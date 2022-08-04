@@ -1,6 +1,6 @@
 import 'package:get_it/get_it.dart';
-import 'data/repository/repository_module.dart';
-import 'environment_info.dart';
+import '../data/repository/repository_module.dart';
+import '../environment_info.dart';
 
 final sl = GetIt.instance;
 
@@ -16,3 +16,5 @@ class Injection {
     // await BlocModule().provides();
   }
 }
+
+void init() {}

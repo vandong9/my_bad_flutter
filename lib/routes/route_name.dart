@@ -1,4 +1,4 @@
 class AppRouteName {
   static const String intro = "intro";
-  static const String home = "";
+  static const String home = "/";
 }

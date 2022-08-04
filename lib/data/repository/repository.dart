@@ -2,7 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 
-import '../../injector.dart';
+import '../../di/injector.dart';
 import '../../utils/network_info.dart';
 import '../source/failure.dart';
 

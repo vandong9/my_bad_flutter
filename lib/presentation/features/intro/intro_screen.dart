@@ -15,7 +15,13 @@ class IntroScreenState extends State<IntroScreen> {
       body: BlocConsumer<IntroBloc, IntroState>(
         listener: (context, state) => {},
         builder: (context, state) {
-          return Container();
+          return Center(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [Text("Intro")],
+            ),
+          );
         },
       ),
     );

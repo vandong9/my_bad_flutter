@@ -1,7 +1,7 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 
 import '../../../utils/network_info.dart';
-import '../../injector.dart';
+import '../../di/injector.dart';
 import '../../environment_info.dart';
 
 class RepositoryModule extends DIModule {

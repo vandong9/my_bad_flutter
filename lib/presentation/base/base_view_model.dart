@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:rxdart/rxdart.dart';
-import '../../injector.dart';
+import '../../di/injector.dart';
 import '../../utils/extension/connectivity_service.dart';
 
 abstract class IInput {

@@ -1,6 +1,6 @@
 import '../../common/theme/theme.dart';
 import '../../environment_info.dart';
-import '../../injector.dart';
+import '../injector.dart';
 
 class AppThemeInstance extends DIModule {
   @override
