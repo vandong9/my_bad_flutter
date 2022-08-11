@@ -1,4 +1,5 @@
 import 'package:get_it/get_it.dart';
+import 'package:my_bad/di/modules/module.dart';
 import '../data/repository/repository_module.dart';
 import '../environment_info.dart';
 
@@ -13,6 +14,7 @@ class Injection {
     // await ComponentsModule().provides(env: env);
     // await ApiModule().provides();
     await RepositoryModule().provides();
+    await ComponentsModule().provides();
     // await BlocModule().provides();
   }
 }

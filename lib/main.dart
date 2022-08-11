@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_translate/flutter_translate.dart';
 
 import 'package:my_bad/di/injector.dart' as service_locator;
-import 'package:my_bad/presentation/features/intro/intro_screen.dart';
-import 'package:my_bad/presentation/features/main/home.dart';
-import 'package:my_bad/presentation/features/splash/splash_bloc.dart';
-import 'package:my_bad/routes/main_route.dart';
 
 import 'app.dart';
+import 'di/injector.dart';
+import 'environment_info.dart';
 
 class SimpleBlocDelegate extends BlocObserver {
   @override
@@ -27,12 +23,8 @@ class SimpleBlocDelegate extends BlocObserver {
 
 void main() async {
   service_locator.init();
-  // var delegate = await LocalizationDelegate.create(
-  //   fallbackLocale: 'en_US',
-  //   supportedLocales: ['en_US', 'de', 'fr'],
-  // );
-
-  // Bloc.observer = SimpleBlocDelegate();
+  final envi = await EnvironmentInfo.dev();
+  await Injection.inject(envi);
 
   runApp(const App());
 }

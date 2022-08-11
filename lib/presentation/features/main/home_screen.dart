@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:my_bad/common/extension/string_extension.dart';
+
+import '../setting/setting.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -9,15 +12,28 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   late TabController _tabController;
 
   List<Widget> tabs = [
-    Container(child: Text("Tab 1\nddf")),
+    Container(child: Text("Tab 1")),
     Container(child: Text("Tab 2")),
-    Container(child: Text("Tab 3"))
+    Container(child: Text("Setting".localized()))
   ];
+
+  List<Widget> tabContents = [];
+  int selectedIndex = 0;
   @override
   void initState() {
     super.initState();
     _tabController = TabController(length: 3, vsync: this);
     _tabController.animateTo(2);
+    tabContents = [
+      Container(child: Text("Tab 1")),
+      Container(child: Text("Tab 2")),
+      SettingScreen()
+      // SettingScreen()
+    ];
+  }
+
+  Widget _contentAtIndex(int index) {
+    return tabContents[index];
   }
 
   @override
@@ -25,7 +41,7 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     return Scaffold(
       body: Container(
         child: Column(children: [
-          Expanded(child: Text("data")),
+          Expanded(child: _contentAtIndex(selectedIndex)),
           Container(
             height: 60,
             child: TabBar(
@@ -36,6 +52,11 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               labelStyle: const TextStyle(fontWeight: FontWeight.bold),
               unselectedLabelStyle:
                   const TextStyle(fontStyle: FontStyle.italic),
+              onTap: (index) {
+                setState(() {
+                  selectedIndex = index;
+                });
+              },
             ),
           ),
         ]),
