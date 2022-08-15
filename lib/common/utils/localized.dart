@@ -3,12 +3,16 @@ import 'dart:io';
 
 import 'package:flutter/services.dart';
 import 'package:injectable/injectable.dart';
+import 'package:my_bad/di/injector.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 @module
 abstract class ILocalizedLanguage {
-  void loadData();
+  Future loadData();
   String textForKey(String key);
+  SupportLanguage currentLanguage();
+  Future switchToLanguage(SupportLanguage language);
 }
 
 /// Implement default LocalizedLanguage
@@ -17,16 +21,15 @@ abstract class ILocalizedLanguage {
 enum SupportLanguage { vietnam, english }
 
 SupportLanguage _defaultSupportLanguge = SupportLanguage.english;
-SupportLanguage currentLanguage = _defaultSupportLanguge;
+SupportLanguage _currentLanguage = _defaultSupportLanguge;
 
 String fileJsonOfLanguage(SupportLanguage language) {
   switch (language) {
     case SupportLanguage.english:
       return "english.json";
     case SupportLanguage.vietnam:
-      return "vietnam.json";
+      return "vietnamese.json";
   }
-  return "english.json";
 }
 
 SupportLanguage languageFormLocale(String locale) {
@@ -36,8 +39,20 @@ SupportLanguage languageFormLocale(String locale) {
 
 class MultipleLanguage implements ILocalizedLanguage {
   String get _languageFolder => "/languages";
+  SharedPreferences? prefs;
+  final kCurrentLanguage = "kCurrentLanguage";
 
   Map<String, String> _data = {};
+
+  MultipleLanguage() {
+    String value = sl<SharedPreferences>().getString(kCurrentLanguage) ?? "";
+    if (value == SupportLanguage.vietnam.name) {
+      _currentLanguage = SupportLanguage.vietnam;
+    } else if (value == SupportLanguage.english.name) {
+      _currentLanguage = SupportLanguage.english;
+    }
+  }
+
   @override
   String textForKey(String key) {
     String? value = _data[key];
@@ -50,21 +65,22 @@ class MultipleLanguage implements ILocalizedLanguage {
     return "english.json";
   }
 
-  void loadData() async {
-    String currentLocale =
-        Platform.localeName; // Returns locale string in the form 'en_US'
-    currentLocale = currentLocale.split("_").first ?? "en";
-    currentLanguage = languageFormLocale(currentLocale);
+  @override
+  Future loadData() async {
+    // String currentLocale =
+    //     Platform.localeName; // Returns locale string in the form 'en_US'
+    // currentLocale = currentLocale.split("_").first;
+    // _currentLanguage = languageFormLocale(currentLocale);
 
     Directory documentDir = await getApplicationDocumentsDirectory();
     try {
-      String languageJsonFile = fileJsonOfLanguage(currentLanguage);
+      String languageJsonFile = fileJsonOfLanguage(_currentLanguage);
       String languagePath =
           "${documentDir.path}$_languageFolder/$languageJsonFile";
       // check if there have json language in folder => load
       if (await File(languagePath).exists()) {
         // TODO: handle load text from file and parse to json
-
+        return;
       } else {
         // if not, load build-in file json language in assets
         String jsonText =
@@ -75,11 +91,28 @@ class MultipleLanguage implements ILocalizedLanguage {
     } catch (error) {
       // AppLog.e("MultipleLanguage loadData error $error");
     }
+    return;
   }
 
   void loadJsonToData(Map<String, dynamic> json) {
     json.forEach((key, value) {
       _data[key] = value;
     });
+  }
+
+  @override
+  Future switchToLanguage(SupportLanguage language) async {
+    if (currentLanguage == language) {
+      return;
+    }
+
+    _currentLanguage = language;
+    await sl<SharedPreferences>().setString(kCurrentLanguage, language.name);
+    await loadData();
+  }
+
+  @override
+  SupportLanguage currentLanguage() {
+    return _currentLanguage;
   }
 }

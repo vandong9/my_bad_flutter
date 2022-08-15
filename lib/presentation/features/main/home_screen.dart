@@ -12,9 +12,9 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   late TabController _tabController;
 
   List<Widget> tabs = [
-    Container(child: Text("Tab 1")),
-    Container(child: Text("Tab 2")),
-    Container(child: Text("Setting".localized()))
+    Container(child: Text("tab_home".localized())),
+    Container(child: Text("tab_payment".localized())),
+    Container(child: Text("tab_other".localized()))
   ];
 
   List<Widget> tabContents = [];

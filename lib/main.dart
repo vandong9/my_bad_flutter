@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_bad/di/injector.dart' as service_locator;
 
 import 'app.dart';
+import 'common/utils/localized.dart';
 import 'di/injector.dart';
 import 'environment_info.dart';
 
@@ -22,9 +23,12 @@ class SimpleBlocDelegate extends BlocObserver {
 }
 
 void main() async {
-  service_locator.init();
+  WidgetsFlutterBinding.ensureInitialized();
+
   final envi = await EnvironmentInfo.dev();
   await Injection.inject(envi);
+  final language = sl<ILocalizedLanguage>();
 
+  await language.loadData();
   runApp(const App());
 }
