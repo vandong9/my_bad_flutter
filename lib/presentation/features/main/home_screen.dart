@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:my_bad/common/extension/string_extension.dart';
 
@@ -14,8 +15,15 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   List<Widget> tabs = [
     Container(child: Text("tab_home".localized())),
     Container(child: Text("tab_payment".localized())),
-    Container(child: Text("tab_other".localized()))
+    Container(child: Text("t_fb_authen_code_invalid".tr()))
   ];
+  List<Widget> getTabs() {
+    return [
+      Container(child: Text("tab_home".localized())),
+      Container(child: Text("tab_payment".localized())),
+      Container(child: Text("t_fb_authen_code_invalid".tr()))
+    ];
+  }
 
   List<Widget> tabContents = [];
   int selectedIndex = 0;
@@ -42,10 +50,11 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       body: Container(
         child: Column(children: [
           Expanded(child: _contentAtIndex(selectedIndex)),
+          Text("t_fb_authen_code_invalid".tr()),
           Container(
             height: 60,
             child: TabBar(
-              tabs: tabs,
+              tabs: getTabs(),
               controller: _tabController,
               labelColor: Colors.red,
               unselectedLabelColor: Colors.grey,

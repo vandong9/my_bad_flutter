@@ -1,9 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import 'package:my_bad/di/injector.dart' as service_locator;
-
 import 'app.dart';
 import 'common/utils/localized.dart';
 import 'di/injector.dart';
@@ -34,7 +31,10 @@ void main() async {
   await language.loadData();
 
   runApp(EasyLocalization(
-    supportedLocales: [const Locale('en', 'US')],
+    supportedLocales: const [Locale('en', 'US'), Locale('vi', 'VN')],
+    fallbackLocale: const Locale('en', 'US'),
+    startLocale: const Locale('en', 'US'),
+    saveLocale: true,
     path: 'assets/langs',
     child: const App(),
   ));

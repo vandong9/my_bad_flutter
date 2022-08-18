@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:my_bad/common/extension/string_extension.dart';
 import 'package:my_bad/di/injector.dart';
@@ -23,6 +24,12 @@ class LanguageScreenState extends State<LanguageScreen> {
     for (var e in SupportLanguage.values) {
       ElevatedButton row = ElevatedButton(
           onPressed: () {
+            if (e == SupportLanguage.english) {
+              EasyLocalization.of(context)?.setLocale(const Locale('en', 'US'));
+            } else {
+              EasyLocalization.of(context)?.setLocale(const Locale('vi', 'VN'));
+            }
+
             updateSelectedLanguage(e).then((value) => {Navigator.pop(context)});
           },
           child: Row(children: [
