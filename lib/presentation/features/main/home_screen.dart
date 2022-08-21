@@ -1,8 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:my_bad/common/extension/string_extension.dart';
-import 'package:my_bad/common/theme/theme_manager.dart';
 import 'package:my_bad/di/injector.dart';
+import 'package:share_ui/theme/theme.dart';
 
 import '../setting/setting.dart';
 

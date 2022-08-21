@@ -1,10 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:my_bad/common/theme/theme.dart';
-import 'package:my_bad/common/theme/theme_manager.dart';
+// import 'package:my_bad/common/theme/theme.dart';
+// import 'package:my_bad/common/theme/theme_manager.dart';
 import 'package:my_bad/di/injector.dart';
 import 'package:my_bad/routes/routes.dart';
+import 'package:share_ui/share_ui.dart';
 
 class MyApp extends StatefulWidget {
   @override

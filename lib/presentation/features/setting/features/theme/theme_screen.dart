@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_bad/common/theme/theme_manager.dart';
+import 'package:share_ui/theme/theme.dart';
 import 'package:my_bad/di/injector.dart';
 
 class ThemeScreen extends StatefulWidget {

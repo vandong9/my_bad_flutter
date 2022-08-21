@@ -6,6 +6,8 @@ import 'common/utils/localized.dart';
 import 'di/injector.dart';
 import 'environment_info.dart';
 
+import 'package:share_ui/share_ui.dart';
+
 class SimpleBlocDelegate extends BlocObserver {
   @override
   void onTransition(Bloc bloc, Transition transition) {
@@ -29,6 +31,7 @@ void main() async {
   final language = sl<ILocalizedLanguage>();
 
   await language.loadData();
+  await sl<ThemeManager>().loadStorageTheme();
 
   runApp(EasyLocalization(
     supportedLocales: const [Locale('en', 'US'), Locale('vi', 'VN')],

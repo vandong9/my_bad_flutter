@@ -1,9 +1,9 @@
-import 'package:my_bad/common/theme/theme_manager.dart';
+// import 'package:my_bad/common/theme/theme_manager.dart';
 import 'package:my_bad/common/utils/localized.dart';
 import 'package:my_bad/di/injector.dart';
 import 'package:my_bad/environment_info.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../../common/theme/theme.dart';
+import 'package:share_ui/share_ui.dart';
 
 class ComponentsModule extends DIModule {
   @override
