@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:my_bad/presentation/features/setting/features/language/language_screen.dart';
+import 'package:my_bad/presentation/features/setting/features/theme/theme_screen.dart';
 
 class SettingScreen extends StatefulWidget {
   @override
@@ -12,8 +13,14 @@ class SettingScreenState extends State<SettingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(children: [
-        Row(
-          children: [const Text("Change theme")],
+        TextButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const ThemeScreen()),
+            );
+          },
+          child: const Text("Change theme"),
         ),
         TextButton(
           onPressed: () {

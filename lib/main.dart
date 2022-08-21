@@ -36,6 +36,6 @@ void main() async {
     startLocale: const Locale('en', 'US'),
     saveLocale: true,
     path: 'assets/langs',
-    child: const App(),
+    child: MyApp(),
   ));
 }

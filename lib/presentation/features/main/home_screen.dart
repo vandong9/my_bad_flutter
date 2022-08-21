@@ -1,6 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:my_bad/common/extension/string_extension.dart';
+import 'package:my_bad/common/theme/theme_manager.dart';
+import 'package:my_bad/di/injector.dart';
 
 import '../setting/setting.dart';
 
@@ -11,6 +13,7 @@ class HomeScreen extends StatefulWidget {
 
 class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   late TabController _tabController;
+  ThemeManager themeManager = sl<ThemeManager>();
 
   List<Widget> tabs = [
     Container(child: Text("tab_home".localized())),
@@ -50,7 +53,9 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       body: Container(
         child: Column(children: [
           Expanded(child: _contentAtIndex(selectedIndex)),
-          Text("t_fb_authen_code_invalid".tr()),
+          Text("t_fb_authen_code_invalid".tr(),
+              style:
+                  TextStyle(color: themeManager.current.color.transparent())),
           Container(
             height: 60,
             child: TabBar(

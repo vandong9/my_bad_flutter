@@ -11,7 +11,12 @@ class AppColor {
   Color accentColor = Color(0xffD81B60);
 }
 
-class DartColor extends AppColor {
+class DarkColor extends AppColor {
   @override
-  Color transparent() => const Color.fromARGB(0, 81, 52, 52);
+  Color transparent() => const Color.fromARGB(255, 174, 48, 48);
+}
+
+class LightColor extends AppColor {
+  @override
+  Color transparent() => const Color.fromARGB(255, 239, 233, 233);
 }
