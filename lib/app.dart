@@ -1,15 +1,33 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:my_bad/common/theme/theme.dart';
+import 'package:my_bad/common/theme/theme_manager.dart';
+import 'package:my_bad/di/injector.dart';
 import 'package:my_bad/routes/routes.dart';
 
-class App extends StatelessWidget {
-  const App({Key? key}) : super(key: key);
+class MyApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => MyAppState();
+}
+
+class MyAppState extends State<MyApp> {
+  late AppTheme appTheme;
+
+  @override
+  void initState() {
+    super.initState();
+    ThemeManager themeManager = sl<ThemeManager>();
+    appTheme = themeManager.current;
+    themeManager.onChangedCurrentTheme = () {
+      setState(() {
+        appTheme = themeManager.current;
+      });
+    };
+  }
 
   @override
   Widget build(BuildContext context) {
-    // var localizationDelegate = LocalizedApp.of(context).delegate;
-
     return AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle.light,
         child: MaterialApp(
