@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_bad/common/theme/theme.dart';
 import 'package:my_bad/di/injector.dart';
+import 'package:share_ui/theme/theme.dart';
 
 class Loading extends StatelessWidget {
   // ignore: use_key_in_widget_constructors
