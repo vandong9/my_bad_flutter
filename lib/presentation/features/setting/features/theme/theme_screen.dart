@@ -42,7 +42,7 @@ class ThemeScreenState extends State<ThemeScreen> {
           Text(
             "Current value color",
             style: const TextStyle()
-                .copyWith(color: themeManager.current.color.transparent()),
+                .copyWith(color: themeManager.current.color.transparent),
           )
         ],
       ),

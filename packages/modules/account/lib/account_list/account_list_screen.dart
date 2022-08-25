@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:share_ui/theme/theme.dart';
 
 class AccountListScreen extends StatefulWidget {
@@ -12,10 +11,18 @@ class AccountListScreen extends StatefulWidget {
 class AccountListScreenState extends State<AccountListScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Expanded(
-        child: Text(
-      "AccountListScreen",
-      style: TextStyle(color: Colors.red),
-    ));
+    InheritedAppThemeProvider? themeProvider =
+        InheritedAppThemeProvider.of(context);
+    Color? text1 = themeProvider != null
+        ? themeProvider.appTheme.color.accentColor
+        : Colors.red;
+    return Column(
+      children: [
+        Text(
+          "AccountListScreen",
+          style: TextStyle(color: text1),
+        ),
+      ],
+    );
   }
 }

@@ -29,23 +29,28 @@ class MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    ThemeManager themeManager = sl<ThemeManager>();
+
     return AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle.light,
-        child: MaterialApp(
-            localizationsDelegates: context.localizationDelegates,
-            supportedLocales: context.supportedLocales,
-            locale: context.locale,
+        child: InheritedAppThemeProvider(
+          appTheme: themeManager.current,
+          child: MaterialApp(
+              localizationsDelegates: context.localizationDelegates,
+              supportedLocales: context.supportedLocales,
+              locale: context.locale,
 
-            // localizationsDelegates: [
-            //   // localizationDelegate,
-            // ],
-            // onGenerateRoute: _registerRoutesWithParameters,
-            // supportedLocales: localizationDelegate.supportedLocales,
-            debugShowCheckedModeBanner: false,
-            // locale: localizationDelegate.currentLocale,
-            title: 'Open FLutter E-commerce',
-            // theme: OpenFlutterEcommerceTheme.of(context),
-            routes: mainRoutes(),
-            initialRoute: "/"));
+              // localizationsDelegates: [
+              //   // localizationDelegate,
+              // ],
+              // onGenerateRoute: _registerRoutesWithParameters,
+              // supportedLocales: localizationDelegate.supportedLocales,
+              debugShowCheckedModeBanner: false,
+              // locale: localizationDelegate.currentLocale,
+              title: 'Open FLutter E-commerce',
+              // theme: OpenFlutterEcommerceTheme.of(context),
+              routes: mainRoutes(),
+              initialRoute: "/"),
+        ));
   }
 }

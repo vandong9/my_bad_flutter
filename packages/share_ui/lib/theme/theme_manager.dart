@@ -1,3 +1,4 @@
+import 'package:rxdart/subjects.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'colors.dart';
@@ -39,12 +40,14 @@ class ThemeManager {
   late AppTheme current;
   final String _storageThemeKey = "StorageThemeKey";
   final SupportTheme _defaultThemeType = SupportTheme.light;
+  late SharedPreferences _prefs;
+
+  BehaviorSubject<AppTheme> themeChangeSubject = BehaviorSubject();
   Function? onChangedCurrentTheme;
-  late SharedPreferences prefs;
 
   Future loadStorageTheme() async {
-    prefs = await SharedPreferences.getInstance();
-    String type = prefs.getString(_storageThemeKey) ?? "";
+    _prefs = await SharedPreferences.getInstance();
+    String type = _prefs.getString(_storageThemeKey) ?? "";
     SupportTheme themeType =
         SupportThemePreferance.themeTypeByName(type) ?? _defaultThemeType;
 
@@ -80,10 +83,12 @@ class ThemeManager {
         break;
     }
 
-    prefs.setString(_storageThemeKey, newThemeType.name());
+    _prefs.setString(_storageThemeKey, newThemeType.name());
     if (onChangedCurrentTheme != null) {
       onChangedCurrentTheme!();
     }
+
+    themeChangeSubject.add(current);
   }
 }
 

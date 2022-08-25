@@ -1,7 +1,9 @@
+// ignore_for_file: overridden_fields
+
 import 'package:flutter/material.dart';
 
 class AppColor {
-  Color transparent() => Colors.transparent;
+  Color transparent = Colors.transparent;
   Color whiteColor = Colors.white;
   Color blackColor = Colors.black;
   Color primaryColor = Color(0xffffffff);
@@ -12,11 +14,15 @@ class AppColor {
 }
 
 class DarkColor extends AppColor {
-  @override
-  Color transparent() => const Color.fromARGB(255, 174, 48, 48);
+  DarkColor() {
+    accentColor = const Color(0xff000000);
+    transparent = const Color.fromARGB(255, 174, 48, 48);
+  }
 }
 
 class LightColor extends AppColor {
-  @override
-  Color transparent() => const Color.fromARGB(255, 239, 233, 233);
+  LightColor() {
+    accentColor = const Color(0xffffffff);
+    transparent = const Color.fromARGB(255, 239, 233, 233);
+  }
 }

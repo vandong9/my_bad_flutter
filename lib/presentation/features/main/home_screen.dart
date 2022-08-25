@@ -5,6 +5,7 @@ import 'package:my_bad/di/injector.dart';
 import 'package:share_ui/theme/theme.dart';
 
 import '../setting/setting.dart';
+import 'package:account/account_list/account_list.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -36,7 +37,7 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     _tabController = TabController(length: 3, vsync: this);
     _tabController.animateTo(2);
     tabContents = [
-      Container(child: Text("Tab 1")),
+      Container(child: AccountListScreen()),
       Container(child: Text("Tab 2")),
       SettingScreen()
       // SettingScreen()
@@ -54,8 +55,7 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         child: Column(children: [
           Expanded(child: _contentAtIndex(selectedIndex)),
           Text("t_fb_authen_code_invalid".tr(),
-              style:
-                  TextStyle(color: themeManager.current.color.transparent())),
+              style: TextStyle(color: themeManager.current.color.transparent)),
           Container(
             height: 60,
             child: TabBar(

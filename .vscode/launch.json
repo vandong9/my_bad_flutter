@@ -1,0 +1,85 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "my_bad_flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "my_bad_flutter (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "my_bad_flutter (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "data_source",
+            "cwd": "packages/data_source",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "data_source (profile mode)",
+            "cwd": "packages/data_source",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "data_source (release mode)",
+            "cwd": "packages/data_source",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "share_ui",
+            "cwd": "packages/share_ui",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "share_ui (profile mode)",
+            "cwd": "packages/share_ui",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "share_ui (release mode)",
+            "cwd": "packages/share_ui",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "account",
+            "cwd": "packages/modules/account",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "account (profile mode)",
+            "cwd": "packages/modules/account",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "account (release mode)",
+            "cwd": "packages/modules/account",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
