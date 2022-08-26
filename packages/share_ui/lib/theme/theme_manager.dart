@@ -1,9 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:rxdart/subjects.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-import 'colors.dart';
-import 'font.dart';
-import 'text_style.dart';
 import 'app_theme.dart';
 
 enum SupportTheme { dark, light }
@@ -92,18 +89,18 @@ class ThemeManager {
   }
 }
 
-class DarkTheme extends AppTheme {
-  DarkTheme()
-      : super(
-            DarkColor(),
-            AppFont(AppFontFamily(), AppFontWeight(), AppFontSize()),
-            AppTextStyle());
-}
+/// wrap to view so can use .of(context)
+class InheritedAppThemeProvider extends InheritedWidget {
+  final AppTheme appTheme;
 
-class LightTheme extends AppTheme {
-  LightTheme()
-      : super(
-            LightColor(),
-            AppFont(AppFontFamily(), AppFontWeight(), AppFontSize()),
-            AppTextStyle());
+  const InheritedAppThemeProvider(
+      {Key? key, required this.appTheme, required Widget child})
+      : super(key: key, child: child);
+
+  static InheritedAppThemeProvider? of(BuildContext context) =>
+      context.dependOnInheritedWidgetOfExactType<InheritedAppThemeProvider>();
+
+  @override
+  bool updateShouldNotify(covariant InheritedAppThemeProvider oldWidget) =>
+      appTheme != oldWidget.appTheme;
 }

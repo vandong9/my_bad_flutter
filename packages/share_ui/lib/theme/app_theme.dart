@@ -9,23 +9,20 @@ class AppTheme {
   AppFont font;
   AppTextStyle textStyle;
   AppTheme(this.color, this.font, this.textStyle);
-
-  static AppTheme? ofContext(BuildContext context) {
-    return null;
-  }
 }
 
-class InheritedAppThemeProvider extends InheritedWidget {
-  final AppTheme appTheme;
+class DarkTheme extends AppTheme {
+  DarkTheme()
+      : super(
+            DarkColor(),
+            AppFont(AppFontFamily(), AppFontWeight(), AppFontSize()),
+            AppTextStyle());
+}
 
-  const InheritedAppThemeProvider(
-      {Key? key, required this.appTheme, required Widget child})
-      : super(key: key, child: child);
-
-  static InheritedAppThemeProvider? of(BuildContext context) =>
-      context.dependOnInheritedWidgetOfExactType<InheritedAppThemeProvider>();
-
-  @override
-  bool updateShouldNotify(covariant InheritedAppThemeProvider oldWidget) =>
-      appTheme != oldWidget.appTheme;
+class LightTheme extends AppTheme {
+  LightTheme()
+      : super(
+            LightColor(),
+            AppFont(AppFontFamily(), AppFontWeight(), AppFontSize()),
+            AppTextStyle());
 }
