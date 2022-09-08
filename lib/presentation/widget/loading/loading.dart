@@ -16,8 +16,7 @@ class Loading extends StatelessWidget {
       absorbing: disableClick,
       child: Center(
         child: CircularProgressIndicator(
-            valueColor:
-                AlwaysStoppedAnimation<Color>(appTheme.color.transparent)),
+            valueColor: AlwaysStoppedAnimation<Color>(appTheme.color.grey900)),
       ),
     );
   }

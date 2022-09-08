@@ -14,7 +14,7 @@ class AccountListScreenState extends State<AccountListScreen> {
     InheritedAppThemeProvider? themeProvider =
         InheritedAppThemeProvider.of(context);
     Color? text1 = themeProvider != null
-        ? themeProvider.appTheme.color.accentColor
+        ? themeProvider.appTheme.color.grey900
         : Colors.red;
     return Column(
       children: [

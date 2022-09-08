@@ -18,31 +18,29 @@ class ThemeScreenState extends State<ThemeScreen> {
         children: [
           ElevatedButton(
             onPressed: () {
-              themeManager.updateTheme(SupportTheme.light);
+              themeManager.updateTheme(SupportTheme.ice);
               Navigator.pop(context);
             },
             child: Row(children: [
               Text("Light"),
-              Text(themeManager.currentThemeType == SupportTheme.light
-                  ? "X"
-                  : "")
+              Text(themeManager.currentThemeType == SupportTheme.ice ? "X" : "")
             ]),
           ),
           ElevatedButton(
             onPressed: () {
-              themeManager.updateTheme(SupportTheme.dark);
+              themeManager.updateTheme(SupportTheme.fire);
               Navigator.pop(context);
             },
             child: Row(children: [
               Text("dark"),
               Text(
-                  themeManager.currentThemeType == SupportTheme.dark ? "X" : "")
+                  themeManager.currentThemeType == SupportTheme.fire ? "X" : "")
             ]),
           ),
           Text(
             "Current value color",
             style: const TextStyle()
-                .copyWith(color: themeManager.current.color.transparent),
+                .copyWith(color: themeManager.current.color.grey900),
           )
         ],
       ),

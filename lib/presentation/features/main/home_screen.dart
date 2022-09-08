@@ -55,7 +55,7 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         child: Column(children: [
           Expanded(child: _contentAtIndex(selectedIndex)),
           Text("t_fb_authen_code_invalid".tr(),
-              style: TextStyle(color: themeManager.current.color.transparent)),
+              style: TextStyle(color: themeManager.current.color.grey900)),
           Container(
             height: 60,
             child: TabBar(

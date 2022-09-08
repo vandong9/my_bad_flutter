@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'colors.dart';
+import 'gradient_color.dart';
 import 'text_style.dart';
 import 'font.dart';
 
@@ -8,21 +9,24 @@ class AppTheme {
   AppColor color;
   AppFont font;
   AppTextStyle textStyle;
-  AppTheme(this.color, this.font, this.textStyle);
+  GradientColor gradientColor;
+  AppTheme(this.color, this.font, this.textStyle, this.gradientColor);
 }
 
-class DarkTheme extends AppTheme {
-  DarkTheme()
+class FireTheme extends AppTheme {
+  FireTheme()
       : super(
-            DarkColor(),
+            FireColor(),
             AppFont(AppFontFamily(), AppFontWeight(), AppFontSize()),
-            AppTextStyle());
+            AppTextStyle(),
+            FireThemeGradientColor());
 }
 
-class LightTheme extends AppTheme {
-  LightTheme()
+class IceTheme extends AppTheme {
+  IceTheme()
       : super(
-            LightColor(),
+            IceColor(),
             AppFont(AppFontFamily(), AppFontWeight(), AppFontSize()),
-            AppTextStyle());
+            AppTextStyle(),
+            IceThemeGradientColor());
 }

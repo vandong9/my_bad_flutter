@@ -3,29 +3,29 @@ import 'package:rxdart/subjects.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'app_theme.dart';
 
-enum SupportTheme { dark, light }
+enum SupportTheme { fire, ice }
 
 extension SupportThemePreferance on SupportTheme {
   String name() {
     switch (this) {
-      case SupportTheme.light:
+      case SupportTheme.ice:
         {
-          return "SupportTheme.light";
+          return "SupportTheme.ice";
         }
-      case SupportTheme.dark:
+      case SupportTheme.fire:
         {
-          return "SupportTheme.dark";
+          return "SupportTheme.fire";
         }
     }
   }
 
   static SupportTheme? themeTypeByName(String themeName) {
-    if (themeName == SupportTheme.light.name()) {
-      return SupportTheme.light;
+    if (themeName == SupportTheme.ice.name()) {
+      return SupportTheme.ice;
     }
 
-    if (themeName == SupportTheme.dark.name()) {
-      return SupportTheme.dark;
+    if (themeName == SupportTheme.fire.name()) {
+      return SupportTheme.fire;
     }
 
     return null;
@@ -33,10 +33,10 @@ extension SupportThemePreferance on SupportTheme {
 }
 
 class ThemeManager {
-  SupportTheme currentThemeType = SupportTheme.light;
+  SupportTheme currentThemeType = SupportTheme.ice;
   late AppTheme current;
   final String _storageThemeKey = "StorageThemeKey";
-  final SupportTheme _defaultThemeType = SupportTheme.light;
+  final SupportTheme _defaultThemeType = SupportTheme.ice;
   late SharedPreferences _prefs;
 
   BehaviorSubject<AppTheme> themeChangeSubject = BehaviorSubject();
@@ -49,14 +49,14 @@ class ThemeManager {
         SupportThemePreferance.themeTypeByName(type) ?? _defaultThemeType;
 
     switch (themeType) {
-      case SupportTheme.light:
+      case SupportTheme.ice:
         {
-          current = LightTheme();
+          current = IceTheme();
         }
         break;
-      case SupportTheme.dark:
+      case SupportTheme.fire:
         {
-          current = DarkTheme();
+          current = FireTheme();
         }
         break;
     }
@@ -68,14 +68,14 @@ class ThemeManager {
     }
     currentThemeType = newThemeType;
     switch (newThemeType) {
-      case SupportTheme.light:
+      case SupportTheme.ice:
         {
-          current = LightTheme();
+          current = IceTheme();
         }
         break;
-      case SupportTheme.dark:
+      case SupportTheme.fire:
         {
-          current = DarkTheme();
+          current = FireTheme();
         }
         break;
     }
