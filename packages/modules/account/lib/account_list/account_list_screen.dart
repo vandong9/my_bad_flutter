@@ -2,17 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:share_ui/theme/theme.dart';
 
 import 'account_list_view_model.dart';
-
-abstract class BaseMVVMScreen extends StatefulWidget {
-  const BaseMVVMScreen({super.key});
-  @override
-  State<StatefulWidget> createState();
-}
-
-abstract class BaseMVVMState<T extends BaseMVVMScreen> extends State<T> {
-  BaseViewModel viewmodel;
-  BaseMVVMState(this.viewmodel);
-}
+import 'package:share_ui/template/mvvm/mvvm_template.dart';
 
 class AccountListScreen extends BaseMVVMScreen {
   const AccountListScreen({Key? key}) : super(key: key);
@@ -21,7 +11,10 @@ class AccountListScreen extends BaseMVVMScreen {
   State<StatefulWidget> createState() => AccountListScreenState();
 }
 
-class AccountListScreenState extends State<AccountListScreen> {
+class AccountListScreenState
+    extends BaseMVVMState<AccountListScreen, AccountListViewModel> {
+  AccountListScreenState() : super(AccountListViewModel());
+
   @override
   Widget build(BuildContext context) {
     InheritedAppThemeProvider? themeProvider =

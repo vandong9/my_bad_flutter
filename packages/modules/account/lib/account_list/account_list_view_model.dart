@@ -1,22 +1,9 @@
-abstract class Input {
-  dispose();
-}
-
-abstract class Output {
-  dispose();
-}
-
-abstract class BaseViewModel<IN extends Input, OUT extends Output> {
-  IN input;
-  OUT output;
-  BaseViewModel(this.input, this.output);
-  transform();
-  dispose();
-}
+import 'package:share_ui/template/mvvm/mvvm_template.dart';
 
 class AccountListViewModel extends BaseViewModel<AccountListViewModelInput,
     AccountListViewModelOutput> {
-  AccountListViewModel(super.input, super.output);
+  AccountListViewModel()
+      : super(AccountListViewModelInput(), AccountListViewModelOutput());
 
   @override
   dispose() {
