@@ -5,13 +5,8 @@ import 'package:flutter/services.dart';
 import 'loading/circle_loading.dart';
 import 'dialog/progress_dialog.dart';
 
-class BaseWidget extends StatefulWidget {
+abstract class BaseWidget extends StatefulWidget {
   const BaseWidget({Key? key}) : super(key: key);
-
-  @override
-  State<StatefulWidget> createState() {
-    return BaseState();
-  }
 }
 
 class BaseState<T extends BaseWidget> extends State<T> {

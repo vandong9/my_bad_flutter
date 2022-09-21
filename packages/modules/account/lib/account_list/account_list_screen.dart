@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:share_ui/theme/theme.dart';
 
@@ -17,10 +18,13 @@ class AccountListScreenState
 
   @override
   Widget build(BuildContext context) {
+    if (kDebugMode) {
+      print(viewmodel.getStringSample());
+    }
     InheritedAppThemeProvider? themeProvider =
         InheritedAppThemeProvider.of(context);
     Color? text1 = themeProvider != null
-        ? themeProvider.appTheme.color.grey900
+        ? themeProvider.appTheme.color.darkThemeColor
         : Colors.red;
     return Column(
       children: [
