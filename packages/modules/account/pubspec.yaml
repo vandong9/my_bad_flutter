@@ -13,7 +13,9 @@ dependencies:
 
   share_ui:
     path: './../../share_ui'    
-
+  product:
+    path: './../product'
+    
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -42,10 +42,7 @@ class SampleBaseViewModel extends BaseViewModel {
   SampleBaseViewModel(super.input, super.output);
 
   @override
-  dispose() {
-    // TODO: implement dispose
-    throw UnimplementedError();
-  }
+  dispose() {}
 
   @override
   transform() {
