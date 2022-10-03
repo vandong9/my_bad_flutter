@@ -28,21 +28,23 @@ class AccountListScreenState
     Color? text1 = themeProvider != null
         ? themeProvider.appTheme.color.darkThemeColor
         : Colors.red;
-    return Column(
-      children: [
-        Text(
-          "AccountListScreen",
-          style: TextStyle(color: text1),
-        ),
-        TextButton(
-          onPressed: () {
-            String productList = productRouters.Page.productList.pageName();
-            Navigator.of(context).pushNamed(productList);
-            // NavigateUtil.openPage(context, "/product/productList");
-          },
-          child: const Text("Show Product"),
-        )
-      ],
+    return SafeArea(
+      child: Column(
+        children: [
+          Text(
+            "AccountListScreen",
+            style: TextStyle(color: text1),
+          ),
+          TextButton(
+            onPressed: () {
+              String productList = productRouters.Page.productList.pageName();
+              Navigator.of(context).pushNamed(productList);
+              // NavigateUtil.openPage(context, "/product/productList");
+            },
+            child: const Text("Show Product"),
+          )
+        ],
+      ),
     );
   }
 }
