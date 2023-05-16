@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:flutter/foundation.dart';
 
 import 'package:flutter/services.dart';
 import 'package:injectable/injectable.dart';
@@ -67,10 +68,16 @@ class MultipleLanguage implements ILocalizedLanguage {
 
   @override
   Future loadData() async {
-    // String currentLocale =
-    //     Platform.localeName; // Returns locale string in the form 'en_US'
-    // currentLocale = currentLocale.split("_").first;
-    // _currentLanguage = languageFormLocale(currentLocale);
+    if (kIsWeb) {
+      String languageJsonFile = fileJsonOfLanguage(_currentLanguage);
+
+      String jsonText =
+          await rootBundle.loadString('assets/language/$languageJsonFile');
+      final jsonObj = json.decode(jsonText);
+      loadJsonToData(jsonObj);
+
+      return;
+    }
 
     Directory documentDir = await getApplicationDocumentsDirectory();
     try {
