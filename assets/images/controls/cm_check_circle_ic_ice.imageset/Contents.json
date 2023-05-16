@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "cm_check_circle_ic_ice.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

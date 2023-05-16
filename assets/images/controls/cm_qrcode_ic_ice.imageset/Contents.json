@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "cm_qrcode_ic_ice.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
