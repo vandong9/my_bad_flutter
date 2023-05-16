@@ -69,6 +69,7 @@ class MultipleLanguage implements ILocalizedLanguage {
   @override
   Future loadData() async {
     if (kIsWeb) {
+      // path_provider not support web -> must load wording from assets
       String languageJsonFile = fileJsonOfLanguage(_currentLanguage);
 
       String jsonText =
