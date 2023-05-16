@@ -21,8 +21,6 @@ abstract class BaseViewModel<IN extends Input, OUT extends Output> {
 /// Screen
 abstract class BaseMVVMScreen extends BaseWidget {
   const BaseMVVMScreen({super.key});
-  @override
-  State<StatefulWidget> createState();
 }
 
 abstract class BaseMVVMState<T extends BaseMVVMScreen, VM extends BaseViewModel>

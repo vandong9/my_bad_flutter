@@ -12,6 +12,10 @@ class AccountListViewModel extends BaseViewModel<AccountListViewModelInput,
 
   @override
   transform() {}
+
+  String getStringSample() {
+    return "sample";
+  }
 }
 
 class AccountListViewModelInput implements Input {

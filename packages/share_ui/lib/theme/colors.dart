@@ -31,12 +31,21 @@ class AppColor {
   Color orange300 = const Color(0xFFF9B869);
   Color orange200 = const Color(0xFFFDD3A6);
   Color orange100 = const Color(0xFFFFE8D3);
+
+  Color lightThemeColor = const Color(0xFFFE9B25);
+  Color darkThemeColor = const Color(0xFFFE9B25);
 }
 
 class FireColor extends AppColor {
-  FireColor() {}
+  FireColor() {
+    lightThemeColor = const Color(0xFFFE9B25);
+    darkThemeColor = const Color(0xFFFF5922);
+  }
 }
 
 class IceColor extends AppColor {
-  IceColor() {}
+  IceColor() {
+    lightThemeColor = const Color(0xFF0070D7);
+    darkThemeColor = const Color(0xFF00417D);
+  }
 }
