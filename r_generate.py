@@ -7,6 +7,7 @@
 #           # assets-generator-begin
 #           # assets-generator-end
 import os
+import re
 
 currentPath = os.path.dirname(__file__)
 folderToImports = []
@@ -49,7 +50,7 @@ sinalEnd = "assets-generator-end"
 #   final String a = "a.jpg"
 # }
 #
-# clas B {
+# class B {
 #   final String b = "b.jpg"
 # }
 #
@@ -71,8 +72,8 @@ def lowerOnlyFirstCharacter(string):
 
 def processFolderName(folderName):
     replacedUnderscoreString = folderName.title()
-    replacedUnderscoreString = replacedUnderscoreString.replace("_", " ")
-    removedSpaceString = replacedUnderscoreString.replace(" ", "")
+    # replacedUnderscoreString = replacedUnderscoreString.replace("_", " ").replace(".", " ").replace("-", " ")
+    removedSpaceString = re.sub('[^A-Za-z0-9]+', '', replacedUnderscoreString)
     # adding Images to limit the conflict class name with other user defined class
     return removedSpaceString + "Images"
 
@@ -80,8 +81,7 @@ def processFolderName(folderName):
 def processFileName(fileName):
     fileNameOnly = os.path.splitext(fileName)[0]
     replacedUnderscoreString = fileNameOnly.title()
-    replacedUnderscoreString = replacedUnderscoreString.replace("_", " ")
-    removedSpaceString = replacedUnderscoreString.replace(" ", "")
+    removedSpaceString = re.sub('[^A-Za-z0-9]+', '', replacedUnderscoreString)
     return lowerOnlyFirstCharacter(removedSpaceString)
 
 
@@ -97,6 +97,9 @@ def generateResourceForFolder(folderPath, folderName, level):
     stringArray.append(
         "class " + processFolderName(folderName) + " {")
     for fileName in os.listdir(folderPath):
+        if fileName.endswith("@2x.png") or fileName.endswith("@3x.png"):
+            continue
+
         newPath = os.path.join(folderPath, fileName)
         if os.path.isdir(newPath):
             # Folder 2.0x and 3.0x is for high resolution screen, flutter will auto detect to use,
@@ -107,13 +110,13 @@ def generateResourceForFolder(folderPath, folderName, level):
                 folderToImports.append(folderPath + "/" + fileName)
                 processedFolderName = processFolderName(fileName)
                 stringArray.append(
-                    "   final " + lowerOnlyFirstCharacter(processedFolderName) + " = " + processedFolderName + "();")
+                    " final " + lowerOnlyFirstCharacter(processedFolderName) + " = " + processedFolderName + "();")
                 subFolderString.append(generateResourceForFolder(
                     newPath, fileName, level + 1))
-        elif fileName.endswith(".png" or ".jpg" or ".jpeg"):
+        elif fileName.endswith(".png" or ".jpg" or ".jpeg" or ".pdf"):
             fileNameToGenerateProperty = processFileName(fileName)
             folderPath = processWindowPath(folderPath)
-            stringArray.append("    " * level + "final String " +
+            stringArray.append(" final String " +
                                fileNameToGenerateProperty + " = " + "'" + folderPath + "/" + fileName + "';")
     stringArray.append("}")
     for subGeneratedClass in subFolderString:

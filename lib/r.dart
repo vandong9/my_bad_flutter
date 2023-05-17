@@ -1,1074 +1,841 @@
 //*** This is the automate generated file, DO NOT EDIT ***
 final ResourceImages R = ResourceImages();
 class ResourceImages {
-   final generalImages = GeneralImages();
-   final controlsImages = ControlsImages();
-   final sampleImages = SampleImages();
+ final generalImages = GeneralImages();
+ final controlsImages = ControlsImages();
+ final sampleImages = SampleImages();
 }
 
 
 class GeneralImages {
-    final String icArrowLeft = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/general/ic_arrow_left.png';
-    final String icClose = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/general/ic_close.png';
-    final String icAdd = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/general/ic_add.png';
-    final String icDelete = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/general/ic_delete.png';
-    final String icCart = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/general/ic_cart.png';
-    final String icEdit = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/general/ic_edit.png';
-    final String icArrowDown = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/general/ic_arrow_down.png';
+ final String icArrowLeft = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/general/ic_arrow_left.png';
+ final String icClose = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/general/ic_close.png';
+ final String icAdd = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/general/ic_add.png';
+ final String icDelete = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/general/ic_delete.png';
+ final String icCart = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/general/ic_cart.png';
+ final String icEdit = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/general/ic_edit.png';
+ final String icArrowDown = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/general/ic_arrow_down.png';
 }
 
 
 class ControlsImages {
-   final cmCheckCircleGreyIc.ImagesetImages = CmCheckCircleGreyIc.ImagesetImages();
-   final cmPhoneIc.ImagesetImages = CmPhoneIc.ImagesetImages();
-   final cmErrorCircle.ImagesetImages = CmErrorCircle.ImagesetImages();
-   final cmWifiIcFire.ImagesetImages = CmWifiIcFire.ImagesetImages();
-   final cmCameraIc.ImagesetImages = CmCameraIc.ImagesetImages();
-   final cmLogoutGreyIc.ImagesetImages = CmLogoutGreyIc.ImagesetImages();
-   final cmWalletIcFire.ImagesetImages = CmWalletIcFire.ImagesetImages();
-   final cmKbNumberIc.ImagesetImages = CmKbNumberIc.ImagesetImages();
-   final cmUpIc.ImagesetImages = CmUpIc.ImagesetImages();
-   final cmClockBannerIcFire.ImagesetImages = CmClockBannerIcFire.ImagesetImages();
-   final cmAdd2IcIce.ImagesetImages = CmAdd2IcIce.ImagesetImages();
-   final cmCheckCircleIcIce.ImagesetImages = CmCheckCircleIcIce.ImagesetImages();
-   final cmWalletIcIce.ImagesetImages = CmWalletIcIce.ImagesetImages();
-   final cmCheckProcessingIc.ImagesetImages = CmCheckProcessingIc.ImagesetImages();
-   final cmCheckboxCheckedIc.ImagesetImages = CmCheckboxCheckedIc.ImagesetImages();
-   final cmInfo40IcFire.ImagesetImages = CmInfo40IcFire.ImagesetImages();
-   final cmAutoBillIcIce.ImagesetImages = CmAutoBillIcIce.ImagesetImages();
-   final cmPictureIc.ImagesetImages = CmPictureIc.ImagesetImages();
-   final cmCopyIc.ImagesetImages = CmCopyIc.ImagesetImages();
-   final cmLeftArrowIc.ImagesetImages = CmLeftArrowIc.ImagesetImages();
-   final cmInfo40IcIce.ImagesetImages = CmInfo40IcIce.ImagesetImages();
-   final cmCheckBoxActiveIc.ImagesetImages = CmCheckBoxActiveIc.ImagesetImages();
-   final cmArrowDownIc.ImagesetImages = CmArrowDownIc.ImagesetImages();
-   final cmCheckboxCheckedDisableIc.ImagesetImages = CmCheckboxCheckedDisableIc.ImagesetImages();
-   final cmCheckPaddingIc.ImagesetImages = CmCheckPaddingIc.ImagesetImages();
-   final cmShowPasswordIc.ImagesetImages = CmShowPasswordIc.ImagesetImages();
-   final cmClose40ThemeIcFire.ImagesetImages = CmClose40ThemeIcFire.ImagesetImages();
-   final cmSave24IcFire.ImagesetImages = CmSave24IcFire.ImagesetImages();
-   final cmCalenderIcFire.ImagesetImages = CmCalenderIcFire.ImagesetImages();
-   final cmQrCodeIcFire.ImagesetImages = CmQrCodeIcFire.ImagesetImages();
-   final cmSave24IcIce.ImagesetImages = CmSave24IcIce.ImagesetImages();
-   final cmFlagVnIc.ImagesetImages = CmFlagVnIc.ImagesetImages();
-   final cmStarIcIce.ImagesetImages = CmStarIcIce.ImagesetImages();
-   final cmMinusIc.ImagesetImages = CmMinusIc.ImagesetImages();
-   final cmCheckVIc.ImagesetImages = CmCheckVIc.ImagesetImages();
-   final cmCopyIcIce.ImagesetImages = CmCopyIcIce.ImagesetImages();
-   final cmTranIcFire.ImagesetImages = CmTranIcFire.ImagesetImages();
-   final cmArrowRightGrey600Ic.ImagesetImages = CmArrowRightGrey600Ic.ImagesetImages();
-   final cmClearTextIc.ImagesetImages = CmClearTextIc.ImagesetImages();
-   final cmTrashHeaderIc.ImagesetImages = CmTrashHeaderIc.ImagesetImages();
-   final cmInfo40Ic.ImagesetImages = CmInfo40Ic.ImagesetImages();
-   final cmUserIc.ImagesetImages = CmUserIc.ImagesetImages();
-   final cmAlertSaveBenIcIce.ImagesetImages = CmAlertSaveBenIcIce.ImagesetImages();
-   final cmCheckErrorIc.ImagesetImages = CmCheckErrorIc.ImagesetImages();
-   final cmArrowRightGrey200Ic.ImagesetImages = CmArrowRightGrey200Ic.ImagesetImages();
-   final cmGradientGreyBottomIc.ImagesetImages = CmGradientGreyBottomIc.ImagesetImages();
-   final cmIceLogoIc.ImagesetImages = CmIceLogoIc.ImagesetImages();
-   final cmInfoIcFire.ImagesetImages = CmInfoIcFire.ImagesetImages();
-   final cmPendingReceiptIcIce.ImagesetImages = CmPendingReceiptIcIce.ImagesetImages();
-   final cmForceUpgradeIcFire.ImagesetImages = CmForceUpgradeIcFire.ImagesetImages();
-   final cmTrashIc.ImagesetImages = CmTrashIc.ImagesetImages();
-   final cmArrowCellIc.ImagesetImages = CmArrowCellIc.ImagesetImages();
-   final cmClose40ThemeIcIce.ImagesetImages = CmClose40ThemeIcIce.ImagesetImages();
-   final cmCopyTintIc.ImagesetImages = CmCopyTintIc.ImagesetImages();
-   final cmArrowGreyCellIc.ImagesetImages = CmArrowGreyCellIc.ImagesetImages();
-   final cmActiveButtonIc.ImagesetImages = CmActiveButtonIc.ImagesetImages();
-   final cmAlertSaveBenIcFire.ImagesetImages = CmAlertSaveBenIcFire.ImagesetImages();
-   final cmCheckProcessingIc-1.ImagesetImages = CmCheckProcessingIc-1.ImagesetImages();
-   final cmRadioActiveIc.ImagesetImages = CmRadioActiveIc.ImagesetImages();
-   final cmSaveContactIcFire.ImagesetImages = CmSaveContactIcFire.ImagesetImages();
-   final cmWifiIcIce.ImagesetImages = CmWifiIcIce.ImagesetImages();
-   final cmMaintanceBigIcFire.ImagesetImages = CmMaintanceBigIcFire.ImagesetImages();
-   final cmAlertCloseIc.ImagesetImages = CmAlertCloseIc.ImagesetImages();
-   final cmRoundCloseIc.ImagesetImages = CmRoundCloseIc.ImagesetImages();
-   final cmCalenderIcIce.ImagesetImages = CmCalenderIcIce.ImagesetImages();
-   final cmCloseHeaderIc.ImagesetImages = CmCloseHeaderIc.ImagesetImages();
-   final cmSelectedShadowIc.ImagesetImages = CmSelectedShadowIc.ImagesetImages();
-   final cmShadowRoundBgIc.ImagesetImages = CmShadowRoundBgIc.ImagesetImages();
-   final cmFailedReceiptIcFire.ImagesetImages = CmFailedReceiptIcFire.ImagesetImages();
-   final cmEllipseNumIcIce.ImagesetImages = CmEllipseNumIcIce.ImagesetImages();
-   final cmPlusIc.ImagesetImages = CmPlusIc.ImagesetImages();
-   final cmSaveContactIcIce.ImagesetImages = CmSaveContactIcIce.ImagesetImages();
-   final cmSearchIc.ImagesetImages = CmSearchIc.ImagesetImages();
-   final cmAddressBookBigIc.ImagesetImages = CmAddressBookBigIc.ImagesetImages();
-   final cmSelectArrowIc.ImagesetImages = CmSelectArrowIc.ImagesetImages();
-   final cmGiftIcFire.ImagesetImages = CmGiftIcFire.ImagesetImages();
-   final cmRadioInactiveIc.ImagesetImages = CmRadioInactiveIc.ImagesetImages();
-   final cmHistoryIcFire.ImagesetImages = CmHistoryIcFire.ImagesetImages();
-   final cmQrcodeIcIce.ImagesetImages = CmQrcodeIcIce.ImagesetImages();
-   final cmWalletIc.ImagesetImages = CmWalletIc.ImagesetImages();
-   final cmMoreIc.ImagesetImages = CmMoreIc.ImagesetImages();
-   final cmCheckboxUncheckedIc.ImagesetImages = CmCheckboxUncheckedIc.ImagesetImages();
-   final cmThreeDotHorizonIc.ImagesetImages = CmThreeDotHorizonIc.ImagesetImages();
-   final cmDownIc.ImagesetImages = CmDownIc.ImagesetImages();
-   final cmArrowRightGrey400Ic.ImagesetImages = CmArrowRightGrey400Ic.ImagesetImages();
-   final cmTranIcIce.ImagesetImages = CmTranIcIce.ImagesetImages();
-   final cmWifiGreyIc.ImagesetImages = CmWifiGreyIc.ImagesetImages();
-   final cmKbAbcIc.ImagesetImages = CmKbAbcIc.ImagesetImages();
-   final cmSaveIc.ImagesetImages = CmSaveIc.ImagesetImages();
-   final cmClockBannerIcIce.ImagesetImages = CmClockBannerIcIce.ImagesetImages();
-   final cmCheckSmallIcFire.ImagesetImages = CmCheckSmallIcFire.ImagesetImages();
-   final cmCheckCircleIcFire.ImagesetImages = CmCheckCircleIcFire.ImagesetImages();
-   final cmDownGreyIc.ImagesetImages = CmDownGreyIc.ImagesetImages();
-   final cmMaintanceBigIcIce.ImagesetImages = CmMaintanceBigIcIce.ImagesetImages();
-   final cmCopyIcFire.ImagesetImages = CmCopyIcFire.ImagesetImages();
-   final cmHidePasswordIc.ImagesetImages = CmHidePasswordIc.ImagesetImages();
-   final cmFailedReceiptIcIce.ImagesetImages = CmFailedReceiptIcIce.ImagesetImages();
-   final cmInfoDarkGreyIc.ImagesetImages = CmInfoDarkGreyIc.ImagesetImages();
-   final cmCheckboxUncheckedDisableIc.ImagesetImages = CmCheckboxUncheckedDisableIc.ImagesetImages();
-   final cmThreeDotHorizonClearIc.ImagesetImages = CmThreeDotHorizonClearIc.ImagesetImages();
-   final cmCubeIc.ImagesetImages = CmCubeIc.ImagesetImages();
-   final cmSmallRoundCloseIc.ImagesetImages = CmSmallRoundCloseIc.ImagesetImages();
-   final cmBlackCloseIc.ImagesetImages = CmBlackCloseIc.ImagesetImages();
-   final cmDoneGreenIc.ImagesetImages = CmDoneGreenIc.ImagesetImages();
-   final cmBackIc.ImagesetImages = CmBackIc.ImagesetImages();
-   final cmArrowUp.ImagesetImages = CmArrowUp.ImagesetImages();
-   final cmStarIcFire.ImagesetImages = CmStarIcFire.ImagesetImages();
-   final cmArrowLeftIc.ImagesetImages = CmArrowLeftIc.ImagesetImages();
-   final cmInfoIcIce.ImagesetImages = CmInfoIcIce.ImagesetImages();
-   final cmFireLogoIc.ImagesetImages = CmFireLogoIc.ImagesetImages();
-   final cmPendingReceiptIcFire.ImagesetImages = CmPendingReceiptIcFire.ImagesetImages();
-   final cmAdd2IcFire.ImagesetImages = CmAdd2IcFire.ImagesetImages();
-   final cmDownIc-1.ImagesetImages = CmDownIc-1.ImagesetImages();
-   final cmAutoBillIcFire.ImagesetImages = CmAutoBillIcFire.ImagesetImages();
-   final cmForceUpgradeIcIce.ImagesetImages = CmForceUpgradeIcIce.ImagesetImages();
-   final cmCheckSmallIcIce.ImagesetImages = CmCheckSmallIcIce.ImagesetImages();
-   final cmFilterIc.ImagesetImages = CmFilterIc.ImagesetImages();
-   final cmHistoryIcIce.ImagesetImages = CmHistoryIcIce.ImagesetImages();
-   final cmCheckBoxInactiveIc.ImagesetImages = CmCheckBoxInactiveIc.ImagesetImages();
-   final cmOtherIc.ImagesetImages = CmOtherIc.ImagesetImages();
-   final cmBellIc.ImagesetImages = CmBellIc.ImagesetImages();
-   final cmArrowRightGrey900Ic.ImagesetImages = CmArrowRightGrey900Ic.ImagesetImages();
-   final cmAccessoryIc.ImagesetImages = CmAccessoryIc.ImagesetImages();
-   final cmGiftIcIce.ImagesetImages = CmGiftIcIce.ImagesetImages();
-   final cmQrCodeIcIce.ImagesetImages = CmQrCodeIcIce.ImagesetImages();
-   final cmLoadingIc.ImagesetImages = CmLoadingIc.ImagesetImages();
-   final cmDoneGreyIc.ImagesetImages = CmDoneGreyIc.ImagesetImages();
-   final cmNextCircleIc.ImagesetImages = CmNextCircleIc.ImagesetImages();
-   final cmArrowRightIc.ImagesetImages = CmArrowRightIc.ImagesetImages();
-   final cmLockIc.ImagesetImages = CmLockIc.ImagesetImages();
-   final cmEllipseNumIcFire.ImagesetImages = CmEllipseNumIcFire.ImagesetImages();
-   final cmSendEmail.ImagesetImages = CmSendEmail.ImagesetImages();
-   final cmChainIc.ImagesetImages = CmChainIc.ImagesetImages();
-   final cmSecureIc.ImagesetImages = CmSecureIc.ImagesetImages();
-   final cmCheckSuccessIc.ImagesetImages = CmCheckSuccessIc.ImagesetImages();
-   final cmCloseIc.ImagesetImages = CmCloseIc.ImagesetImages();
-   final cmQrcodeIcFire.ImagesetImages = CmQrcodeIcFire.ImagesetImages();
-   final cmRightArrowIc.ImagesetImages = CmRightArrowIc.ImagesetImages();
-   final cmAddressBookIc.ImagesetImages = CmAddressBookIc.ImagesetImages();
+ final cmPhoneIcImagesetImages = CmPhoneIcImagesetImages();
+ final cmErrorCircleImagesetImages = CmErrorCircleImagesetImages();
+ final cmArrowLeftIcImages = CmArrowLeftIcImages();
+ final cmWifiIcFireImagesetImages = CmWifiIcFireImagesetImages();
+ final cmCameraIcImagesetImages = CmCameraIcImagesetImages();
+ final cmLogoutGreyIcImagesetImages = CmLogoutGreyIcImagesetImages();
+ final cmWalletIcFireImagesetImages = CmWalletIcFireImagesetImages();
+ final cmKbNumberIcImagesetImages = CmKbNumberIcImagesetImages();
+ final cmUpIcImagesetImages = CmUpIcImagesetImages();
+ final cmClockBannerIcFireImagesetImages = CmClockBannerIcFireImagesetImages();
+ final cmCheckCircleIcIceImages = CmCheckCircleIcIceImages();
+ final cmCubeIcImages = CmCubeIcImages();
+ final cmCheckboxCheckedIcImages = CmCheckboxCheckedIcImages();
+ final cmCalenderIcFireImages = CmCalenderIcFireImages();
+ final cmAutoBillIcFireImages = CmAutoBillIcFireImages();
+ final cmAlertSaveBenIcFireImages = CmAlertSaveBenIcFireImages();
+ final cmWalletIcIceImagesetImages = CmWalletIcIceImagesetImages();
+ final cmDoneGreyIcImages = CmDoneGreyIcImages();
+ final cmInfo40IcFireImagesetImages = CmInfo40IcFireImagesetImages();
+ final cmPictureIcImagesetImages = CmPictureIcImagesetImages();
+ final cmCopyIcImagesetImages = CmCopyIcImagesetImages();
+ final cmLeftArrowIcImagesetImages = CmLeftArrowIcImagesetImages();
+ final cmInfo40IcIceImagesetImages = CmInfo40IcIceImagesetImages();
+ final cmAlertSaveBenIcIceImages = CmAlertSaveBenIcIceImages();
+ final cmArrowRightGrey200IcImages = CmArrowRightGrey200IcImages();
+ final cmActiveButtonIcImages = CmActiveButtonIcImages();
+ final cmAutoBillIcIceImages = CmAutoBillIcIceImages();
+ final cmBackIcImages = CmBackIcImages();
+ final cmCheckPaddingIcImages = CmCheckPaddingIcImages();
+ final cmShowPasswordIcImagesetImages = CmShowPasswordIcImagesetImages();
+ final cmClose40ThemeIcFireImagesetImages = CmClose40ThemeIcFireImagesetImages();
+ final cmSave24IcFireImagesetImages = CmSave24IcFireImagesetImages();
+ final cmDownGreyIcImages = CmDownGreyIcImages();
+ final cmQrCodeIcFireImagesetImages = CmQrCodeIcFireImagesetImages();
+ final cmSave24IcIceImagesetImages = CmSave24IcIceImagesetImages();
+ final cmFlagVnIcImagesetImages = CmFlagVnIcImagesetImages();
+ final cmStarIcIceImagesetImages = CmStarIcIceImagesetImages();
+ final cmMinusIcImagesetImages = CmMinusIcImagesetImages();
+ final cmCheckSmallIcFireImages = CmCheckSmallIcFireImages();
+ final cmCopyIcIceImagesetImages = CmCopyIcIceImagesetImages();
+ final cmCheckSmallIcIceImages = CmCheckSmallIcIceImages();
+ final cmTranIcFireImagesetImages = CmTranIcFireImagesetImages();
+ final cmAccessoryIcImages = CmAccessoryIcImages();
+ final cmClearTextIcImagesetImages = CmClearTextIcImagesetImages();
+ final cmTrashHeaderIcImagesetImages = CmTrashHeaderIcImagesetImages();
+ final cmInfo40IcImagesetImages = CmInfo40IcImagesetImages();
+ final cmUserIcImagesetImages = CmUserIcImagesetImages();
+ final cmGradientGreyBottomIcImagesetImages = CmGradientGreyBottomIcImagesetImages();
+ final cmIceLogoIcImagesetImages = CmIceLogoIcImagesetImages();
+ final cmCheckSuccessIcImages = CmCheckSuccessIcImages();
+ final cmInfoIcFireImagesetImages = CmInfoIcFireImagesetImages();
+ final cmCheckBoxActiveIcImages = CmCheckBoxActiveIcImages();
+ final cmArrowRightGrey900IcImages = CmArrowRightGrey900IcImages();
+ final cmArrowRightIcImages = CmArrowRightIcImages();
+ final cmPendingReceiptIcIceImagesetImages = CmPendingReceiptIcIceImagesetImages();
+ final cmForceUpgradeIcFireImagesetImages = CmForceUpgradeIcFireImagesetImages();
+ final cmTrashIcImagesetImages = CmTrashIcImagesetImages();
+ final cmClose40ThemeIcIceImagesetImages = CmClose40ThemeIcIceImagesetImages();
+ final cmCopyTintIcImagesetImages = CmCopyTintIcImagesetImages();
+ final cmCheckVIcImages = CmCheckVIcImages();
+ final cmAlertCloseIcImages = CmAlertCloseIcImages();
+ final cmRadioActiveIcImagesetImages = CmRadioActiveIcImagesetImages();
+ final cmSaveContactIcFireImagesetImages = CmSaveContactIcFireImagesetImages();
+ final cmArrowCellIcImages = CmArrowCellIcImages();
+ final cmWifiIcIceImagesetImages = CmWifiIcIceImagesetImages();
+ final cmMaintanceBigIcFireImagesetImages = CmMaintanceBigIcFireImagesetImages();
+ final cmDoneGreenIcImages = CmDoneGreenIcImages();
+ final cmRoundCloseIcImagesetImages = CmRoundCloseIcImagesetImages();
+ final cmCloseHeaderIcImagesetImages = CmCloseHeaderIcImagesetImages();
+ final cmSelectedShadowIcImagesetImages = CmSelectedShadowIcImagesetImages();
+ final cmShadowRoundBgIcImagesetImages = CmShadowRoundBgIcImagesetImages();
+ final cmArrowRightGrey400IcImages = CmArrowRightGrey400IcImages();
+ final cmFailedReceiptIcFireImagesetImages = CmFailedReceiptIcFireImagesetImages();
+ final cmEllipseNumIcIceImagesetImages = CmEllipseNumIcIceImagesetImages();
+ final cmPlusIcImagesetImages = CmPlusIcImagesetImages();
+ final cmArrowDownIcImages = CmArrowDownIcImages();
+ final cmCheckCircleGreyIcImages = CmCheckCircleGreyIcImages();
+ final cmSaveContactIcIceImagesetImages = CmSaveContactIcIceImagesetImages();
+ final cmSearchIcImagesetImages = CmSearchIcImagesetImages();
+ final cmSelectArrowIcImagesetImages = CmSelectArrowIcImagesetImages();
+ final cmGiftIcFireImagesetImages = CmGiftIcFireImagesetImages();
+ final cmRadioInactiveIcImagesetImages = CmRadioInactiveIcImagesetImages();
+ final cmHistoryIcFireImagesetImages = CmHistoryIcFireImagesetImages();
+ final cmCheckProcessingIcImages = CmCheckProcessingIcImages();
+ final cmQrcodeIcIceImagesetImages = CmQrcodeIcIceImagesetImages();
+ final cmWalletIcImagesetImages = CmWalletIcImagesetImages();
+ final cmMoreIcImagesetImages = CmMoreIcImagesetImages();
+ final cmCheckboxUncheckedIcImagesetImages = CmCheckboxUncheckedIcImagesetImages();
+ final cmThreeDotHorizonIcImagesetImages = CmThreeDotHorizonIcImagesetImages();
+ final cmAddressBookIcImages = CmAddressBookIcImages();
+ final cmCheckErrorIcImages = CmCheckErrorIcImages();
+ final cmTranIcIceImagesetImages = CmTranIcIceImagesetImages();
+ final cmWifiGreyIcImagesetImages = CmWifiGreyIcImagesetImages();
+ final cmBellIcImages = CmBellIcImages();
+ final cmKbAbcIcImagesetImages = CmKbAbcIcImagesetImages();
+ final cmSaveIcImagesetImages = CmSaveIcImagesetImages();
+ final cmClockBannerIcIceImagesetImages = CmClockBannerIcIceImagesetImages();
+ final cmBlackCloseIcImages = CmBlackCloseIcImages();
+ final cmMaintanceBigIcIceImagesetImages = CmMaintanceBigIcIceImagesetImages();
+ final cmCopyIcFireImagesetImages = CmCopyIcFireImagesetImages();
+ final cmCheckBoxInactiveIcImages = CmCheckBoxInactiveIcImages();
+ final cmHidePasswordIcImagesetImages = CmHidePasswordIcImagesetImages();
+ final cmFailedReceiptIcIceImagesetImages = CmFailedReceiptIcIceImagesetImages();
+ final cmArrowRightGrey600IcImages = CmArrowRightGrey600IcImages();
+ final cmArrowUpImages = CmArrowUpImages();
+ final cmInfoDarkGreyIcImagesetImages = CmInfoDarkGreyIcImagesetImages();
+ final cmCheckboxUncheckedDisableIcImagesetImages = CmCheckboxUncheckedDisableIcImagesetImages();
+ final cmThreeDotHorizonClearIcImagesetImages = CmThreeDotHorizonClearIcImagesetImages();
+ final cmSmallRoundCloseIcImagesetImages = CmSmallRoundCloseIcImagesetImages();
+ final cmStarIcFireImagesetImages = CmStarIcFireImagesetImages();
+ final cmInfoIcIceImagesetImages = CmInfoIcIceImagesetImages();
+ final cmArrowGreyCellIcImages = CmArrowGreyCellIcImages();
+ final cmFireLogoIcImagesetImages = CmFireLogoIcImagesetImages();
+ final cmPendingReceiptIcFireImagesetImages = CmPendingReceiptIcFireImagesetImages();
+ final cmCheckboxCheckedDisableIcImages = CmCheckboxCheckedDisableIcImages();
+ final cmDownIc1ImagesetImages = CmDownIc1ImagesetImages();
+ final cmForceUpgradeIcIceImagesetImages = CmForceUpgradeIcIceImagesetImages();
+ final cmCheckProcessingIc1Images = CmCheckProcessingIc1Images();
+ final cmFilterIcImagesetImages = CmFilterIcImagesetImages();
+ final cmHistoryIcIceImagesetImages = CmHistoryIcIceImagesetImages();
+ final cmOtherIcImagesetImages = CmOtherIcImagesetImages();
+ final cmCalenderIcIceImages = CmCalenderIcIceImages();
+ final cmEllipseNumIcFireImages = CmEllipseNumIcFireImages();
+ final cmGiftIcIceImagesetImages = CmGiftIcIceImagesetImages();
+ final cmAdd2IcIceImages = CmAdd2IcIceImages();
+ final cmAdd2IcFireImages = CmAdd2IcFireImages();
+ final cmQrCodeIcIceImagesetImages = CmQrCodeIcIceImagesetImages();
+ final cmLoadingIcImagesetImages = CmLoadingIcImagesetImages();
+ final cmCheckCircleIcFireImages = CmCheckCircleIcFireImages();
+ final cmDownIcImages = CmDownIcImages();
+ final cmNextCircleIcImagesetImages = CmNextCircleIcImagesetImages();
+ final cmLockIcImagesetImages = CmLockIcImagesetImages();
+ final cmAddressBookBigIcImages = CmAddressBookBigIcImages();
+ final cmSendEmailImagesetImages = CmSendEmailImagesetImages();
+ final cmChainIcImagesetImages = CmChainIcImagesetImages();
+ final cmSecureIcImagesetImages = CmSecureIcImagesetImages();
+ final cmCloseIcImagesetImages = CmCloseIcImagesetImages();
+ final cmQrcodeIcFireImagesetImages = CmQrcodeIcFireImagesetImages();
+ final cmRightArrowIcImagesetImages = CmRightArrowIcImagesetImages();
 }
 
 
-class CmCheckCircleGreyIc.ImagesetImages {
-        final String cmCheckCircleGreyIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_circle_grey_ic.imageset/cm_check_circle_grey_ic.png';
-        final String cmCheckCircleGreyIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_circle_grey_ic.imageset/cm_check_circle_grey_ic@2x.png';
-        final String cmCheckCircleGreyIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_circle_grey_ic.imageset/cm_check_circle_grey_ic@3x.png';
+class CmPhoneIcImagesetImages {
+ final String call1X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_phone_ic.imageset/Call@1x.png';
 }
 
 
-class CmPhoneIc.ImagesetImages {
-        final String call@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_phone_ic.imageset/Call@3x.png';
-        final String call@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_phone_ic.imageset/Call@2x.png';
-        final String call@1X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_phone_ic.imageset/Call@1x.png';
+class CmErrorCircleImagesetImages {
+ final String cmErrorCircle = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_error_circle.imageset/cm_error_circle.png';
 }
 
 
-class CmErrorCircle.ImagesetImages {
-        final String cmErrorCircle@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_error_circle.imageset/cm_error_circle@2x.png';
-        final String cmErrorCircle@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_error_circle.imageset/cm_error_circle@3x.png';
-        final String cmErrorCircle = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_error_circle.imageset/cm_error_circle.png';
+class CmArrowLeftIcImages {
+ final String arrowLeft = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_left_ic/arrow-left.png';
 }
 
 
-class CmWifiIcFire.ImagesetImages {
+class CmWifiIcFireImagesetImages {
 }
 
 
-class CmCameraIc.ImagesetImages {
-        final String cmCameraIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_camera_ic.imageset/cm_camera_ic.png';
-        final String cmCameraIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_camera_ic.imageset/cm_camera_ic@2x.png';
-        final String cmCameraIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_camera_ic.imageset/cm_camera_ic@3x.png';
+class CmCameraIcImagesetImages {
+ final String cmCameraIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_camera_ic.imageset/cm_camera_ic.png';
 }
 
 
-class CmLogoutGreyIc.ImagesetImages {
-        final String cmLogoutGreyIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_logout_grey_ic.imageset/cm_logout_grey_ic@2x.png';
-        final String cmLogoutGreyIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_logout_grey_ic.imageset/cm_logout_grey_ic@3x.png';
-        final String cmLogoutGreyIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_logout_grey_ic.imageset/cm_logout_grey_ic.png';
+class CmLogoutGreyIcImagesetImages {
+ final String cmLogoutGreyIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_logout_grey_ic.imageset/cm_logout_grey_ic.png';
 }
 
 
-class CmWalletIcFire.ImagesetImages {
-        final String cmWalletIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_wallet_ic_fire.imageset/cm_wallet_ic_fire.png';
-        final String cmWalletIcFire@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_wallet_ic_fire.imageset/cm_wallet_ic_fire@2x.png';
-        final String cmWalletIcFire@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_wallet_ic_fire.imageset/cm_wallet_ic_fire@3x.png';
+class CmWalletIcFireImagesetImages {
+ final String cmWalletIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_wallet_ic_fire.imageset/cm_wallet_ic_fire.png';
 }
 
 
-class CmKbNumberIc.ImagesetImages {
-        final String cmKbNumberIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_kb_number_ic.imageset/cm_kb_number_ic@3x.png';
-        final String cmKbNumberIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_kb_number_ic.imageset/cm_kb_number_ic@2x.png';
-        final String cmKbNumberIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_kb_number_ic.imageset/cm_kb_number_ic.png';
+class CmKbNumberIcImagesetImages {
+ final String cmKbNumberIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_kb_number_ic.imageset/cm_kb_number_ic.png';
 }
 
 
-class CmUpIc.ImagesetImages {
-        final String cmUpIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_up_ic.imageset/cm_up_ic@3x.png';
-        final String cmUpIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_up_ic.imageset/cm_up_ic@2x.png';
-        final String cmUpIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_up_ic.imageset/cm_up_ic.png';
+class CmUpIcImagesetImages {
+ final String cmUpIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_up_ic.imageset/cm_up_ic.png';
 }
 
 
-class CmClockBannerIcFire.ImagesetImages {
-        final String clock@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_clock_banner_ic_fire.imageset/Clock@3x.png';
-        final String clock@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_clock_banner_ic_fire.imageset/Clock@2x.png';
-        final String clock = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_clock_banner_ic_fire.imageset/Clock.png';
+class CmClockBannerIcFireImagesetImages {
+ final String clock = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_clock_banner_ic_fire.imageset/Clock.png';
 }
 
 
-class CmAdd2IcIce.ImagesetImages {
+class CmCheckCircleIcIceImages {
 }
 
 
-class CmCheckCircleIcIce.ImagesetImages {
+class CmCubeIcImages {
+ final String box2 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_cube_ic/Box#2.png';
 }
 
 
-class CmWalletIcIce.ImagesetImages {
-        final String cmWalletIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_wallet_ic_ice.imageset/cm_wallet_ic_ice.png';
-        final String cmWalletIcIce@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_wallet_ic_ice.imageset/cm_wallet_ic_ice@3x.png';
-        final String cmWalletIcIce@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_wallet_ic_ice.imageset/cm_wallet_ic_ice@2x.png';
+class CmCheckboxCheckedIcImages {
+ final String active = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_checked_ic/Active.png';
 }
 
 
-class CmCheckProcessingIc.ImagesetImages {
-        final String waiting = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_processing_ic.imageset/waiting.png';
-        final String waiting@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_processing_ic.imageset/waiting@3x.png';
-        final String waiting@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_processing_ic.imageset/waiting@2x.png';
+class CmCalenderIcFireImages {
+ final String cmCalenderIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_calender_ic_fire/cm_calender_ic_fire.png';
 }
 
 
-class CmCheckboxCheckedIc.ImagesetImages {
-        final String active@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_checked_ic.imageset/Active@3x.png';
-        final String active@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_checked_ic.imageset/Active@2x.png';
-        final String active = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_checked_ic.imageset/Active.png';
+class CmAutoBillIcFireImages {
+ final String cmAutoBillIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_auto_bill_ic_fire/cm_auto_bill_ic_fire.png';
 }
 
 
-class CmInfo40IcFire.ImagesetImages {
-        final String icon = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_40_ic_fire.imageset/Icon.png';
-        final String icon@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_40_ic_fire.imageset/Icon@2x.png';
-        final String icon@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_40_ic_fire.imageset/Icon@3x.png';
+class CmAlertSaveBenIcFireImages {
+ final String cmAlertSaveBenIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_alert_save_ben_ic_fire/cm_alert_save_ben_ic_fire.png';
 }
 
 
-class CmAutoBillIcIce.ImagesetImages {
-        final String receipt-2@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_auto_bill_ic_ice.imageset/receipt-2@2x.png';
-        final String receipt-2@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_auto_bill_ic_ice.imageset/receipt-2@3x.png';
-        final String receipt-2 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_auto_bill_ic_ice.imageset/receipt-2.png';
+class CmWalletIcIceImagesetImages {
+ final String cmWalletIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_wallet_ic_ice.imageset/cm_wallet_ic_ice.png';
 }
 
 
-class CmPictureIc.ImagesetImages {
-        final String cmPictureIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_picture_ic.imageset/cm_picture_ic@2x.png';
-        final String cmPictureIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_picture_ic.imageset/cm_picture_ic@3x.png';
-        final String cmPictureIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_picture_ic.imageset/cm_picture_ic.png';
+class CmDoneGreyIcImages {
+ final String cmDoneGreyIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_done_grey_ic/cm_done_grey_ic.png';
 }
 
 
-class CmCopyIc.ImagesetImages {
-        final String cmCopyIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_copy_ic.imageset/cm_copy_ic@3x.png';
-        final String cmCopyIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_copy_ic.imageset/cm_copy_ic.png';
-        final String cmCopyIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_copy_ic.imageset/cm_copy_ic@2x.png';
+class CmInfo40IcFireImagesetImages {
+ final String icon = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_40_ic_fire.imageset/Icon.png';
 }
 
 
-class CmLeftArrowIc.ImagesetImages {
-        final String cmLeftArrowIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_left_arrow_ic.imageset/cm_left_arrow_ic@3x.png';
-        final String cmLeftArrowIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_left_arrow_ic.imageset/cm_left_arrow_ic@2x.png';
-        final String cmLeftArrowIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_left_arrow_ic.imageset/cm_left_arrow_ic.png';
+class CmPictureIcImagesetImages {
+ final String cmPictureIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_picture_ic.imageset/cm_picture_ic.png';
 }
 
 
-class CmInfo40IcIce.ImagesetImages {
-        final String icon = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_40_ic_ice.imageset/Icon.png';
-        final String icon@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_40_ic_ice.imageset/Icon@2x.png';
-        final String icon@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_40_ic_ice.imageset/Icon@3x.png';
+class CmCopyIcImagesetImages {
+ final String cmCopyIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_copy_ic.imageset/cm_copy_ic.png';
 }
 
 
-class CmCheckBoxActiveIc.ImagesetImages {
-        final String active@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_box_active_ic.imageset/Active@3x.png';
-        final String active@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_box_active_ic.imageset/Active@2x.png';
-        final String active = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_box_active_ic.imageset/Active.png';
+class CmLeftArrowIcImagesetImages {
+ final String cmLeftArrowIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_left_arrow_ic.imageset/cm_left_arrow_ic.png';
 }
 
 
-class CmArrowDownIc.ImagesetImages {
-        final String angle-Down = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_down_ic.imageset/angle-down.png';
-        final String angle-Down@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_down_ic.imageset/angle-down@3x.png';
-        final String angle-Down@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_down_ic.imageset/angle-down@2x.png';
+class CmInfo40IcIceImagesetImages {
+ final String icon = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_40_ic_ice.imageset/Icon.png';
 }
 
 
-class CmCheckboxCheckedDisableIc.ImagesetImages {
-        final String group12186 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_checked_disable_ic.imageset/Group 12186.png';
-        final String group12186@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_checked_disable_ic.imageset/Group 12186@2x.png';
-        final String group12186@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_checked_disable_ic.imageset/Group 12186@3x.png';
+class CmAlertSaveBenIcIceImages {
+ final String cmAlertSaveBenIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_alert_save_ben_ic_ice/cm_alert_save_ben_ic_ice.png';
 }
 
 
-class CmCheckPaddingIc.ImagesetImages {
-        final String cmCheckPaddingIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_padding_ic.imageset/cm_check_padding_ic@3x.png';
-        final String cmCheckPaddingIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_padding_ic.imageset/cm_check_padding_ic.png';
-        final String cmCheckPaddingIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_padding_ic.imageset/cm_check_padding_ic@2x.png';
+class CmArrowRightGrey200IcImages {
+ final String angleRight = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_200_ic/Angle right.png';
 }
 
 
-class CmShowPasswordIc.ImagesetImages {
-        final String cmShowPasswordIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_show_password_ic.imageset/cm_show_password_ic.png';
-        final String cmShowPasswordIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_show_password_ic.imageset/cm_show_password_ic@2x.png';
-        final String cmShowPasswordIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_show_password_ic.imageset/cm_show_password_ic@3x.png';
+class CmActiveButtonIcImages {
+ final String active = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_active_button_ic/Active.png';
 }
 
 
-class CmClose40ThemeIcFire.ImagesetImages {
-        final String cmClose40ThemeIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_close_40_theme_ic_fire.imageset/cm_close_40_theme_ic_fire.png';
-        final String cmClose40ThemeIcFire2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_close_40_theme_ic_fire.imageset/cm_close_40_theme_ic_fire 2x.png';
-        final String cmClose40ThemeIcFire@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_close_40_theme_ic_fire.imageset/cm_close_40_theme_ic_fire@3x.png';
+class CmAutoBillIcIceImages {
+ final String receipt2 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_auto_bill_ic_ice/receipt-2.png';
 }
 
 
-class CmSave24IcFire.ImagesetImages {
-        final String cmSave24IcFire@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_24_ic_fire.imageset/cm_save_24_ic_fire@2x.png';
-        final String cmSave24IcFire@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_24_ic_fire.imageset/cm_save_24_ic_fire@3x.png';
-        final String cmSave24IcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_24_ic_fire.imageset/cm_save_24_ic_fire.png';
+class CmBackIcImages {
+ final String cmBackIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_back_ic/cm_back_ic.png';
 }
 
 
-class CmCalenderIcFire.ImagesetImages {
-        final String cmCalenderIcFire@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_calender_ic_fire.imageset/cm_calender_ic_fire@3x.png';
-        final String cmCalenderIcFire@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_calender_ic_fire.imageset/cm_calender_ic_fire@2x.png';
-        final String cmCalenderIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_calender_ic_fire.imageset/cm_calender_ic_fire.png';
+class CmCheckPaddingIcImages {
+ final String cmCheckPaddingIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_padding_ic/cm_check_padding_ic.png';
 }
 
 
-class CmQrCodeIcFire.ImagesetImages {
-        final String paymentBarcodeReadIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_qr_code_ic_fire.imageset/payment_barcode_read_ic.png';
-        final String paymentBarcodeReadIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_qr_code_ic_fire.imageset/payment_barcode_read_ic@2x.png';
-        final String paymentBarcodeReadIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_qr_code_ic_fire.imageset/payment_barcode_read_ic@3x.png';
+class CmShowPasswordIcImagesetImages {
+ final String cmShowPasswordIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_show_password_ic.imageset/cm_show_password_ic.png';
 }
 
 
-class CmSave24IcIce.ImagesetImages {
-        final String cmSave24IcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_24_ic_ice.imageset/cm_save_24_ic_ice.png';
-        final String cmSave24IcIce@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_24_ic_ice.imageset/cm_save_24_ic_ice@3x.png';
-        final String cmSave24IcIce@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_24_ic_ice.imageset/cm_save_24_ic_ice@2x.png';
+class CmClose40ThemeIcFireImagesetImages {
+ final String cmClose40ThemeIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_close_40_theme_ic_fire.imageset/cm_close_40_theme_ic_fire.png';
+ final String cmClose40ThemeIcFire2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_close_40_theme_ic_fire.imageset/cm_close_40_theme_ic_fire 2x.png';
 }
 
 
-class CmFlagVnIc.ImagesetImages {
-        final String vietnam@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_flag_vn_ic.imageset/vietnam@2x.png';
-        final String vietnam@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_flag_vn_ic.imageset/vietnam@3x.png';
-        final String vietnam@1X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_flag_vn_ic.imageset/vietnam@1x.png';
+class CmSave24IcFireImagesetImages {
+ final String cmSave24IcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_24_ic_fire.imageset/cm_save_24_ic_fire.png';
 }
 
 
-class CmStarIcIce.ImagesetImages {
-        final String cmStarIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_star_ic_ice.imageset/cm_star_ic_ice.png';
-        final String cmStarIcIce@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_star_ic_ice.imageset/cm_star_ic_ice@3x.png';
-        final String cmStarIcIce@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_star_ic_ice.imageset/cm_star_ic_ice@2x.png';
+class CmDownGreyIcImages {
+ final String cmDownGreyIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_down_grey_ic/cm_down_grey_ic.png';
 }
 
 
-class CmMinusIc.ImagesetImages {
-        final String cmMinusIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_minus_ic.imageset/cm_minus_ic@3x.png';
-        final String cmMinusIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_minus_ic.imageset/cm_minus_ic@2x.png';
-        final String cmMinusIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_minus_ic.imageset/cm_minus_ic.png';
+class CmQrCodeIcFireImagesetImages {
+ final String paymentBarcodeReadIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_qr_code_ic_fire.imageset/payment_barcode_read_ic.png';
 }
 
 
-class CmCheckVIc.ImagesetImages {
-        final String icCheckV = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_v_ic.imageset/ic_check_v.png';
-        final String icCheckV@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_v_ic.imageset/ic_check_v@2x.png';
-        final String icCheckV@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_v_ic.imageset/ic_check_v@3x.png';
+class CmSave24IcIceImagesetImages {
+ final String cmSave24IcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_24_ic_ice.imageset/cm_save_24_ic_ice.png';
 }
 
 
-class CmCopyIcIce.ImagesetImages {
+class CmFlagVnIcImagesetImages {
+ final String vietnam1X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_flag_vn_ic.imageset/vietnam@1x.png';
 }
 
 
-class CmTranIcFire.ImagesetImages {
-        final String group12446@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_tran_ic_fire.imageset/Group 12446@3x.png';
-        final String group12446@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_tran_ic_fire.imageset/Group 12446@2x.png';
-        final String group12446 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_tran_ic_fire.imageset/Group 12446.png';
+class CmStarIcIceImagesetImages {
+ final String cmStarIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_star_ic_ice.imageset/cm_star_ic_ice.png';
 }
 
 
-class CmArrowRightGrey600Ic.ImagesetImages {
-        final String cmArrowRightGrey600Ic@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_600_ic.imageset/cm_arrow_right_grey_600_ic@2x.png';
-        final String cmArrowRightGrey600Ic@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_600_ic.imageset/cm_arrow_right_grey_600_ic@3x.png';
-        final String cmArrowRightGrey600Ic = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_600_ic.imageset/cm_arrow_right_grey_600_ic.png';
+class CmMinusIcImagesetImages {
+ final String cmMinusIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_minus_ic.imageset/cm_minus_ic.png';
 }
 
 
-class CmClearTextIc.ImagesetImages {
-        final String close@1X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_clear_text_ic.imageset/close@1x.png';
-        final String close@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_clear_text_ic.imageset/close@3x.png';
-        final String close@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_clear_text_ic.imageset/close@2x.png';
+class CmCheckSmallIcFireImages {
+ final String cmCheckSmallIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_small_ic_fire/cm_check_small_ic_fire.png';
 }
 
 
-class CmTrashHeaderIc.ImagesetImages {
-        final String cmTrashHeaderIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_trash_header_ic.imageset/cm_trash_header_ic@3x.png';
-        final String cmTrashHeaderIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_trash_header_ic.imageset/cm_trash_header_ic@2x.png';
-        final String cmTrashHeaderIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_trash_header_ic.imageset/cm_trash_header_ic.png';
+class CmCopyIcIceImagesetImages {
 }
 
 
-class CmInfo40Ic.ImagesetImages {
-        final String icon = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_40_ic.imageset/Icon.png';
-        final String icon@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_40_ic.imageset/Icon@2x.png';
-        final String icon@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_40_ic.imageset/Icon@3x.png';
+class CmCheckSmallIcIceImages {
+ final String cmCheckSmallIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_small_ic_ice/cm_check_small_ic_ice.png';
 }
 
 
-class CmUserIc.ImagesetImages {
-        final String user@1X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_user_ic.imageset/user@1x.png';
-        final String user@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_user_ic.imageset/user@3x.png';
-        final String user@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_user_ic.imageset/user@2x.png';
+class CmTranIcFireImagesetImages {
+ final String group12446 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_tran_ic_fire.imageset/Group 12446.png';
 }
 
 
-class CmAlertSaveBenIcIce.ImagesetImages {
-        final String cmAlertSaveBenIcIce@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_alert_save_ben_ic_ice.imageset/cm_alert_save_ben_ic_ice@2x.png';
-        final String cmAlertSaveBenIcIce@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_alert_save_ben_ic_ice.imageset/cm_alert_save_ben_ic_ice@3x.png';
-        final String cmAlertSaveBenIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_alert_save_ben_ic_ice.imageset/cm_alert_save_ben_ic_ice.png';
+class CmAccessoryIcImages {
+ final String cmAccessoryIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_accessory_ic/cm_accessory_ic.png';
 }
 
 
-class CmCheckErrorIc.ImagesetImages {
-        final String error-Circle@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_error_ic.imageset/error-circle@3x.png';
-        final String error-Circle@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_error_ic.imageset/error-circle@2x.png';
-        final String error-Circle = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_error_ic.imageset/error-circle.png';
+class CmClearTextIcImagesetImages {
+ final String close1X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_clear_text_ic.imageset/close@1x.png';
 }
 
 
-class CmArrowRightGrey200Ic.ImagesetImages {
-        final String angleRight@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_200_ic.imageset/Angle right@3x.png';
-        final String angleRight@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_200_ic.imageset/Angle right@2x.png';
-        final String angleRight = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_200_ic.imageset/Angle right.png';
+class CmTrashHeaderIcImagesetImages {
+ final String cmTrashHeaderIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_trash_header_ic.imageset/cm_trash_header_ic.png';
 }
 
 
-class CmGradientGreyBottomIc.ImagesetImages {
-        final String cmGradientGreyBottomIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_gradient_grey_bottom_ic.imageset/cm_gradient_grey_bottom_ic.png';
+class CmInfo40IcImagesetImages {
+ final String icon = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_40_ic.imageset/Icon.png';
 }
 
 
-class CmIceLogoIc.ImagesetImages {
-        final String vector@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_ice_logo_ic.imageset/Vector@2x.png';
-        final String vector@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_ice_logo_ic.imageset/Vector@3x.png';
-        final String vector = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_ice_logo_ic.imageset/Vector.png';
+class CmUserIcImagesetImages {
+ final String user1X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_user_ic.imageset/user@1x.png';
 }
 
 
-class CmInfoIcFire.ImagesetImages {
-        final String infoCircle@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_ic_fire.imageset/Info circle@3x.png';
-        final String infoCircle@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_ic_fire.imageset/Info circle@2x.png';
-        final String infoCircle = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_ic_fire.imageset/Info circle.png';
+class CmGradientGreyBottomIcImagesetImages {
+ final String cmGradientGreyBottomIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_gradient_grey_bottom_ic.imageset/cm_gradient_grey_bottom_ic.png';
 }
 
 
-class CmPendingReceiptIcIce.ImagesetImages {
-        final String group12446@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_pending_receipt_ic_ice.imageset/Group 12446@3x.png';
-        final String group12446@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_pending_receipt_ic_ice.imageset/Group 12446@2x.png';
-        final String group12446 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_pending_receipt_ic_ice.imageset/Group 12446.png';
+class CmIceLogoIcImagesetImages {
+ final String vector = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_ice_logo_ic.imageset/Vector.png';
 }
 
 
-class CmForceUpgradeIcFire.ImagesetImages {
+class CmCheckSuccessIcImages {
+ final String check = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_success_ic/check.png';
 }
 
 
-class CmTrashIc.ImagesetImages {
-        final String cmTrashIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_trash_ic.imageset/cm_trash_ic@2x.png';
-        final String cmTrashIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_trash_ic.imageset/cm_trash_ic@3x.png';
-        final String cmTrashIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_trash_ic.imageset/cm_trash_ic.png';
+class CmInfoIcFireImagesetImages {
+ final String infoCircle = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_ic_fire.imageset/Info circle.png';
 }
 
 
-class CmArrowCellIc.ImagesetImages {
-        final String angle-Right = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_cell_ic.imageset/angle-right.png';
-        final String angle-Right@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_cell_ic.imageset/angle-right@3x.png';
-        final String angle-Right@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_cell_ic.imageset/angle-right@2x.png';
+class CmCheckBoxActiveIcImages {
+ final String active = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_box_active_ic/Active.png';
 }
 
 
-class CmClose40ThemeIcIce.ImagesetImages {
+class CmArrowRightGrey900IcImages {
+ final String angleRight = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_900_ic/Angle right.png';
 }
 
 
-class CmCopyTintIc.ImagesetImages {
+class CmArrowRightIcImages {
+ final String arrowRight = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_ic/arrow-right.png';
 }
 
 
-class CmArrowGreyCellIc.ImagesetImages {
-        final String cmArrowGreyCellIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_grey_cell_ic.imageset/cm_arrow_grey_cell_ic@2x.png';
-        final String cmArrowGreyCellIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_grey_cell_ic.imageset/cm_arrow_grey_cell_ic@3x.png';
-        final String cmArrowGreyCellIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_grey_cell_ic.imageset/cm_arrow_grey_cell_ic.png';
+class CmPendingReceiptIcIceImagesetImages {
+ final String group12446 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_pending_receipt_ic_ice.imageset/Group 12446.png';
 }
 
 
-class CmActiveButtonIc.ImagesetImages {
-        final String active@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_active_button_ic.imageset/Active@3x.png';
-        final String active@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_active_button_ic.imageset/Active@2x.png';
-        final String active = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_active_button_ic.imageset/Active.png';
+class CmForceUpgradeIcFireImagesetImages {
 }
 
 
-class CmAlertSaveBenIcFire.ImagesetImages {
-        final String cmAlertSaveBenIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_alert_save_ben_ic_fire.imageset/cm_alert_save_ben_ic_fire.png';
-        final String cmAlertSaveBenIcFire@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_alert_save_ben_ic_fire.imageset/cm_alert_save_ben_ic_fire@3x.png';
-        final String cmAlertSaveBenIcFire@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_alert_save_ben_ic_fire.imageset/cm_alert_save_ben_ic_fire@2x.png';
+class CmTrashIcImagesetImages {
+ final String cmTrashIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_trash_ic.imageset/cm_trash_ic.png';
 }
 
 
-class CmCheckProcessingIc-1.ImagesetImages {
-        final String waiting = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_processing_ic-1.imageset/waiting.png';
-        final String waiting@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_processing_ic-1.imageset/waiting@3x.png';
-        final String waiting@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_processing_ic-1.imageset/waiting@2x.png';
+class CmClose40ThemeIcIceImagesetImages {
 }
 
 
-class CmRadioActiveIc.ImagesetImages {
-        final String cmRadioActiveIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_radio_active_ic.imageset/cm_radio_active_ic@2x.png';
-        final String cmRadioActiveIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_radio_active_ic.imageset/cm_radio_active_ic@3x.png';
-        final String cmRadioActiveIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_radio_active_ic.imageset/cm_radio_active_ic.png';
+class CmCopyTintIcImagesetImages {
 }
 
 
-class CmSaveContactIcFire.ImagesetImages {
-        final String cmSaveContactIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_contact_ic_fire.imageset/cm_save_contact_ic_fire.png';
-        final String cmSaveContactIcFire@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_contact_ic_fire.imageset/cm_save_contact_ic_fire@2x.png';
-        final String cmSaveContactIcFire@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_contact_ic_fire.imageset/cm_save_contact_ic_fire@3x.png';
+class CmCheckVIcImages {
+ final String icCheckV = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_v_ic/ic_check_v.png';
 }
 
 
-class CmWifiIcIce.ImagesetImages {
+class CmAlertCloseIcImages {
+ final String cmAlertCloseIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_alert_close_ic/cm_alert_close_ic.png';
 }
 
 
-class CmMaintanceBigIcFire.ImagesetImages {
-        final String cmMaintanceBigIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_maintance_big_ic_fire.imageset/cm_maintance_big_ic_fire.png';
-        final String cmMaintanceBigIcFire@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_maintance_big_ic_fire.imageset/cm_maintance_big_ic_fire@3x.png';
-        final String cmMaintanceBigIcFire@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_maintance_big_ic_fire.imageset/cm_maintance_big_ic_fire@2x.png';
+class CmRadioActiveIcImagesetImages {
+ final String cmRadioActiveIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_radio_active_ic.imageset/cm_radio_active_ic.png';
 }
 
 
-class CmAlertCloseIc.ImagesetImages {
-        final String cmAlertCloseIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_alert_close_ic.imageset/cm_alert_close_ic@2x.png';
-        final String cmAlertCloseIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_alert_close_ic.imageset/cm_alert_close_ic@3x.png';
-        final String cmAlertCloseIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_alert_close_ic.imageset/cm_alert_close_ic.png';
+class CmSaveContactIcFireImagesetImages {
+ final String cmSaveContactIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_contact_ic_fire.imageset/cm_save_contact_ic_fire.png';
 }
 
 
-class CmRoundCloseIc.ImagesetImages {
-        final String icFzClose = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_round_close_ic.imageset/ic_fz_close.png';
-        final String icFzClose@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_round_close_ic.imageset/ic_fz_close@2x.png';
-        final String icFzClose@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_round_close_ic.imageset/ic_fz_close@3x.png';
+class CmArrowCellIcImages {
+ final String angleRight = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_cell_ic/angle-right.png';
 }
 
 
-class CmCalenderIcIce.ImagesetImages {
+class CmWifiIcIceImagesetImages {
 }
 
 
-class CmCloseHeaderIc.ImagesetImages {
-        final String cmCloseHeaderIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_close_header_ic.imageset/cm_close_header_ic.png';
-        final String cmCloseHeaderIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_close_header_ic.imageset/cm_close_header_ic@2x.png';
-        final String cmCloseHeaderIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_close_header_ic.imageset/cm_close_header_ic@3x.png';
+class CmMaintanceBigIcFireImagesetImages {
+ final String cmMaintanceBigIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_maintance_big_ic_fire.imageset/cm_maintance_big_ic_fire.png';
 }
 
 
-class CmSelectedShadowIc.ImagesetImages {
-        final String text@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_selected_shadow_ic.imageset/Text@2x.png';
-        final String text@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_selected_shadow_ic.imageset/Text@3x.png';
-        final String text = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_selected_shadow_ic.imageset/Text.png';
+class CmDoneGreenIcImages {
+ final String cmDoneGreenIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_done_green_ic/cm_done_green_ic.png';
 }
 
 
-class CmShadowRoundBgIc.ImagesetImages {
-        final String group = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_shadow_round_bg_ic.imageset/Group.png';
-        final String group@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_shadow_round_bg_ic.imageset/Group@3x.png';
-        final String group@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_shadow_round_bg_ic.imageset/Group@2x.png';
+class CmRoundCloseIcImagesetImages {
+ final String icFzClose = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_round_close_ic.imageset/ic_fz_close.png';
 }
 
 
-class CmFailedReceiptIcFire.ImagesetImages {
-        final String group12446@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_failed_receipt_ic_fire.imageset/Group 12446@3x.png';
-        final String group12446@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_failed_receipt_ic_fire.imageset/Group 12446@2x.png';
-        final String group12446 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_failed_receipt_ic_fire.imageset/Group 12446.png';
+class CmCloseHeaderIcImagesetImages {
+ final String cmCloseHeaderIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_close_header_ic.imageset/cm_close_header_ic.png';
 }
 
 
-class CmEllipseNumIcIce.ImagesetImages {
-        final String cmEllipseNumIcIce@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_ellipse_num_ic_ice.imageset/cm_ellipse_num_ic_ice@2x.png';
-        final String cmEllipseNumIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_ellipse_num_ic_ice.imageset/cm_ellipse_num_ic_ice.png';
-        final String cmEllipseNumIcIce@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_ellipse_num_ic_ice.imageset/cm_ellipse_num_ic_ice@3x.png';
+class CmSelectedShadowIcImagesetImages {
+ final String text = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_selected_shadow_ic.imageset/Text.png';
 }
 
 
-class CmPlusIc.ImagesetImages {
-        final String cmPlusIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_plus_ic.imageset/cm_plus_ic@2x.png';
-        final String cmPlusIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_plus_ic.imageset/cm_plus_ic@3x.png';
-        final String cmPlusIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_plus_ic.imageset/cm_plus_ic.png';
+class CmShadowRoundBgIcImagesetImages {
+ final String group = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_shadow_round_bg_ic.imageset/Group.png';
 }
 
 
-class CmSaveContactIcIce.ImagesetImages {
-        final String cmSaveContactIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_contact_ic_ice.imageset/cm_save_contact_ic_ice.png';
-        final String cmSaveContactIcIce@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_contact_ic_ice.imageset/cm_save_contact_ic_ice@2x.png';
-        final String cmSaveContactIcIce@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_contact_ic_ice.imageset/cm_save_contact_ic_ice@3x.png';
+class CmArrowRightGrey400IcImages {
+ final String angleRight = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_400_ic/angle-right.png';
 }
 
 
-class CmSearchIc.ImagesetImages {
-        final String search@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_search_ic.imageset/Search@2x.png';
-        final String search@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_search_ic.imageset/Search@3x.png';
-        final String search = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_search_ic.imageset/Search.png';
+class CmFailedReceiptIcFireImagesetImages {
+ final String group12446 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_failed_receipt_ic_fire.imageset/Group 12446.png';
 }
 
 
-class CmAddressBookBigIc.ImagesetImages {
-        final String cmAddressBookBigIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_address_book_big_ic.imageset/cm_address_book_big_ic.png';
-        final String cmAddressBookBigIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_address_book_big_ic.imageset/cm_address_book_big_ic@3x.png';
-        final String cmAddressBookBigIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_address_book_big_ic.imageset/cm_address_book_big_ic@2x.png';
+class CmEllipseNumIcIceImagesetImages {
+ final String cmEllipseNumIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_ellipse_num_ic_ice.imageset/cm_ellipse_num_ic_ice.png';
 }
 
 
-class CmSelectArrowIc.ImagesetImages {
-        final String angle-Down@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_select_arrow_ic.imageset/angle-down@3x.png';
-        final String angle-Down@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_select_arrow_ic.imageset/angle-down@2x.png';
-        final String angle-Down@1X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_select_arrow_ic.imageset/angle-down@1x.png';
+class CmPlusIcImagesetImages {
+ final String cmPlusIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_plus_ic.imageset/cm_plus_ic.png';
 }
 
 
-class CmGiftIcFire.ImagesetImages {
-        final String cmGiftIcFire@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_gift_ic_fire.imageset/cm_gift_ic_fire@2x.png';
-        final String cmGiftIcFire@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_gift_ic_fire.imageset/cm_gift_ic_fire@3x.png';
-        final String cmGiftIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_gift_ic_fire.imageset/cm_gift_ic_fire.png';
+class CmArrowDownIcImages {
+ final String angleDown = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_down_ic/angle-down.png';
 }
 
 
-class CmRadioInactiveIc.ImagesetImages {
-        final String cmRadioUnactiveIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_radio_inactive_ic.imageset/cm_radio_unactive_ic.png';
-        final String cmRadioUnactiveIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_radio_inactive_ic.imageset/cm_radio_unactive_ic@3x.png';
-        final String cmRadioUnactiveIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_radio_inactive_ic.imageset/cm_radio_unactive_ic@2x.png';
+class CmCheckCircleGreyIcImages {
+ final String cmCheckCircleGreyIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_circle_grey_ic/cm_check_circle_grey_ic.png';
 }
 
 
-class CmHistoryIcFire.ImagesetImages {
+class CmSaveContactIcIceImagesetImages {
+ final String cmSaveContactIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_contact_ic_ice.imageset/cm_save_contact_ic_ice.png';
 }
 
 
-class CmQrcodeIcIce.ImagesetImages {
+class CmSearchIcImagesetImages {
+ final String search = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_search_ic.imageset/Search.png';
 }
 
 
-class CmWalletIc.ImagesetImages {
-        final String wallet@1X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_wallet_ic.imageset/Wallet@1x.png';
-        final String wallet@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_wallet_ic.imageset/Wallet@3x.png';
-        final String wallet@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_wallet_ic.imageset/Wallet@2x.png';
+class CmSelectArrowIcImagesetImages {
+ final String angleDown1X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_select_arrow_ic.imageset/angle-down@1x.png';
 }
 
 
-class CmMoreIc.ImagesetImages {
-        final String other#1@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_more_ic.imageset/Other#1@3x.png';
-        final String other#1@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_more_ic.imageset/Other#1@2x.png';
-        final String other#1 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_more_ic.imageset/Other#1.png';
+class CmGiftIcFireImagesetImages {
+ final String cmGiftIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_gift_ic_fire.imageset/cm_gift_ic_fire.png';
 }
 
 
-class CmCheckboxUncheckedIc.ImagesetImages {
-        final String default@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_unchecked_ic.imageset/Default@2x.png';
-        final String default@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_unchecked_ic.imageset/Default@3x.png';
-        final String default = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_unchecked_ic.imageset/Default.png';
+class CmRadioInactiveIcImagesetImages {
+ final String cmRadioUnactiveIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_radio_inactive_ic.imageset/cm_radio_unactive_ic.png';
 }
 
 
-class CmThreeDotHorizonIc.ImagesetImages {
-        final String cmThreeDotHorizonIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_three_dot_horizon_ic.imageset/cm_three_dot_horizon_ic@3x.png';
-        final String cmThreeDotHorizonIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_three_dot_horizon_ic.imageset/cm_three_dot_horizon_ic@2x.png';
-        final String cmThreeDotHorizonIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_three_dot_horizon_ic.imageset/cm_three_dot_horizon_ic.png';
+class CmHistoryIcFireImagesetImages {
 }
 
 
-class CmDownIc.ImagesetImages {
-        final String cmDownIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_down_ic.imageset/cm_down_ic@2x.png';
-        final String cmDownIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_down_ic.imageset/cm_down_ic@3x.png';
-        final String cmDownIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_down_ic.imageset/cm_down_ic.png';
+class CmCheckProcessingIcImages {
+ final String waiting = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_processing_ic/waiting.png';
 }
 
 
-class CmArrowRightGrey400Ic.ImagesetImages {
-        final String angle-Right = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_400_ic.imageset/angle-right.png';
-        final String angle-Right@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_400_ic.imageset/angle-right@3x.png';
-        final String angle-Right@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_400_ic.imageset/angle-right@2x.png';
+class CmQrcodeIcIceImagesetImages {
 }
 
 
-class CmTranIcIce.ImagesetImages {
-        final String group12446@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_tran_ic_ice.imageset/Group 12446@3x.png';
-        final String group12446@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_tran_ic_ice.imageset/Group 12446@2x.png';
-        final String group12446 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_tran_ic_ice.imageset/Group 12446.png';
+class CmWalletIcImagesetImages {
+ final String wallet1X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_wallet_ic.imageset/Wallet@1x.png';
 }
 
 
-class CmWifiGreyIc.ImagesetImages {
+class CmMoreIcImagesetImages {
+ final String other1 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_more_ic.imageset/Other#1.png';
 }
 
 
-class CmKbAbcIc.ImagesetImages {
-        final String cmKbAbcIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_kb_abc_ic.imageset/cm_kb_abc_ic.png';
-        final String cmKbAbcIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_kb_abc_ic.imageset/cm_kb_abc_ic@2x.png';
-        final String cmKbAbcIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_kb_abc_ic.imageset/cm_kb_abc_ic@3x.png';
+class CmCheckboxUncheckedIcImagesetImages {
+ final String default = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_unchecked_ic.imageset/Default.png';
 }
 
 
-class CmSaveIc.ImagesetImages {
-        final String cmSaveIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_ic.imageset/cm_save_ic.png';
-        final String cmSaveIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_ic.imageset/cm_save_ic@3x.png';
-        final String cmSaveIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_ic.imageset/cm_save_ic@2x.png';
+class CmThreeDotHorizonIcImagesetImages {
+ final String cmThreeDotHorizonIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_three_dot_horizon_ic.imageset/cm_three_dot_horizon_ic.png';
 }
 
 
-class CmClockBannerIcIce.ImagesetImages {
-        final String clock@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_clock_banner_ic_ice.imageset/Clock@3x.png';
-        final String clock@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_clock_banner_ic_ice.imageset/Clock@2x.png';
-        final String clock = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_clock_banner_ic_ice.imageset/Clock.png';
+class CmAddressBookIcImages {
+ final String cmAddressBookIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_address_book_ic/cm_address_book_ic.png';
 }
 
 
-class CmCheckSmallIcFire.ImagesetImages {
-        final String cmCheckSmallIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_small_ic_fire.imageset/cm_check_small_ic_fire.png';
-        final String cmCheckSmallIcFire@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_small_ic_fire.imageset/cm_check_small_ic_fire@2x.png';
-        final String cmCheckSmallIcFire@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_small_ic_fire.imageset/cm_check_small_ic_fire@3x.png';
+class CmCheckErrorIcImages {
+ final String errorCircle = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_error_ic/error-circle.png';
 }
 
 
-class CmCheckCircleIcFire.ImagesetImages {
-        final String cmCheckCircleIcFire@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_circle_ic_fire.imageset/cm_check_circle_ic_fire@3x.png';
-        final String cmCheckCircleIcFire@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_circle_ic_fire.imageset/cm_check_circle_ic_fire@2x.png';
-        final String cmCheckCircleIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_circle_ic_fire.imageset/cm_check_circle_ic_fire.png';
+class CmTranIcIceImagesetImages {
+ final String group12446 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_tran_ic_ice.imageset/Group 12446.png';
 }
 
 
-class CmDownGreyIc.ImagesetImages {
-        final String cmDownGreyIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_down_grey_ic.imageset/cm_down_grey_ic@3x.png';
-        final String cmDownGreyIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_down_grey_ic.imageset/cm_down_grey_ic@2x.png';
-        final String cmDownGreyIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_down_grey_ic.imageset/cm_down_grey_ic.png';
+class CmWifiGreyIcImagesetImages {
 }
 
 
-class CmMaintanceBigIcIce.ImagesetImages {
-        final String cmMaintanceBigIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_maintance_big_ic_ice.imageset/cm_maintance_big_ic_ice.png';
-        final String cmMaintanceBigIcIce@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_maintance_big_ic_ice.imageset/cm_maintance_big_ic_ice@3x.png';
-        final String cmMaintanceBigIcIce@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_maintance_big_ic_ice.imageset/cm_maintance_big_ic_ice@2x.png';
+class CmBellIcImages {
 }
 
 
-class CmCopyIcFire.ImagesetImages {
-        final String cmCopyIcFire@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_copy_ic_fire.imageset/cm_copy_ic_fire@2x.png';
-        final String cmCopyIcFire@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_copy_ic_fire.imageset/cm_copy_ic_fire@3x.png';
-        final String cmCopyIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_copy_ic_fire.imageset/cm_copy_ic_fire.png';
+class CmKbAbcIcImagesetImages {
+ final String cmKbAbcIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_kb_abc_ic.imageset/cm_kb_abc_ic.png';
 }
 
 
-class CmHidePasswordIc.ImagesetImages {
-        final String cmHidePasswordIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_hide_password_ic.imageset/cm_hide_password_ic@3x.png';
-        final String cmHidePasswordIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_hide_password_ic.imageset/cm_hide_password_ic@2x.png';
-        final String cmHidePasswordIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_hide_password_ic.imageset/cm_hide_password_ic.png';
+class CmSaveIcImagesetImages {
+ final String cmSaveIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_save_ic.imageset/cm_save_ic.png';
 }
 
 
-class CmFailedReceiptIcIce.ImagesetImages {
-        final String group12446@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_failed_receipt_ic_ice.imageset/Group 12446@3x.png';
-        final String group12446@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_failed_receipt_ic_ice.imageset/Group 12446@2x.png';
-        final String group12446 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_failed_receipt_ic_ice.imageset/Group 12446.png';
+class CmClockBannerIcIceImagesetImages {
+ final String clock = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_clock_banner_ic_ice.imageset/Clock.png';
 }
 
 
-class CmInfoDarkGreyIc.ImagesetImages {
+class CmBlackCloseIcImages {
+ final String icon = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_black_close_ic/Icon.png';
 }
 
 
-class CmCheckboxUncheckedDisableIc.ImagesetImages {
-        final String disabled-Default = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_unchecked_disable_ic.imageset/Disabled-Default.png';
-        final String disabled-Default@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_unchecked_disable_ic.imageset/Disabled-Default@2x.png';
-        final String disabled-Default@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_unchecked_disable_ic.imageset/Disabled-Default@3x.png';
+class CmMaintanceBigIcIceImagesetImages {
+ final String cmMaintanceBigIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_maintance_big_ic_ice.imageset/cm_maintance_big_ic_ice.png';
 }
 
 
-class CmThreeDotHorizonClearIc.ImagesetImages {
-        final String cmThreeDotHorizonClearIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_three_dot_horizon_clear_ic.imageset/cm_three_dot_horizon_clear_ic@2x.png';
-        final String cmThreeDotHorizonClearIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_three_dot_horizon_clear_ic.imageset/cm_three_dot_horizon_clear_ic.png';
-        final String cmThreeDotHorizonClearIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_three_dot_horizon_clear_ic.imageset/cm_three_dot_horizon_clear_ic@3x.png';
+class CmCopyIcFireImagesetImages {
+ final String cmCopyIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_copy_ic_fire.imageset/cm_copy_ic_fire.png';
 }
 
 
-class CmCubeIc.ImagesetImages {
-        final String box#2@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_cube_ic.imageset/Box#2@3x.png';
-        final String box#2 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_cube_ic.imageset/Box#2.png';
-        final String box#2@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_cube_ic.imageset/Box#2@2x.png';
+class CmCheckBoxInactiveIcImages {
+ final String cmCheckBoxInactiveIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_box_inactive_ic/cm_check_box_inactive_ic.png';
 }
 
 
-class CmSmallRoundCloseIc.ImagesetImages {
-        final String cmSmallRoundCloseIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_small_round_close_ic.imageset/cm_small_round_close_ic@2x.png';
-        final String cmSmallRoundCloseIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_small_round_close_ic.imageset/cm_small_round_close_ic@3x.png';
-        final String cmSmallRoundCloseIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_small_round_close_ic.imageset/cm_small_round_close_ic.png';
+class CmHidePasswordIcImagesetImages {
+ final String cmHidePasswordIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_hide_password_ic.imageset/cm_hide_password_ic.png';
 }
 
 
-class CmBlackCloseIc.ImagesetImages {
-        final String icon = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_black_close_ic.imageset/Icon.png';
-        final String icon@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_black_close_ic.imageset/Icon@2x.png';
-        final String icon@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_black_close_ic.imageset/Icon@3x.png';
+class CmFailedReceiptIcIceImagesetImages {
+ final String group12446 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_failed_receipt_ic_ice.imageset/Group 12446.png';
 }
 
 
-class CmDoneGreenIc.ImagesetImages {
-        final String cmDoneGreenIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_done_green_ic.imageset/cm_done_green_ic.png';
-        final String cmDoneGreenIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_done_green_ic.imageset/cm_done_green_ic@3x.png';
-        final String cmDoneGreenIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_done_green_ic.imageset/cm_done_green_ic@2x.png';
+class CmArrowRightGrey600IcImages {
+ final String cmArrowRightGrey600Ic = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_600_ic/cm_arrow_right_grey_600_ic.png';
 }
 
 
-class CmBackIc.ImagesetImages {
-        final String cmBackIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_back_ic.imageset/cm_back_ic@2x.png';
-        final String cmBackIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_back_ic.imageset/cm_back_ic@3x.png';
-        final String cmBackIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_back_ic.imageset/cm_back_ic.png';
+class CmArrowUpImages {
+ final String cmArrowUp = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_up/cm_arrow_up.png';
 }
 
 
-class CmArrowUp.ImagesetImages {
-        final String cmArrowUp = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_up.imageset/cm_arrow_up.png';
-        final String cmArrowUp@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_up.imageset/cm_arrow_up@2x.png';
-        final String cmArrowUp@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_up.imageset/cm_arrow_up@3x.png';
+class CmInfoDarkGreyIcImagesetImages {
 }
 
 
-class CmStarIcFire.ImagesetImages {
-        final String cmStarIcFire@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_star_ic_fire.imageset/cm_star_ic_fire@2x.png';
-        final String cmStarIcFire@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_star_ic_fire.imageset/cm_star_ic_fire@3x.png';
-        final String cmStarIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_star_ic_fire.imageset/cm_star_ic_fire.png';
+class CmCheckboxUncheckedDisableIcImagesetImages {
+ final String disabledDefault = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_unchecked_disable_ic.imageset/Disabled-Default.png';
 }
 
 
-class CmArrowLeftIc.ImagesetImages {
-        final String arrow-Left = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_left_ic.imageset/arrow-left.png';
-        final String arrow-Left@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_left_ic.imageset/arrow-left@2x.png';
-        final String arrow-Left@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_left_ic.imageset/arrow-left@3x.png';
+class CmThreeDotHorizonClearIcImagesetImages {
+ final String cmThreeDotHorizonClearIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_three_dot_horizon_clear_ic.imageset/cm_three_dot_horizon_clear_ic.png';
 }
 
 
-class CmInfoIcIce.ImagesetImages {
-        final String accountCardDetailInfoIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_ic_ice.imageset/account_card_detail_info_ic_ice.png';
-        final String accountCardDetailInfoIcIce@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_ic_ice.imageset/account_card_detail_info_ic_ice@2x.png';
-        final String accountCardDetailInfoIcIce@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_ic_ice.imageset/account_card_detail_info_ic_ice@3x.png';
+class CmSmallRoundCloseIcImagesetImages {
+ final String cmSmallRoundCloseIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_small_round_close_ic.imageset/cm_small_round_close_ic.png';
 }
 
 
-class CmFireLogoIc.ImagesetImages {
-        final String group11777 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_fire_logo_ic.imageset/Group 11777.png';
-        final String group11777@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_fire_logo_ic.imageset/Group 11777@2x.png';
-        final String group11777@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_fire_logo_ic.imageset/Group 11777@3x.png';
+class CmStarIcFireImagesetImages {
+ final String cmStarIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_star_ic_fire.imageset/cm_star_ic_fire.png';
 }
 
 
-class CmPendingReceiptIcFire.ImagesetImages {
-        final String group12446@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_pending_receipt_ic_fire.imageset/Group 12446@3x.png';
-        final String group12446@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_pending_receipt_ic_fire.imageset/Group 12446@2x.png';
-        final String group12446 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_pending_receipt_ic_fire.imageset/Group 12446.png';
+class CmInfoIcIceImagesetImages {
+ final String accountCardDetailInfoIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_info_ic_ice.imageset/account_card_detail_info_ic_ice.png';
 }
 
 
-class CmAdd2IcFire.ImagesetImages {
+class CmArrowGreyCellIcImages {
+ final String cmArrowGreyCellIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_grey_cell_ic/cm_arrow_grey_cell_ic.png';
 }
 
 
-class CmDownIc-1.ImagesetImages {
-        final String cmDownIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_down_ic-1.imageset/cm_down_ic@2x.png';
-        final String cmDownIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_down_ic-1.imageset/cm_down_ic@3x.png';
-        final String cmDownIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_down_ic-1.imageset/cm_down_ic.png';
+class CmFireLogoIcImagesetImages {
+ final String group11777 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_fire_logo_ic.imageset/Group 11777.png';
 }
 
 
-class CmAutoBillIcFire.ImagesetImages {
-        final String cmAutoBillIcFire@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_auto_bill_ic_fire.imageset/cm_auto_bill_ic_fire@2x.png';
-        final String cmAutoBillIcFire@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_auto_bill_ic_fire.imageset/cm_auto_bill_ic_fire@3x.png';
-        final String cmAutoBillIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_auto_bill_ic_fire.imageset/cm_auto_bill_ic_fire.png';
+class CmPendingReceiptIcFireImagesetImages {
+ final String group12446 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_pending_receipt_ic_fire.imageset/Group 12446.png';
 }
 
 
-class CmForceUpgradeIcIce.ImagesetImages {
+class CmCheckboxCheckedDisableIcImages {
+ final String group12186 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_checkbox_checked_disable_ic/Group 12186.png';
 }
 
 
-class CmCheckSmallIcIce.ImagesetImages {
-        final String cmCheckSmallIcIce@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_small_ic_ice.imageset/cm_check_small_ic_ice@3x.png';
-        final String cmCheckSmallIcIce@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_small_ic_ice.imageset/cm_check_small_ic_ice@2x.png';
-        final String cmCheckSmallIcIce = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_small_ic_ice.imageset/cm_check_small_ic_ice.png';
+class CmDownIc1ImagesetImages {
+ final String cmDownIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_down_ic-1.imageset/cm_down_ic.png';
 }
 
 
-class CmFilterIc.ImagesetImages {
-        final String cmFilterIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_filter_ic.imageset/cm_filter_ic@3x.png';
-        final String cmFilterIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_filter_ic.imageset/cm_filter_ic.png';
-        final String cmFilterIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_filter_ic.imageset/cm_filter_ic@2x.png';
+class CmForceUpgradeIcIceImagesetImages {
 }
 
 
-class CmHistoryIcIce.ImagesetImages {
+class CmCheckProcessingIc1Images {
+ final String waiting = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_processing_ic-1/waiting.png';
 }
 
 
-class CmCheckBoxInactiveIc.ImagesetImages {
-        final String cmCheckBoxInactiveIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_box_inactive_ic.imageset/cm_check_box_inactive_ic@3x.png';
-        final String cmCheckBoxInactiveIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_box_inactive_ic.imageset/cm_check_box_inactive_ic.png';
-        final String cmCheckBoxInactiveIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_box_inactive_ic.imageset/cm_check_box_inactive_ic@2x.png';
+class CmFilterIcImagesetImages {
+ final String cmFilterIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_filter_ic.imageset/cm_filter_ic.png';
 }
 
 
-class CmOtherIc.ImagesetImages {
-        final String cmOtherIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_other_ic.imageset/cm_other_ic.png';
-        final String cmOtherIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_other_ic.imageset/cm_other_ic@3x.png';
-        final String cmOtherIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_other_ic.imageset/cm_other_ic@2x.png';
+class CmHistoryIcIceImagesetImages {
 }
 
 
-class CmBellIc.ImagesetImages {
+class CmOtherIcImagesetImages {
+ final String cmOtherIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_other_ic.imageset/cm_other_ic.png';
 }
 
 
-class CmArrowRightGrey900Ic.ImagesetImages {
-        final String angleRight@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_900_ic.imageset/Angle right@3x.png';
-        final String angleRight@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_900_ic.imageset/Angle right@2x.png';
-        final String angleRight = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_grey_900_ic.imageset/Angle right.png';
+class CmCalenderIcIceImages {
 }
 
 
-class CmAccessoryIc.ImagesetImages {
-        final String cmAccessoryIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_accessory_ic.imageset/cm_accessory_ic.png';
-        final String cmAccessoryIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_accessory_ic.imageset/cm_accessory_ic@3x.png';
-        final String cmAccessoryIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_accessory_ic.imageset/cm_accessory_ic@2x.png';
+class CmEllipseNumIcFireImages {
+ final String cmEllipseNumIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_ellipse_num_ic_fire/cm_ellipse_num_ic_fire.png';
 }
 
 
-class CmGiftIcIce.ImagesetImages {
+class CmGiftIcIceImagesetImages {
 }
 
 
-class CmQrCodeIcIce.ImagesetImages {
+class CmAdd2IcIceImages {
 }
 
 
-class CmLoadingIc.ImagesetImages {
-        final String cmLoadingIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_loading_ic.imageset/cm_loading_ic@2x.png';
-        final String cmLoadingIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_loading_ic.imageset/cm_loading_ic@3x.png';
-        final String cmLoadingIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_loading_ic.imageset/cm_loading_ic.png';
+class CmAdd2IcFireImages {
 }
 
 
-class CmDoneGreyIc.ImagesetImages {
-        final String cmDoneGreyIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_done_grey_ic.imageset/cm_done_grey_ic.png';
-        final String cmDoneGreyIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_done_grey_ic.imageset/cm_done_grey_ic@2x.png';
-        final String cmDoneGreyIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_done_grey_ic.imageset/cm_done_grey_ic@3x.png';
+class CmQrCodeIcIceImagesetImages {
 }
 
 
-class CmNextCircleIc.ImagesetImages {
+class CmLoadingIcImagesetImages {
+ final String cmLoadingIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_loading_ic.imageset/cm_loading_ic.png';
 }
 
 
-class CmArrowRightIc.ImagesetImages {
-        final String arrow-Right@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_ic.imageset/arrow-right@3x.png';
-        final String arrow-Right@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_ic.imageset/arrow-right@2x.png';
-        final String arrow-Right = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_arrow_right_ic.imageset/arrow-right.png';
+class CmCheckCircleIcFireImages {
+ final String cmCheckCircleIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_circle_ic_fire/cm_check_circle_ic_fire.png';
 }
 
 
-class CmLockIc.ImagesetImages {
-        final String cmLockIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_lock_ic.imageset/cm_lock_ic@2x.png';
-        final String cmLockIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_lock_ic.imageset/cm_lock_ic@3x.png';
-        final String cmLockIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_lock_ic.imageset/cm_lock_ic.png';
+class CmDownIcImages {
+ final String cmDownIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_down_ic/cm_down_ic.png';
 }
 
 
-class CmEllipseNumIcFire.ImagesetImages {
-        final String cmEllipseNumIcFire@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_ellipse_num_ic_fire.imageset/cm_ellipse_num_ic_fire@2x.png';
-        final String cmEllipseNumIcFire@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_ellipse_num_ic_fire.imageset/cm_ellipse_num_ic_fire@3x.png';
-        final String cmEllipseNumIcFire = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_ellipse_num_ic_fire.imageset/cm_ellipse_num_ic_fire.png';
+class CmNextCircleIcImagesetImages {
 }
 
 
-class CmSendEmail.ImagesetImages {
-        final String cmSendEmail = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_send_email.imageset/cm_send_email.png';
-        final String cmSendEmail@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_send_email.imageset/cm_send_email@2x.png';
-        final String cmSendEmail@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_send_email.imageset/cm_send_email@3x.png';
+class CmLockIcImagesetImages {
+ final String cmLockIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_lock_ic.imageset/cm_lock_ic.png';
 }
 
 
-class CmChainIc.ImagesetImages {
-        final String clip@1X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_chain_ic.imageset/Clip@1x.png';
-        final String clip@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_chain_ic.imageset/Clip@2x.png';
-        final String clip@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_chain_ic.imageset/Clip@3x.png';
+class CmAddressBookBigIcImages {
+ final String cmAddressBookBigIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_address_book_big_ic/cm_address_book_big_ic.png';
 }
 
 
-class CmSecureIc.ImagesetImages {
-        final String shield-Protected@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_secure_ic.imageset/shield-protected@2x.png';
-        final String shield-Protected@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_secure_ic.imageset/shield-protected@3x.png';
-        final String shield-Protected = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_secure_ic.imageset/shield-protected.png';
+class CmSendEmailImagesetImages {
+ final String cmSendEmail = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_send_email.imageset/cm_send_email.png';
 }
 
 
-class CmCheckSuccessIc.ImagesetImages {
-        final String check = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_success_ic.imageset/check.png';
-        final String check@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_success_ic.imageset/check@2x.png';
-        final String check@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_check_success_ic.imageset/check@3x.png';
+class CmChainIcImagesetImages {
+ final String clip1X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_chain_ic.imageset/Clip@1x.png';
 }
 
 
-class CmCloseIc.ImagesetImages {
-        final String close@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_close_ic.imageset/close@3x.png';
-        final String close@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_close_ic.imageset/close@2x.png';
-        final String close = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_close_ic.imageset/close.png';
+class CmSecureIcImagesetImages {
+ final String shieldProtected = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_secure_ic.imageset/shield-protected.png';
 }
 
 
-class CmQrcodeIcFire.ImagesetImages {
+class CmCloseIcImagesetImages {
+ final String close = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_close_ic.imageset/close.png';
 }
 
 
-class CmRightArrowIc.ImagesetImages {
-        final String path94@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_right_arrow_ic.imageset/Path 94@3x.png';
-        final String path94 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_right_arrow_ic.imageset/Path 94.png';
-        final String path94@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_right_arrow_ic.imageset/Path 94@2x.png';
+class CmQrcodeIcFireImagesetImages {
 }
 
 
-class CmAddressBookIc.ImagesetImages {
-        final String cmAddressBookIc@3X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_address_book_ic.imageset/cm_address_book_ic@3x.png';
-        final String cmAddressBookIc@2X = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_address_book_ic.imageset/cm_address_book_ic@2x.png';
-        final String cmAddressBookIc = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_address_book_ic.imageset/cm_address_book_ic.png';
+class CmRightArrowIcImagesetImages {
+ final String path94 = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/controls/cm_right_arrow_ic.imageset/Path 94.png';
 }
 
 
 class SampleImages {
-    final String imgPrinter = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/sample/img_printer.png';
+ final String imgPrinter = '/Volumes/DATA/Learning/Flutter/my_bad_flutter/assets/images/sample/img_printer.png';
 }

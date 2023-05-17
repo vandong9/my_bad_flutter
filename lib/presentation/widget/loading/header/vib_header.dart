@@ -1,7 +1,14 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 
 class VIBHeaderView extends StatelessWidget {
-  final String leftIconName;
+  final String leftIconName = "";
+
+  void loadJson() {
+    String json = _jsonexport;
+    JSON jsonOBject = JSON.parse(json);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -19,3 +26,27 @@ class VIBHeaderView extends StatelessWidget {
     );
   }
 }
+
+final String _jsonexport = """
+{
+    "native_control": "VIBHeaderView",
+    "attribute": {
+        "layout": {
+            "top": "0_<relevant>", 
+            "left": "0_",
+            "right": "0_",
+            "height": "50/",
+            "background_color": ""
+        },
+        "properties": {
+            "title":"",
+            "left_icon": "back",
+            "right_icon": "x",
+            "left_click": ""
+        }
+    },
+
+    "name": "headerView"
+
+}
+""";
