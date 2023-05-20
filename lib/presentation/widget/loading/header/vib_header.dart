@@ -3,11 +3,12 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 
 class VIBHeaderView extends StatelessWidget {
-  final String leftIconName = "";
+  String leftIconName = "";
 
   void loadJson() {
     String json = _jsonexport;
-    JSON jsonOBject = JSON.parse(json);
+    Map<String, dynamic> jsonOBject = jsonDecode(json);
+    leftIconName = jsonOBject[""];
   }
 
   @override

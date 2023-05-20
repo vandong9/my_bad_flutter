@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:my_bad/common/extension/string_extension.dart';
 import 'package:my_bad/di/injector.dart';
+import 'package:my_bad/presentation/features/show_simulator/show_simulator_screen.dart';
 import 'package:share_ui/theme/theme.dart';
 
 import '../setting/setting.dart';
@@ -19,13 +20,19 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   List<Widget> tabs = [
     Container(child: Text("tab_home".localized())),
     Container(child: Text("tab_payment".localized())),
-    Container(child: Text("t_fb_authen_code_invalid".tr()))
+    Container(child: Text("t_fb_authen_code_invalid".tr())),
+    Container(
+      child: Text("simulator"),
+    )
   ];
   List<Widget> getTabs() {
     return [
       Container(child: Text("tab_home".localized())),
       Container(child: Text("tab_payment".localized())),
-      Container(child: Text("t_fb_authen_code_invalid".tr()))
+      Container(child: Text("t_fb_authen_code_invalid".tr())),
+      Container(
+        child: Text("simulator"),
+      )
     ];
   }
 
@@ -34,13 +41,13 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
-    _tabController.animateTo(2);
+    _tabController = TabController(length: 4, vsync: this);
+    _tabController.animateTo(3);
     tabContents = [
       Container(child: AccountListScreen()),
       Container(child: Text("Tab 2")),
-      SettingScreen()
-      // SettingScreen()
+      SettingScreen(),
+      ShowSimulatorScreen()
     ];
   }
 

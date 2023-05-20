@@ -5,4 +5,6 @@ class AppRouteName {
   static const String account = "account";
   static const String transfer = "transfer";
   static const String setting = "setting";
+
+  static const String simulator = "simulator";
 }
