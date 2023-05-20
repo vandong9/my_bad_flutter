@@ -8,6 +8,211 @@ class AppTextStyle {
     fontFamily: AppFontFamily.SVNMillerBanner,
     decoration: TextDecoration.none,
   );
+
+  TextStyle superLargeTitle(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 40,
+        fontFamily: AppFontFamily.Intern_semiBold,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle largeTitle(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 34,
+        fontFamily: AppFontFamily.Intern_bold,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle title1(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 28,
+        fontFamily: AppFontFamily.Intern_bold,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle title2(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 22,
+        fontFamily: AppFontFamily.Intern_bold,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle title3(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 20,
+        fontFamily: AppFontFamily.Intern_semiBold,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle title4(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 18,
+        fontFamily: AppFontFamily.Intern_semiBold,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle bodyBold(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 17,
+        fontFamily: AppFontFamily.Intern_semiBold,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle bodyRegular(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 17,
+        fontFamily: AppFontFamily.Intern_regular,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle bodyLink(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 17,
+        fontFamily: AppFontFamily.Intern_medium,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle headline(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 16,
+        fontFamily: AppFontFamily.Intern_semiBold,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle subheadlineBold(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 15,
+        fontFamily: AppFontFamily.Intern_bold,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle subheadlineMedium(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 15,
+        fontFamily: AppFontFamily.Intern_medium,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle subheadline(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 15,
+        fontFamily: AppFontFamily.Intern_semiBold,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle subheadlineRegular(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 15,
+        fontFamily: AppFontFamily.Intern_regular,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle smallBodyBold(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 13,
+        fontFamily: AppFontFamily.Intern_semiBold,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle smallBodyRegular(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 13,
+        fontFamily: AppFontFamily.Intern_regular,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle smallBodyLink(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 13,
+        fontFamily: AppFontFamily.Intern_medium,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle inputMedium(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 13,
+        fontFamily: AppFontFamily.Intern_medium,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle captionBold(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 12,
+        fontFamily: AppFontFamily.Intern_bold,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle captionRegular(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 12,
+        fontFamily: AppFontFamily.Intern_medium,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle bold11(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 11,
+        fontFamily: AppFontFamily.Intern_bold,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  TextStyle bold17(Color color) {
+    return TextStyle(
+        color: color,
+        fontSize: 17,
+        fontFamily: AppFontFamily.Intern_bold,
+        decoration: TextDecoration.none,
+        package: "share_ui");
+  }
+
+  // static var baseSmallBodyLink: UIFont = AppFont.medium(size: 13)
+  // static var baseInputMedium: UIFont = AppFont.medium(size: 13)
+  // static var baseCaptionBold: UIFont = AppFont.semiBold(size: 12)
+  // static var baseCaptionRegular: UIFont = AppFont.medium(size: 12)
+  // static var baseBold11: UIFont = AppFont.bold(size: 11)
+  // static var baseBold17: UIFont = AppFont.bold(size: 17)
 }
 
 const TextStyle textSmall = TextStyle(

@@ -1,18 +1,53 @@
 import 'package:flutter/material.dart';
 
 import '../../../../r.dart';
+import 'package:share_ui/theme/theme.dart';
 
 class StatusBardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    InheritedAppThemeProvider themeProvider =
+        InheritedAppThemeProvider.of(context)!; // Little tricky force
+    AppTheme currentTheme = themeProvider.appTheme;
+
     return Container(
-      height: 20,
-      child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-        Text("9:41"),
-        Row(
-          children: [Image.asset(R.controlsImages.cmWifiIc)],
-        )
-      ]),
+      padding: EdgeInsets.only(left: 21, right: 21),
+      height: 44,
+      child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              "9:41",
+              style: currentTheme.textStyle
+                  .subheadline(currentTheme.color.blackColor),
+            ),
+            Row(
+              children: [
+                Image.asset(
+                  R.controlsImages.cm4GIc,
+                  height: 11,
+                  width: 17,
+                ),
+                Container(
+                  width: 5,
+                ),
+                Image.asset(
+                  R.controlsImages.cmWifiIc,
+                  height: 11,
+                  width: 15,
+                ),
+                Container(
+                  width: 5,
+                ),
+                Image.asset(
+                  R.controlsImages.cmBatteryIc,
+                  height: 10,
+                  width: 24,
+                )
+              ],
+            )
+          ]),
     );
   }
 }

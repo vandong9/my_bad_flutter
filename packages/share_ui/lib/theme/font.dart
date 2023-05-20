@@ -3,6 +3,27 @@ import 'dart:ui';
 class AppFontFamily {
   static const String SVNMillerBanner = "SVNMillerBanner";
   static const String Helvetica = "Helvetica";
+  static const String Intern = "Intern";
+
+  static const String Intern_regular = "Inter-Regular";
+  static const String Intern_medium = "Inter-Medium";
+  static const String Intern_semiBold = "Inter-SemiBold";
+  static const String Intern_bold = "Inter-Bold";
+
+  static const String Intern_italic = "Inter-Regular_Italic";
+  static const String Intern_thin = "Inter-Regular_Thin";
+  static const String Intern_thinItalic = "Inter-Regular_Thin-Italic";
+  static const String Intern_extraLight = "Inter-Regular_ExtraLight";
+  static const String Intern_extraLightItalic =
+      "Inter-Regular_ExtraLight-Italic";
+  static const String Intern_light = "Inter-Regular_Light";
+  static const String Intern_lightItalic = "Inter-Regular_Light-Italic";
+  static const String Intern_mediumItalic = "Inter-Regular_Medium-Italic";
+  static const String Intern_semiBoldItalic = "Inter-Regular_SemiBold-Italic";
+  static const String Intern_boldItalic = "Inter-Regular_Bold-Italic";
+  static const String Intern_extraBold = "Inter-Regular_ExtraBold";
+  static const String Intern_extraBoldItalic = "Inter-Regular_ExtraBold-Italic";
+  static const String Intern_black = "Inter-Regular_Black";
 }
 
 class AppFontWeight {
