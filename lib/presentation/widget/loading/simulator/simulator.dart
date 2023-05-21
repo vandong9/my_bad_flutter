@@ -4,6 +4,8 @@ import 'package:my_bad/presentation/widget/loading/status_bar/status_bard.dart';
 import 'package:share_ui/theme/app_theme.dart';
 import 'package:share_ui/theme/theme_manager.dart';
 
+import '../header/vib_header_view_model.dart';
+
 class SimulatorWidget extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -21,6 +23,8 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
     AppTheme currentTheme = themeProvider.appTheme;
     backgroundColor = currentTheme.color.grey50;
 
+    VibHeaderViewRenderObject model = VibHeaderViewRenderObject.mockObject();
+
     return Container(
       color: Colors.red,
       padding: EdgeInsets.all(16),
@@ -30,7 +34,8 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
         decoration: BoxDecoration(
             color: backgroundColor,
             borderRadius: BorderRadius.all(Radius.circular(38))),
-        child: Column(children: [StatusBardWidget(), VIBHeaderView()]),
+        child:
+            Column(children: [StatusBardWidget(), VIBHeaderView(model: model)]),
       ),
     );
   }

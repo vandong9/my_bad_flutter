@@ -5,19 +5,19 @@ import 'package:share_ui/theme/app_theme.dart';
 import 'package:share_ui/theme/theme_manager.dart';
 
 import '../../../../r.dart';
+import 'vib_header_view_model.dart';
 
 class VIBHeaderView extends StatelessWidget {
+  VibHeaderViewRenderObject model;
+
+  VIBHeaderView({required this.model});
+
   String title = "Mở tài khoản";
   String leftIconName = R.controlsImages.cmBackIcImages.cmBackIc;
   String rightIconName =
       R.controlsImages.cmCloseHeaderIcImagesetImages.cmCloseHeaderIc;
 
   Color backgroundColor = Color.fromRGBO(0, 0, 0, 0);
-  void loadJson() {
-    String json = _jsonexport;
-    Map<String, dynamic> jsonOBject = jsonDecode(json);
-    leftIconName = jsonOBject[""];
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -50,27 +50,3 @@ class VIBHeaderView extends StatelessWidget {
     );
   }
 }
-
-final String _jsonexport = """
-{
-    "native_control": "VIBHeaderView",
-    "attribute": {
-        "layout": {
-            "top": "0_<relevant>", 
-            "left": "0_",
-            "right": "0_",
-            "height": "50/",
-            "background_color": ""
-        },
-        "properties": {
-            "title":"",
-            "left_icon": "back",
-            "right_icon": "x",
-            "left_click": ""
-        }
-    },
-
-    "name": "headerView"
-
-}
-""";
