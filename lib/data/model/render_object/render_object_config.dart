@@ -18,3 +18,8 @@ String assetsNameFor(VIBImageAssets mapKey) {
       return R.controlsImages.cmBackIcImages.cmBackIc;
   }
 }
+
+final Map<String, String> mapVibImageAsset = {
+  "arrow_left": R.controlsImages.cmBackIcImages.cmBackIc,
+  "close": R.controlsImages.cmCloseHeaderIcImagesetImages.cmCloseHeaderIc
+};
