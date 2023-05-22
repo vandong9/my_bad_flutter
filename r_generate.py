@@ -109,6 +109,7 @@ def generateResourceForFolder(folderPath, folderName, level):
                 folderPath = processWindowPath(folderPath)
                 folderToImports.append(folderPath + "/" + fileName)
                 processedFolderName = processFolderName(fileName)
+                processedFolderName = processedFolderName.replace(currentPath + "/", "")
                 stringArray.append(
                     " final " + lowerOnlyFirstCharacter(processedFolderName) + " = " + processedFolderName + "();")
                 subFolderString.append(generateResourceForFolder(
@@ -116,6 +117,7 @@ def generateResourceForFolder(folderPath, folderName, level):
         elif fileName.endswith(".png" or ".jpg" or ".jpeg" or ".pdf"):
             fileNameToGenerateProperty = processFileName(fileName)
             folderPath = processWindowPath(folderPath)
+            folderPath = folderPath.replace(currentPath + "/", "")
             stringArray.append(" final String " +
                                fileNameToGenerateProperty + " = " + "'" + folderPath + "/" + fileName + "';")
     stringArray.append("}")
@@ -157,6 +159,7 @@ with open(os.path.join(currentPath, 'pubspec.yaml'), "r+") as filePubspec:
             # filePubspec.writelines(folderToImports)
             for folderPath in folderToImports:
                 folderPath = processWindowPath(folderPath)
+                folderPath = folderPath.replace(currentPath + "/", "")
                 filePubspec.write("    - " + folderPath + "/\n")
         if sinalEnd in line:
             ended = True
