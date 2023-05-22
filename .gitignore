@@ -1,3 +1,4 @@
 .*
 !/.gitignore
+.dart_tool
 build
