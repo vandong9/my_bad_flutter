@@ -91,22 +91,3 @@ class VIBHeaderViewState extends State<VIBHeaderView> {
     );
   }
 }
-
-class VIBHeaderEditInfoView extends StatefulWidget {
-  VibHeaderViewRenderObject model;
-  VIBHeaderEditInfoView({required this.model});
-
-  @override
-  State<StatefulWidget> createState() {
-    return VIBHeaderEditInfoViewState();
-  }
-}
-
-class VIBHeaderEditInfoViewState extends State<VIBHeaderEditInfoView> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Column(children: []),
-    );
-  }
-}
