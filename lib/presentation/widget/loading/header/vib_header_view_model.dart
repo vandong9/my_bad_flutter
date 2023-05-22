@@ -79,3 +79,65 @@ final String _jsonexport = """
 
 }
 """;
+
+String json = """
+    [{
+      "name": "Text",
+      "type": "string",
+      "value": "",
+      "default": ""
+    },]
+""";
+
+class VisualValueField {
+  late String fieldName;
+  late String readableName;
+  late DataType type;
+  late dynamic value;
+  late String defaultValue;
+
+  VisualValueField.fromJson(Map<String, dynamic> json) {
+    fieldName = json["name"];
+    readableName = json["read_name"];
+    String typeName = json["type"];
+    type = CatExtension.fromStringType(typeName);
+    defaultValue = json["default"];
+  }
+}
+
+enum DataType {
+  unknown,
+  string,
+  numInt,
+  numFloat,
+  numDouble,
+  boolean,
+  color,
+  image,
+  custom
+}
+
+extension CatExtension on DataType {
+  static DataType fromStringType(String typeName) {
+    switch (typeName) {
+      case "string":
+        return DataType.string;
+      case "int":
+        return DataType.numInt;
+      case "float":
+        return DataType.numFloat;
+      case "double":
+        return DataType.numDouble;
+      case "bool":
+        return DataType.boolean;
+      case "color":
+        return DataType.color;
+      case "image":
+        return DataType.image;
+      case "custom":
+        return DataType.custom;
+    }
+
+    return DataType.unknown;
+  }
+}

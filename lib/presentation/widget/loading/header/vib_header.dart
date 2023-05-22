@@ -23,7 +23,7 @@ class VIBHeaderView extends StatefulWidget {
 class VIBHeaderViewState extends State<VIBHeaderView> {
   VibHeaderViewRenderObject model;
 
-  bool isSelected = false;
+  bool isSelected = true;
 
   VIBHeaderViewState({required this.model});
 
@@ -38,52 +38,75 @@ class VIBHeaderViewState extends State<VIBHeaderView> {
     InheritedAppThemeProvider themeProvider =
         InheritedAppThemeProvider.of(context)!; // Little tricky force
     AppTheme currentTheme = themeProvider.appTheme;
-    return Stack(
-      children: [
-        Container(
-          color: backgroundColor,
-          padding: EdgeInsets.only(left: 18, right: 18),
-          height: model.attribute.layout.height,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Container(
-                width: 30,
-                height: 30,
-                child: (model.attribute.properties.leftIcon == null
-                    ? Container()
-                    : Image.asset(model.attribute.properties.leftIcon!)),
-              ),
-              Text(
-                model.attribute.properties.title,
-                style:
-                    currentTheme.textStyle.headline(currentTheme.color.grey900),
-              ),
-              Container(
-                width: 30,
-                height: 30,
-                child: (model.attribute.properties.rightIcon == null
-                    ? Container()
-                    : Image.asset(rightIconName)),
-              )
-            ],
-          ),
-        ),
-        GestureDetector(
-          onTap: () {
-            setState(() {
-              isSelected = !this.isSelected;
-            });
-          },
-          child: Container(
+    return Container(
+      child: Stack(
+        children: [
+          Container(
+            color: backgroundColor,
+            padding: EdgeInsets.only(left: 18, right: 18),
             height: model.attribute.layout.height,
-            decoration: isSelected
-                ? BoxDecoration(
-                    border: Border.all(color: Colors.blue, width: 2))
-                : null,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  width: 30,
+                  height: 30,
+                  child: (model.attribute.properties.leftIcon == null
+                      ? Container()
+                      : Image.asset(model.attribute.properties.leftIcon!)),
+                ),
+                Text(
+                  model.attribute.properties.title,
+                  style: currentTheme.textStyle
+                      .headline(currentTheme.color.grey900),
+                ),
+                Container(
+                  width: 30,
+                  height: 30,
+                  child: (model.attribute.properties.rightIcon == null
+                      ? Container()
+                      : Image.asset(rightIconName)),
+                )
+              ],
+            ),
           ),
-        )
-      ],
+          GestureDetector(
+            onTap: () {
+              setState(() {
+                isSelected = !isSelected;
+              });
+            },
+            child: Container(
+              height: model.attribute.layout.height,
+              decoration: isSelected
+                  ? BoxDecoration(
+                      border: Border.all(color: Colors.blue, width: 2))
+                  : BoxDecoration(
+                      border: Border.all(
+                          color: Color.fromARGB(0, 0, 0, 0), width: 2)),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class VIBHeaderEditInfoView extends StatefulWidget {
+  VibHeaderViewRenderObject model;
+  VIBHeaderEditInfoView({required this.model});
+
+  @override
+  State<StatefulWidget> createState() {
+    return VIBHeaderEditInfoViewState();
+  }
+}
+
+class VIBHeaderEditInfoViewState extends State<VIBHeaderEditInfoView> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Column(children: []),
     );
   }
 }
