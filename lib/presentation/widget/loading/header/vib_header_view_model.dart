@@ -3,12 +3,14 @@ import 'dart:convert';
 import '../../../../data/model/render_object/render_object_config.dart';
 
 class VibHeaderViewRenderObject {
+  String objectID = "";
   String native_control = "";
   String variable_name = "";
 
   late VibHeaderViewAttribute attribute;
 
   VibHeaderViewRenderObject.fromJson(Map<String, dynamic> json) {
+    objectID = json["id"];
     attribute = VibHeaderViewAttribute.fromJson(json["attribute"]);
   }
 
@@ -29,9 +31,9 @@ class VibHeaderViewAttribute {
 }
 
 class VibHeaderViewLayout {
-  int? top;
-  int? left;
-  int? right;
+  double? top;
+  double? left;
+  double? right;
   double? height;
   String? background_color;
 
@@ -58,6 +60,8 @@ class VibHeaderProperties {
 
 final String _jsonexport = """
 {
+  "id":"123456",
+    "name": "headerView",
     "native_control": "VIBHeaderView",
     "attribute": {
         "layout": {
@@ -74,9 +78,6 @@ final String _jsonexport = """
             "left_click": ""
         }
     },
-
-    "name": "headerView"
-
 }
 """;
 

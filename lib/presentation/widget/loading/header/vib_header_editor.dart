@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:rxdart/subjects.dart';
 import 'package:share_ui/theme/app_theme.dart';
@@ -23,13 +25,33 @@ class VIBHeaderEditInfoViewState extends State<VIBHeaderEditInfoView> {
   List<Widget> propertiesWidgets() {
     return [
       PairKeyValueWidget(
-          fieldName: "top", value: model.attribute.layout.top.toString()),
+        fieldName: "top",
+        value: model.attribute.layout.top.toString(),
+        valueChanged: (newValue) {
+          model.attribute.layout.top = newValue;
+        },
+      ),
       PairKeyValueWidget(
-          fieldName: "left", value: model.attribute.layout.left.toString()),
+        fieldName: "left",
+        value: model.attribute.layout.left.toString(),
+        valueChanged: (newValue) {
+          model.attribute.layout.left = newValue;
+        },
+      ),
       PairKeyValueWidget(
-          fieldName: "right", value: model.attribute.layout.right.toString()),
+        fieldName: "right",
+        value: model.attribute.layout.right.toString(),
+        valueChanged: (newValue) {
+          model.attribute.layout.right = newValue;
+        },
+      ),
       PairKeyValueWidget(
-          fieldName: "height", value: model.attribute.layout.height.toString())
+        fieldName: "height",
+        value: model.attribute.layout.height.toString(),
+        valueChanged: (newValue) {
+          model.attribute.layout.height = newValue;
+        },
+      )
     ];
   }
 
@@ -47,15 +69,18 @@ class VIBHeaderEditInfoViewState extends State<VIBHeaderEditInfoView> {
 }
 
 class PairKeyValueWidget extends StatelessWidget {
-  TextEditingController mycontroller = TextEditingController();
+  final TextEditingController controller = TextEditingController();
+  Function(double) valueChanged;
 
   String fieldName;
   String value;
-  PairKeyValueWidget({required this.fieldName, required this.value});
+  PairKeyValueWidget(
+      {required this.fieldName,
+      required this.value,
+      required this.valueChanged});
 
   @override
   Widget build(BuildContext context) {
-    mycontroller.text = value;
     return Container(
       child: Row(
         children: [
@@ -63,13 +88,11 @@ class PairKeyValueWidget extends StatelessWidget {
           Container(
             width: 200,
             child: TextField(
-              onChanged: (e) {
-                mycontroller.text = e;
+              onSubmitted: (value) {
+                double doubleValue = double.parse(value);
+                valueChanged(doubleValue);
               },
-              controller: mycontroller,
-              decoration: InputDecoration(
-                border: InputBorder.none,
-              ),
+              controller: controller,
             ),
           )
         ],
