@@ -59,9 +59,10 @@ class VibHeaderProperties {
 }
 
 final String _jsonexport = """
-{
-  "id":"123456",
-    "name": "headerView",
+{  
+    "id" : "123456",
+    "type": "header_view",
+    "name" : "headerView",    
     "native_control": "VIBHeaderView",
     "attribute": {
         "layout": {
@@ -77,7 +78,7 @@ final String _jsonexport = """
             "right_icon": "close",
             "left_click": ""
         }
-    },
+    }
 }
 """;
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_bad/presentation/widget/loading/simulator/page_model.dart';
 import 'package:my_bad/presentation/widget/loading/simulator/simulator.dart';
 
 import '../../widget/loading/header/vib_header_editor.dart';
@@ -10,8 +11,9 @@ class ShowSimulatorScreen extends StatefulWidget {
 }
 
 class _ShowSimulatorScreenState extends State<ShowSimulatorScreen> {
-  VibHeaderViewRenderObject model = VibHeaderViewRenderObject.mockObject();
+  PageModel pageModel = PageModel.mockObject();
 
+// VIBHeaderEditInfoView(model: model)
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -21,11 +23,13 @@ class _ShowSimulatorScreenState extends State<ShowSimulatorScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          child: VIBHeaderEditInfoView(model: model),
+          child: Text("left"),
         ),
         Container(
           width: 414,
-          child: SimulatorWidget(),
+          child: SimulatorWidget(
+            pageModel: pageModel,
+          ),
         )
       ],
     ));
