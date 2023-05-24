@@ -35,3 +35,8 @@ class _ShowSimulatorScreenState extends State<ShowSimulatorScreen> {
     ));
   }
 }
+
+class EditPageViewModel {
+  dynamic selectedWidget;
+  PageModel pageModel;
+}
