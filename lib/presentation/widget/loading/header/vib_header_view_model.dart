@@ -58,7 +58,7 @@ class VibHeaderProperties {
   }
 }
 
-final String _jsonexport = """
+const String _jsonexport = """
 {  
     "id" : "123456",
     "type": "header_view",

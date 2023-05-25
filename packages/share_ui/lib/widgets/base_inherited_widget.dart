@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class InheritedProvider<T> extends InheritedWidget {
   final T inheritedData;
-  InheritedProvider({
+  const InheritedProvider({super.key, 
     required Widget child,
     required this.inheritedData,
   }) : super(child: child);

@@ -12,7 +12,7 @@ class SampleOutput implements Output {
 }
 
 class SampleMVVMTemplateScreen extends BaseMVVMScreen {
-  SampleMVVMTemplateScreen({Key? key}) : super(key: key);
+  const SampleMVVMTemplateScreen({Key? key}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => SampleBaseMVVMState();

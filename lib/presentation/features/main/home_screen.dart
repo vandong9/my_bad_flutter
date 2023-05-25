@@ -9,6 +9,8 @@ import '../setting/setting.dart';
 import 'package:account/account_list/account_list.dart';
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
   @override
   State<StatefulWidget> createState() => HomeScreenState();
 }
@@ -22,7 +24,7 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     Container(child: Text("tab_payment".localized())),
     Container(child: Text("t_fb_authen_code_invalid".tr())),
     Container(
-      child: Text("simulator"),
+      child: const Text("simulator"),
     )
   ];
   List<Widget> getTabs() {
@@ -31,7 +33,7 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       Container(child: Text("tab_payment".localized())),
       Container(child: Text("t_fb_authen_code_invalid".tr())),
       Container(
-        child: Text("simulator"),
+        child: const Text("simulator"),
       )
     ];
   }
@@ -44,10 +46,10 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     _tabController = TabController(length: 4, vsync: this);
     _tabController.animateTo(3);
     tabContents = [
-      Container(child: AccountListScreen()),
-      Container(child: Text("Tab 2")),
-      SettingScreen(),
-      ShowSimulatorScreen()
+      Container(child: const AccountListScreen()),
+      Container(child: const Text("Tab 2")),
+      const SettingScreen(),
+      const ShowSimulatorScreen()
     ];
   }
 
@@ -63,7 +65,7 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           Expanded(child: _contentAtIndex(selectedIndex)),
           Text("t_fb_authen_code_invalid".tr(),
               style: TextStyle(color: themeManager.current.color.grey900)),
-          Container(
+          SizedBox(
             height: 60,
             child: TabBar(
               tabs: getTabs(),

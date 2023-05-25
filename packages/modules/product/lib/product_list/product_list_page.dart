@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/rendering/sliver_grid.dart';
-import 'package:flutter/src/rendering/sliver.dart';
 import 'package:share_ui/template/mvvm/mvvm_template.dart';
 import 'product_list_view_model.dart';
 import 'widgets/item_cell_widget.dart';
 
 class ProductListMVVMTemplateScreen extends BaseMVVMScreen {
-  ProductListMVVMTemplateScreen({Key? key}) : super(key: key);
+  const ProductListMVVMTemplateScreen({Key? key}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => ProductListBaseMVVMState();

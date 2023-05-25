@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'colors.dart';
 
 class GradientColor {
   LinearGradient light = const LinearGradient(

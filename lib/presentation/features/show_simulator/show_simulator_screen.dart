@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:my_bad/presentation/widget/loading/simulator/page_model.dart';
 import 'package:my_bad/presentation/widget/loading/simulator/simulator.dart';
 
-import '../../widget/loading/header/vib_header_editor.dart';
-import '../../widget/loading/header/vib_header_view_model.dart';
 
 class ShowSimulatorScreen extends StatefulWidget {
+  const ShowSimulatorScreen({super.key});
+
   @override
   State<StatefulWidget> createState() => _ShowSimulatorScreenState();
 }
@@ -26,9 +26,9 @@ class _ShowSimulatorScreenState extends State<ShowSimulatorScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              child: Text("left"),
+              child: const Text("left"),
             ),
-            Container(
+            SizedBox(
               width: 414,
               child: SimulatorWidget(
                 pageModel: pageModel,

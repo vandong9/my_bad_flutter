@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:share_ui/widgets/base_widget.dart';
 
 /// ViewModel

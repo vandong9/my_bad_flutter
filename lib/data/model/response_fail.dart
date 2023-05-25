@@ -5,7 +5,7 @@ class ResponseFail extends Equatable {
   final String? name;
   final List<Details>? details;
 
-  ResponseFail({
+  const ResponseFail({
     this.name,
     this.details,
   });
@@ -61,7 +61,7 @@ class ResponseFail extends Equatable {
 class Details extends Equatable {
   final String? message;
 
-  Details({
+  const Details({
     this.message,
   });
 

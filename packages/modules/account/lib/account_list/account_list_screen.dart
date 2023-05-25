@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:share_ui/navigate_util.dart';
 import 'package:share_ui/theme/theme.dart';
 
 import 'account_list_view_model.dart';

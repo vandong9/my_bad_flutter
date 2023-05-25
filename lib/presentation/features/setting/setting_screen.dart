@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:my_bad/presentation/features/setting/features/language/language_screen.dart';
 import 'package:my_bad/presentation/features/setting/features/theme/theme_screen.dart';
 
 class SettingScreen extends StatefulWidget {
+  const SettingScreen({super.key});
+
   @override
   State<StatefulWidget> createState() => SettingScreenState();
 }

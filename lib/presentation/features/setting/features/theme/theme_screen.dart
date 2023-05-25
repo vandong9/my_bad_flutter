@@ -22,7 +22,7 @@ class ThemeScreenState extends State<ThemeScreen> {
               Navigator.pop(context);
             },
             child: Row(children: [
-              Text("Light"),
+              const Text("Light"),
               Text(themeManager.currentThemeType == SupportTheme.ice ? "X" : "")
             ]),
           ),
@@ -32,7 +32,7 @@ class ThemeScreenState extends State<ThemeScreen> {
               Navigator.pop(context);
             },
             child: Row(children: [
-              Text("dark"),
+              const Text("dark"),
               Text(
                   themeManager.currentThemeType == SupportTheme.fire ? "X" : "")
             ]),

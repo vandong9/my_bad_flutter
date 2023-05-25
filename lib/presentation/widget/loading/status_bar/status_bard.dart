@@ -4,6 +4,8 @@ import '../../../../r.dart';
 import 'package:share_ui/theme/theme.dart';
 
 class StatusBardWidget extends StatelessWidget {
+  const StatusBardWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     InheritedAppThemeProvider themeProvider =
@@ -11,7 +13,7 @@ class StatusBardWidget extends StatelessWidget {
     AppTheme currentTheme = themeProvider.appTheme;
 
     return Container(
-      padding: EdgeInsets.only(left: 21, right: 21),
+      padding: const EdgeInsets.only(left: 21, right: 21),
       height: 44,
       child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

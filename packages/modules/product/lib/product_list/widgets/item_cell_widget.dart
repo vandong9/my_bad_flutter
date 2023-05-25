@@ -7,9 +7,9 @@ class ItemCellWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 5, right: 5),
+      margin: const EdgeInsets.only(left: 5, right: 5),
       child: Column(children: [
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Icon(
@@ -20,8 +20,8 @@ class ItemCellWidget extends StatelessWidget {
         ),
         Container(
           clipBehavior: Clip.antiAlias,
-          decoration: BoxDecoration(
-            borderRadius: const BorderRadius.all(Radius.circular(18)),
+          decoration: const BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(18)),
           ),
           foregroundDecoration: BoxDecoration(
             border: Border.all(width: 1, color: Colors.blue),
@@ -45,7 +45,7 @@ class ItemCellWidget extends StatelessWidget {
             );
           }),
         ),
-        Text("Product title"),
+        const Text("Product title"),
       ]),
     );
   }

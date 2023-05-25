@@ -43,7 +43,7 @@ class MultipleLanguage implements ILocalizedLanguage {
   SharedPreferences? prefs;
   final kCurrentLanguage = "kCurrentLanguage";
 
-  Map<String, String> _data = {};
+  final Map<String, String> _data = {};
 
   MultipleLanguage() {
     String value = sl<SharedPreferences>().getString(kCurrentLanguage) ?? "";

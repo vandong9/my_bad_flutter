@@ -8,6 +8,8 @@ import 'package:my_bad/routes/routes.dart';
 import 'package:share_ui/share_ui.dart';
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   State<StatefulWidget> createState() => MyAppState();
 }

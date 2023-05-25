@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:rxdart/subjects.dart';
-import 'package:share_ui/theme/app_theme.dart';
-import 'package:share_ui/theme/theme_manager.dart';
 
-import '../../../../r.dart';
 import 'vib_header_view_model.dart';
 
 class VIBHeaderEditInfoView extends StatefulWidget {
   VibHeaderViewRenderObject model;
-  VIBHeaderEditInfoView({required this.model});
+  VIBHeaderEditInfoView({super.key, required this.model});
 
   @override
   State<StatefulWidget> createState() {
@@ -57,7 +53,7 @@ class VIBHeaderEditInfoViewState extends State<VIBHeaderEditInfoView> {
   Widget build(BuildContext context) {
     return Container(
       child: Column(children: [
-        Text("Layout"),
+        const Text("Layout"),
         Column(
           children: propertiesWidgets(),
         )
@@ -73,7 +69,7 @@ class PairKeyValueWidget extends StatelessWidget {
   String fieldName;
   String value;
   PairKeyValueWidget(
-      {required this.fieldName,
+      {super.key, required this.fieldName,
       required this.value,
       required this.valueChanged});
 
@@ -82,8 +78,8 @@ class PairKeyValueWidget extends StatelessWidget {
     return Container(
       child: Row(
         children: [
-          Container(width: 200, child: Text(fieldName)),
-          Container(
+          SizedBox(width: 200, child: Text(fieldName)),
+          SizedBox(
             width: 200,
             child: TextField(
               onSubmitted: (value) {

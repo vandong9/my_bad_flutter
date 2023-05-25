@@ -23,7 +23,7 @@ class BaseState<T extends BaseWidget> extends State<T> {
     );
     pbLoading?.style(
       message: message,
-      progressWidget: CircleLoading(),
+      progressWidget: const CircleLoading(),
     );
   }
 

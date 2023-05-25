@@ -24,8 +24,8 @@ showPage(BuildContext context, Page page, Object? param) {
 
 Map<String, WidgetBuilder> routes() {
   return <String, WidgetBuilder>{
-    Page.productList.pageName(): (context) => ProductListMVVMTemplateScreen(),
+    Page.productList.pageName(): (context) => const ProductListMVVMTemplateScreen(),
     Page.productDetail.pageName(): (context) =>
-        ProductDetailMVVMTemplateScreen(),
+        const ProductDetailMVVMTemplateScreen(),
   };
 }

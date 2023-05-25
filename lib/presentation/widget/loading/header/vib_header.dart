@@ -1,4 +1,3 @@
-import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:rxdart/subjects.dart';
@@ -10,7 +9,7 @@ import 'vib_header_view_model.dart';
 
 class VIBHeaderView extends StatefulWidget {
   VibHeaderViewRenderObject model;
-  VIBHeaderView({required this.model});
+  VIBHeaderView({super.key, required this.model});
 
   Subject? onSelected;
 
@@ -31,7 +30,7 @@ class VIBHeaderViewState extends State<VIBHeaderView> {
   String rightIconName =
       R.controlsImages.cmCloseHeaderIcImagesetImages.cmCloseHeaderIc;
 
-  Color backgroundColor = Color.fromRGBO(0, 0, 0, 0);
+  Color backgroundColor = const Color.fromRGBO(0, 0, 0, 0);
 
   @override
   Widget build(BuildContext context) {
@@ -43,12 +42,12 @@ class VIBHeaderViewState extends State<VIBHeaderView> {
         children: [
           Container(
             color: backgroundColor,
-            padding: EdgeInsets.only(left: 18, right: 18),
+            padding: const EdgeInsets.only(left: 18, right: 18),
             height: model.attribute.layout.height,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Container(
+                SizedBox(
                   width: 30,
                   height: 30,
                   child: (model.attribute.properties.leftIcon == null
@@ -60,7 +59,7 @@ class VIBHeaderViewState extends State<VIBHeaderView> {
                   style: currentTheme.textStyle
                       .headline(currentTheme.color.grey900),
                 ),
-                Container(
+                SizedBox(
                   width: 30,
                   height: 30,
                   child: (model.attribute.properties.rightIcon == null
@@ -83,7 +82,7 @@ class VIBHeaderViewState extends State<VIBHeaderView> {
                       border: Border.all(color: Colors.blue, width: 2))
                   : BoxDecoration(
                       border: Border.all(
-                          color: Color.fromARGB(0, 0, 0, 0), width: 2)),
+                          color: const Color.fromARGB(0, 0, 0, 0), width: 2)),
             ),
           )
         ],

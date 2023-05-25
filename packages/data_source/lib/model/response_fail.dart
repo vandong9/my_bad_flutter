@@ -4,7 +4,7 @@ class ResponseFail extends Equatable {
   final String? name;
   final List<Details>? details;
 
-  ResponseFail({
+  const ResponseFail({
     this.name,
     this.details,
   });
@@ -30,7 +30,7 @@ class ResponseFail extends Equatable {
             : null,
       );
       return responseFail;
-    } catch (e, stacktrace) {
+    } catch (e) {
       // LogUtils.d(e, stacktrace: stacktrace.toString());
     }
     throw 'Wrong data null';
@@ -43,7 +43,7 @@ class ResponseFail extends Equatable {
       if (details != null) {
         data['details'] = details?.map((v) => v.toJson()).toList();
       }
-    } catch (e, stacktrace) {
+    } catch (e) {
       // LogUtils.d(e, stacktrace: stacktrace.toString());
     }
 
@@ -60,7 +60,7 @@ class ResponseFail extends Equatable {
 class Details extends Equatable {
   final String? message;
 
-  Details({
+  const Details({
     this.message,
   });
 
@@ -78,7 +78,7 @@ class Details extends Equatable {
         message: json['message'],
       );
       return details;
-    } catch (e, stacktrace) {
+    } catch (e) {
       // LogUtils.d(e, stacktrace: stacktrace.toString());
     }
     throw 'Wrong data null';
@@ -88,7 +88,7 @@ class Details extends Equatable {
     final data = <String, dynamic>{};
     try {
       data['message'] = message;
-    } catch (e, stacktrace) {
+    } catch (e) {
       // LogUtils.d(e, stacktrace: stacktrace.toString());
     }
 

@@ -3,7 +3,7 @@ import 'package:share_ui/template/mvvm/mvvm_template.dart';
 import 'product_detail_view_model.dart';
 
 class ProductDetailMVVMTemplateScreen extends BaseMVVMScreen {
-  ProductDetailMVVMTemplateScreen({Key? key}) : super(key: key);
+  const ProductDetailMVVMTemplateScreen({Key? key}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => ProductDetailBaseMVVMState();

@@ -9,7 +9,7 @@ import '../header/vib_header_view_model.dart';
 
 class SimulatorWidget extends StatefulWidget {
   PageModel pageModel;
-  SimulatorWidget({required this.pageModel});
+  SimulatorWidget({super.key, required this.pageModel});
 
   @override
   State<StatefulWidget> createState() {
@@ -31,26 +31,26 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
     backgroundColor = currentTheme.color.grey50;
 
     List<Widget> childrenWidgets = [];
-    pageModel.children.forEach((element) {
+    for (var element in pageModel.children) {
       String type = element["type"];
       if (type == "header_view") {
         VibHeaderViewRenderObject model =
             VibHeaderViewRenderObject.fromJson(element);
         childrenWidgets.add(VIBHeaderView(model: model));
       }
-    });
+    }
 
     return Container(
       color: Colors.red,
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       child: Container(
         width: 375,
         height: 812,
         decoration: BoxDecoration(
             color: backgroundColor,
-            borderRadius: BorderRadius.all(Radius.circular(38))),
+            borderRadius: const BorderRadius.all(Radius.circular(38))),
         child: Column(children: [
-          StatusBardWidget(),
+          const StatusBardWidget(),
           Column(
             children: childrenWidgets,
           )

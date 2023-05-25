@@ -49,6 +49,7 @@ class BaseViewModel {
 }
 
 class BaseInput implements IInput {
+  @override
   void dispose() {}
 }
 

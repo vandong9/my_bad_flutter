@@ -56,7 +56,7 @@ extension WidgetModifier on Widget {
     if (width == 0 && height == 0) {
       return this;
     }
-    return Container(
+    return SizedBox(
       width: width == 0 ? null : width,
       height: height == 0 ? null : height,
       child: this,

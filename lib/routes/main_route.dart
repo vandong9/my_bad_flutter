@@ -7,15 +7,15 @@ import 'package:my_bad/routes/route_name.dart';
 import 'package:product/router.dart' as productRouters;
 
 Map<String, WidgetBuilder> mainRoutes() {
-  Map<String, WidgetBuilder> allRoutes = Map<String, WidgetBuilder>();
+  Map<String, WidgetBuilder> allRoutes = <String, WidgetBuilder>{};
   allRoutes.addAll(productRouters.routes());
 
   Map<String, WidgetBuilder> appRoutes = <String, WidgetBuilder>{
     AppRouteName.intro: (context) => BlocProvider<IntroBloc>(
           create: (context) => IntroBloc(),
-          child: IntroScreen(),
+          child: const IntroScreen(),
         ),
-    AppRouteName.home: (context) => HomeScreen(),
+    AppRouteName.home: (context) => const HomeScreen(),
   };
   allRoutes.addAll(appRoutes);
 

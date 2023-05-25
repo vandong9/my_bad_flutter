@@ -13,6 +13,8 @@ class CategoryCarouselViewModel {
 
 class CategoryCarouselWidget extends StatelessWidget {
   CategoryCarouselViewModel viewModel = CategoryCarouselViewModel();
+
+  CategoryCarouselWidget({super.key});
   Widget _header() {
     return Container();
   }
@@ -20,12 +22,14 @@ class CategoryCarouselWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [_header(), Text("data")],
+      children: [_header(), const Text("data")],
     );
   }
 }
 
 class CategoryHeaderWidget extends StatelessWidget {
+  const CategoryHeaderWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container();
@@ -33,6 +37,8 @@ class CategoryHeaderWidget extends StatelessWidget {
 }
 
 class CategoryFooterWidget extends StatelessWidget {
+  const CategoryFooterWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container();
@@ -40,6 +46,8 @@ class CategoryFooterWidget extends StatelessWidget {
 }
 
 class ProductListItemWidget extends StatelessWidget {
+  const ProductListItemWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container();
@@ -47,6 +55,8 @@ class ProductListItemWidget extends StatelessWidget {
 }
 
 class ProductListItemCardWidget extends StatelessWidget {
+  const ProductListItemCardWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container();
