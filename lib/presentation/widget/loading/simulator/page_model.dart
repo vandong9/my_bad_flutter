@@ -23,7 +23,11 @@ class PageModel {
 
 String sampleJson = """
 {
+  "id": "A11000",
+  "type" : "page",
+  "name": "Page intro",
   "page_name": "intro",
+  "native_control": "BaseViewController",
   "background_color": "",
   "children": [
     {
