@@ -1,10 +1,11 @@
-
 import 'package:flutter/material.dart';
+import 'package:my_bad/presentation/widget/loading/header/vib_header_editor.dart';
 import 'package:rxdart/subjects.dart';
 import 'package:share_ui/theme/app_theme.dart';
 import 'package:share_ui/theme/theme_manager.dart';
 
 import '../../../../r.dart';
+import '../../../features/show_simulator/show_simulator_screen.dart';
 import 'vib_header_view_model.dart';
 
 class VIBHeaderView extends StatefulWidget {
@@ -33,10 +34,27 @@ class VIBHeaderViewState extends State<VIBHeaderView> {
   Color backgroundColor = const Color.fromRGBO(0, 0, 0, 0);
 
   @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    EditPageViewData editPageViewData =
+        EditPageViewData.of(context); // Little tricky force
+
+    isSelected = editPageViewData.selectedWidget.controlID == model.objectID;
+  }
+
+  @override
   Widget build(BuildContext context) {
     InheritedAppThemeProvider themeProvider =
         InheritedAppThemeProvider.of(context)!; // Little tricky force
     AppTheme currentTheme = themeProvider.appTheme;
+    EditPageViewData editPageViewData =
+        EditPageViewData.of(context); // Little tricky force
+
     return Container(
       child: Stack(
         children: [
@@ -71,9 +89,17 @@ class VIBHeaderViewState extends State<VIBHeaderView> {
           ),
           GestureDetector(
             onTap: () {
-              setState(() {
-                isSelected = !isSelected;
-              });
+              editPageViewData?.selectedWidget.updateSelectedWidget(
+                  VIBHeaderEditInfoView(
+                    model: model,
+                    onChanged: () {
+                      setState(() {});
+                    },
+                  ),
+                  model.objectID);
+              // setState(() {
+              //   isSelected = !isSelected;
+              // });
             },
             child: Container(
               height: model.attribute.layout.height,

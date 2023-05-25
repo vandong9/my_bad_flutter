@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
+import '../../../features/show_simulator/show_simulator_screen.dart';
 import 'vib_header_view_model.dart';
 
 class VIBHeaderEditInfoView extends StatefulWidget {
   VibHeaderViewRenderObject model;
-  VIBHeaderEditInfoView({super.key, required this.model});
+  Function onChanged;
+  VIBHeaderEditInfoView(
+      {super.key, required this.model, required this.onChanged});
 
   @override
   State<StatefulWidget> createState() {
@@ -23,6 +26,7 @@ class VIBHeaderEditInfoViewState extends State<VIBHeaderEditInfoView> {
         value: model.attribute.layout.top.toString(),
         valueChanged: (newValue) {
           model.attribute.layout.top = newValue;
+          widget.onChanged();
         },
       ),
       PairKeyValueWidget(
@@ -30,6 +34,7 @@ class VIBHeaderEditInfoViewState extends State<VIBHeaderEditInfoView> {
         value: model.attribute.layout.left.toString(),
         valueChanged: (newValue) {
           model.attribute.layout.left = newValue;
+          widget.onChanged();
         },
       ),
       PairKeyValueWidget(
@@ -44,6 +49,7 @@ class VIBHeaderEditInfoViewState extends State<VIBHeaderEditInfoView> {
         value: model.attribute.layout.height.toString(),
         valueChanged: (newValue) {
           model.attribute.layout.height = newValue;
+          widget.onChanged();
         },
       )
     ];
@@ -69,12 +75,14 @@ class PairKeyValueWidget extends StatelessWidget {
   String fieldName;
   String value;
   PairKeyValueWidget(
-      {super.key, required this.fieldName,
+      {super.key,
+      required this.fieldName,
       required this.value,
       required this.valueChanged});
 
   @override
   Widget build(BuildContext context) {
+    controller.text = value;
     return Container(
       child: Row(
         children: [
@@ -82,8 +90,8 @@ class PairKeyValueWidget extends StatelessWidget {
           SizedBox(
             width: 200,
             child: TextField(
-              onSubmitted: (value) {
-                double doubleValue = double.parse(value);
+              onEditingComplete: () {
+                double doubleValue = double.parse(controller.text);
                 valueChanged(doubleValue);
               },
               controller: controller,

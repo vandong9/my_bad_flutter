@@ -40,7 +40,7 @@ String sampleJson = """
           "background_color": ""
         },
         "properties": {
-          "title": "Mở tài khoản",
+          "title": "Mở tài khoản 1",
           "left_icon": "arrow_left",
           "right_icon": "close",
           "left_click": ""
@@ -57,11 +57,11 @@ String sampleJson = """
           "top": 0,
           "left": 0,
           "right": 0,
-          "height": 50,
+          "height": 100,
           "background_color": ""
         },
         "properties": {
-          "title": "Mở tài khoản",
+          "title": "Mở tài khoản 2",
           "left_icon": "arrow_left",
           "right_icon": "close",
           "left_click": ""

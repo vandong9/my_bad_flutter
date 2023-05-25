@@ -36,7 +36,8 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
       if (type == "header_view") {
         VibHeaderViewRenderObject model =
             VibHeaderViewRenderObject.fromJson(element);
-        childrenWidgets.add(VIBHeaderView(model: model));
+        childrenWidgets
+            .add(VIBHeaderView(key: ValueKey(model.objectID), model: model));
       }
     }
 
