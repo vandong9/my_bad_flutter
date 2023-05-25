@@ -16,27 +16,52 @@ class _ShowSimulatorScreenState extends State<ShowSimulatorScreen> {
 // VIBHeaderEditInfoView(model: model)
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: Row(
-      mainAxisSize: MainAxisSize.max,
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Container(
-          child: Text("left"),
-        ),
-        Container(
-          width: 414,
-          child: SimulatorWidget(
-            pageModel: pageModel,
-          ),
-        )
-      ],
-    ));
+    return EditPageViewData(
+        pageModel: pageModel,
+        selectedWidget: null,
+        child: Container(
+            child: Row(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              child: Text("left"),
+            ),
+            Container(
+              width: 414,
+              child: SimulatorWidget(
+                pageModel: pageModel,
+              ),
+            )
+          ],
+        )));
   }
 }
 
-class EditPageViewModel {
-  dynamic selectedWidget;
-  PageModel pageModel;
+class EditPageViewData extends InheritedWidget {
+  Widget? selectedWidget;
+  PageModel? pageModel;
+
+  EditPageViewData({
+    super.key,
+    this.selectedWidget,
+    this.pageModel,
+    required super.child,
+  });
+  static EditPageViewData? maybeOf(BuildContext context) {
+    return context.dependOnInheritedWidgetOfExactType<EditPageViewData>();
+  }
+
+  static EditPageViewData of(BuildContext context) {
+    final EditPageViewData? result = maybeOf(context);
+    assert(result != null, 'No FrogColor found in context');
+    return result!;
+  }
+
+  @override
+  bool updateShouldNotify(EditPageViewData oldWidget) {
+    return (selectedWidget != oldWidget.selectedWidget ||
+        pageModel != oldWidget.pageModel);
+  }
 }
