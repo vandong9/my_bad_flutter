@@ -3,8 +3,10 @@ import 'dart:html';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:my_bad/presentation/widget/loading/simulator/page_model.dart';
+import 'package:my_bad/presentation/widget/loading/page_widget/page_model.dart';
 import 'package:my_bad/presentation/widget/loading/simulator/simulator.dart';
+
+import '../../widget/loading/simulator/page_tree_node_widget.dart';
 
 class ShowSimulatorScreen extends StatefulWidget {
   const ShowSimulatorScreen({super.key});
@@ -45,25 +47,34 @@ class _ShowSimulatorScreenState extends State<ShowSimulatorScreen> {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        EditPageViewData(
+            pageModel: pageModel,
+            selectedWidget: selectedWidget,
+            child: Builder(builder: (BuildContext innerContext) {
+              EditPageViewData editPageViewData =
+                  EditPageViewData.of(innerContext);
+
+              return Row(
+                children: [
+                  Container(
+                    width: 375,
+                    child: PageTreeNodeWidget(
+                      pageObject: editPageViewData.pageModel,
+                      onSelected: (id) {},
+                    ),
+                  ),
+                  SimulatorWidget(
+                    pageModel: editPageViewData.pageModel,
+                  )
+                ],
+              );
+            })),
         Container(
           width: 400,
           child: selectedWidgetInfo == null
               ? const Text("left")
               : selectedWidgetInfo!,
         ),
-        SizedBox(
-            width: 375,
-            child: EditPageViewData(
-                pageModel: pageModel,
-                selectedWidget: selectedWidget,
-                child: Builder(builder: (BuildContext innerContext) {
-                  EditPageViewData editPageViewData =
-                      EditPageViewData.of(innerContext);
-
-                  return SimulatorWidget(
-                    pageModel: editPageViewData.pageModel,
-                  );
-                })))
       ],
     ));
   }

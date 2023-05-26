@@ -2,17 +2,16 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 
+import '../../../../data/model/render_object/base_render_object.dart';
 import '../../../../data/model/render_object/render_object_config.dart';
 
-class PageModel {
+class PageModel extends BaseViewRenderObject {
   late String pageName;
   late Color backgroundColor;
-  late List<dynamic> children;
 
-  PageModel.fromJson(Map<String, dynamic> json) {
+  PageModel.fromJson(Map<String, dynamic> json) : super.fromJson(json) {
     pageName = json["page_name"];
     backgroundColor = mapVIbColorName[json["backgroundColor"]] ?? Colors.black;
-    children = json["children"];
   }
 
   static PageModel mockObject() {
@@ -23,7 +22,7 @@ class PageModel {
 
 String sampleJson = """
 {
-  "id": "A11000",
+  "id": "1000FC4JC5FMAA1SBQZ9W8Y1JB95HFVARVT13DST063NYBP2YRDJKI",
   "type" : "page",
   "name": "Page intro",
   "page_name": "intro",
@@ -31,7 +30,7 @@ String sampleJson = """
   "background_color": "",
   "children": [
     {
-      "id": "100000",
+      "id": "A98DB973KWL8XP1LZ94KJF0BMA5PEZ8C6490FWEI",
       "type": "header_view",
       "name": "headerView",
       "native_control": "VIBHeaderView",
@@ -52,7 +51,7 @@ String sampleJson = """
       }
     },
     {
-      "id": "111111",
+      "id": "A98DB973KWL8XP1LZ94KJF0BMA5PEZ8C6490FWEI01QJMN32Y",
       "type": "header_view",
       "name": "headerView",
       "native_control": "VIBHeaderView",

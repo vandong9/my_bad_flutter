@@ -1,15 +1,16 @@
 import 'dart:convert';
 
+import '../../../../data/model/render_object/base_render_object.dart';
 import '../../../../data/model/render_object/render_object_config.dart';
 
-class VibHeaderViewRenderObject {
-  String objectID = "";
+class VibHeaderViewRenderObject extends BaseViewRenderObject {
   String native_control = "";
   String variable_name = "";
 
   late VibHeaderViewAttribute attribute;
 
-  VibHeaderViewRenderObject.fromJson(Map<String, dynamic> json) {
+  VibHeaderViewRenderObject.fromJson(Map<String, dynamic> json)
+      : super.fromJson(json) {
     objectID = json["id"];
     attribute = VibHeaderViewAttribute.fromJson(json["attribute"]);
   }

@@ -9,6 +9,7 @@ final Map<String, String> mapVibImageAsset = {
 };
 
 final Map<String, Color> mapVIbColorName = {
+  "clear": const Color(0xFFFFFF00),
   "whiteColor": Colors.white,
   "blackColor": Colors.black,
   "grey900": const Color(0xFF121826),
@@ -34,5 +35,7 @@ final Map<String, Color> mapVIbColorName = {
   "orange200": const Color(0xFFFDD3A6),
   "orange100": const Color(0xFFFFE8D3),
   "lightThemeColor": const Color(0xFFFE9B25),
-  "darkThemeColor": const Color(0xFFFE9B25)
+  "darkThemeColor": const Color(0xFFFE9B25),
+  "themeColor":
+      const Color(0xFFFE9B25) // this color will change up to selected theme
 };

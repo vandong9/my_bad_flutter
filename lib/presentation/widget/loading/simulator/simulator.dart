@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_bad/presentation/widget/loading/header/vib_header.dart';
-import 'package:my_bad/presentation/widget/loading/simulator/page_model.dart';
+import 'package:my_bad/presentation/widget/loading/page_widget/page_model.dart';
 import 'package:my_bad/presentation/widget/loading/status_bar/status_bard.dart';
 import 'package:share_ui/theme/app_theme.dart';
 import 'package:share_ui/theme/theme_manager.dart';
