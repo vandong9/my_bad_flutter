@@ -6,6 +6,7 @@ import 'package:share_ui/theme/app_theme.dart';
 import 'package:share_ui/theme/theme_manager.dart';
 
 import '../header/vib_header_view_model.dart';
+import '../page_widget/page_widget.dart';
 
 class SimulatorWidget extends StatefulWidget {
   PageModel pageModel;
@@ -48,12 +49,12 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
         width: 375,
         height: 812,
         decoration: BoxDecoration(
-            color: backgroundColor,
+            color: Colors.white,
             borderRadius: const BorderRadius.all(Radius.circular(38))),
         child: Column(children: [
           const StatusBardWidget(),
-          Column(
-            children: childrenWidgets,
+          PageRenderWidget(
+            pageModel: pageModel,
           )
         ]),
       ),
