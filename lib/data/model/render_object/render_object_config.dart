@@ -9,7 +9,7 @@ final Map<String, String> mapVibImageAsset = {
 };
 
 final Map<String, Color> mapVIbColorName = {
-  "clear": const Color(0xFFFFFF00),
+  "clear": const Color(0x00FFFFFF),
   "whiteColor": Colors.white,
   "blackColor": Colors.black,
   "grey900": const Color(0xFF121826),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_bad/data/model/render_object/render_object_config.dart';
 import 'package:my_bad/presentation/widget/loading/header/vib_header_editor.dart';
 import 'package:rxdart/subjects.dart';
 import 'package:share_ui/theme/app_theme.dart';
@@ -36,6 +37,9 @@ class VIBHeaderViewState extends State<VIBHeaderView> {
   @override
   void initState() {
     super.initState();
+    backgroundColor =
+        mapVIbColorName[model.attribute.layout.background_color] ??
+            Color.fromRGBO(0, 0, 0, 0);
   }
 
   @override
@@ -59,7 +63,8 @@ class VIBHeaderViewState extends State<VIBHeaderView> {
       child: Stack(
         children: [
           Container(
-            color: backgroundColor,
+            color: mapVIbColorName[model.attribute.layout.background_color] ??
+                Color.fromRGBO(0, 0, 0, 0),
             padding: const EdgeInsets.only(left: 18, right: 18),
             height: model.attribute.layout.height,
             child: Row(
