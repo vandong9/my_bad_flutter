@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../../../../data/model/render_object/base_render_object.dart';
+import '../../../features/show_simulator/show_simulator_screen.dart';
 
 class PageTreeNodeWidget extends StatefulWidget {
   BaseViewRenderObject pageObject;
-  Function(String) onSelected;
+  Function(BaseViewRenderObject) onSelected;
 
   PageTreeNodeWidget(
       {super.key, required this.pageObject, required this.onSelected});
@@ -16,19 +17,20 @@ class PageTreeNodeWidget extends StatefulWidget {
 class PageTreeNodeWidgetState extends State<PageTreeNodeWidget> {
   List<Widget> getTreeNode() {
     List<Widget> treeWidget = [];
+    int i = 0;
     widget.pageObject.childrenNode.forEach((element) {
       if (element.childrenNode.length > 0) {
         treeWidget.add(ParentNodeWidget(
           renderObject: element,
-          onSelected: (id) {
-            widget.onSelected(id);
+          onSelected: (renderObject) {
+            widget.onSelected(renderObject);
           },
         ));
       } else {
         treeWidget.add(LeafNodeWidget(
           renderObject: element,
-          onSelected: (id) {
-            widget.onSelected(id);
+          onSelected: (renderObject) {
+            widget.onSelected(renderObject);
           },
         ));
       }
@@ -55,7 +57,7 @@ class PageTreeNodeWidgetState extends State<PageTreeNodeWidget> {
 
 class ParentNodeWidget extends StatefulWidget {
   BaseViewRenderObject renderObject;
-  Function(String) onSelected;
+  Function(BaseViewRenderObject) onSelected;
   ParentNodeWidget(
       {super.key, required this.renderObject, required this.onSelected});
 
@@ -77,8 +79,8 @@ class ParentNodeWidgetState extends State<ParentNodeWidget> {
       } else {
         treeWidget.add(LeafNodeWidget(
           renderObject: element,
-          onSelected: (id) {
-            widget.onSelected(id);
+          onSelected: (renderObject) {
+            widget.onSelected(renderObject);
           },
         ));
       }
@@ -93,8 +95,8 @@ class ParentNodeWidgetState extends State<ParentNodeWidget> {
         LeafNodeWidget(
           renderObject: widget.renderObject,
           isParent: true,
-          onSelected: (String) {
-            widget.onSelected(widget.renderObject.objectID);
+          onSelected: (renderObject) {
+            widget.onSelected(renderObject);
           },
         ),
         Container(
@@ -111,7 +113,7 @@ class ParentNodeWidgetState extends State<ParentNodeWidget> {
 class LeafNodeWidget extends StatefulWidget {
   bool isParent = false;
   BaseViewRenderObject renderObject;
-  Function(String) onSelected;
+  Function(BaseViewRenderObject) onSelected;
   LeafNodeWidget(
       {super.key,
       required this.renderObject,
@@ -123,14 +125,33 @@ class LeafNodeWidget extends StatefulWidget {
 }
 
 class LeafNodeWidgetState extends State<LeafNodeWidget> {
+  bool isSelected = false;
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    EditPageViewData editPageViewData =
+        EditPageViewData.of(context); // Little tricky force
+
+    isSelected = editPageViewData.selectedWidget.controlID ==
+        widget.renderObject.objectID;
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(
-        children: [
-          widget.isParent ? Container() : Text("-- "),
-          Text(widget.renderObject.name)
-        ],
+    return GestureDetector(
+      onTap: () {
+        widget.onSelected(widget.renderObject);
+      },
+      child: Container(
+        child: Row(
+          children: [
+            widget.isParent ? Container() : Text("|-- "),
+            Text(
+              widget.renderObject.name,
+              style: TextStyle(color: isSelected ? Colors.red : Colors.black),
+            )
+          ],
+        ),
       ),
     );
   }

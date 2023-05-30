@@ -3,9 +3,11 @@ import 'dart:html';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:my_bad/presentation/widget/loading/header/vib_header_view_model.dart';
 import 'package:my_bad/presentation/widget/loading/page_widget/page_model.dart';
 import 'package:my_bad/presentation/widget/loading/simulator/simulator.dart';
 
+import '../../widget/loading/header/vib_header_editor.dart';
 import '../../widget/loading/simulator/page_tree_node_widget.dart';
 
 class ShowSimulatorScreen extends StatefulWidget {
@@ -57,10 +59,21 @@ class _ShowSimulatorScreenState extends State<ShowSimulatorScreen> {
               return Row(
                 children: [
                   Container(
-                    width: 375,
+                    width: 350,
                     child: PageTreeNodeWidget(
-                      pageObject: editPageViewData.pageModel,
-                      onSelected: (id) {},
+                      pageObject: pageModel,
+                      onSelected: (renderObject) {
+                        selectedWidget.updateSelectedWidget(
+                            VIBHeaderEditInfoView(
+                              model: renderObject as VibHeaderViewRenderObject,
+                              onChanged: () {
+                                setState(() {
+                                  pageModel = pageModel;
+                                });
+                              },
+                            ),
+                            renderObject.objectID);
+                      },
                     ),
                   ),
                   SimulatorWidget(
