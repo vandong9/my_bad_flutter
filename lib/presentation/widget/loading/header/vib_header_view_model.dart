@@ -67,9 +67,9 @@ const String _jsonexport = """
     "native_control": "VIBHeaderView",
     "attribute": {
         "layout": {
-            "top": 0, 
-            "left": 0,
-            "right": 0,
+            "top": 0.0, 
+            "left": 0.0,
+            "right": 0.0,
             "height": 50.0,
             "background_color": ""
         },

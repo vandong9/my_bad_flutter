@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:html';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -61,14 +60,14 @@ class _ShowSimulatorScreenState extends State<ShowSimulatorScreen> {
                   Container(
                     width: 350,
                     child: PageTreeNodeWidget(
-                      pageObject: pageModel,
+                      pageObject: editPageViewData.pageModel,
                       onSelected: (renderObject) {
                         selectedWidget.updateSelectedWidget(
                             VIBHeaderEditInfoView(
                               model: renderObject as VibHeaderViewRenderObject,
                               onChanged: () {
                                 setState(() {
-                                  pageModel = pageModel;
+                                  // pageModel = pageModel;
                                 });
                               },
                             ),

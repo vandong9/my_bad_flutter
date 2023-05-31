@@ -36,10 +36,10 @@ String sampleJson = """
       "native_control": "VIBHeaderView",
       "attribute": {
         "layout": {
-          "top": 0,
-          "left": 0,
-          "right": 0,
-          "height": 50,
+          "top": 0.0,
+          "left": 0.0,
+          "right": 0.0,
+          "height": 50.0,
           "background_color": ""
         },
         "properties": {
@@ -57,10 +57,10 @@ String sampleJson = """
       "native_control": "VIBHeaderView",
       "attribute": {
         "layout": {
-          "top": 0,
-          "left": 0,
-          "right": 0,
-          "height": 100,
+          "top": 0.0,
+          "left": 0.0,
+          "right": 0.0,
+          "height": 100.0,
           "background_color": ""
         },
         "properties": {
