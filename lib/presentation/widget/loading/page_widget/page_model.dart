@@ -4,21 +4,56 @@ import 'package:flutter/material.dart';
 
 import '../../../../data/model/render_object/base_render_object.dart';
 import '../../../../data/model/render_object/render_object_config.dart';
+import 'package:uuid/uuid.dart';
 
 class PageModel extends BaseViewRenderObject {
   late String pageName;
-  late Color backgroundColor;
+
+  late String backgroundColorName;
 
   PageModel.fromJson(Map<String, dynamic> json) : super.fromJson(json) {
     pageName = json["page_name"];
-    backgroundColor = mapVIbColorName[json["backgroundColor"]] ?? Colors.black;
+    backgroundColorName = json["background_color"];
+  }
+
+  Color backgroundColor() {
+    return mapVIbColorName[backgroundColorName] ?? Colors.white;
   }
 
   static PageModel mockObject() {
     Map<String, dynamic> json = jsonDecode(sampleJson);
     return PageModel.fromJson(json);
   }
+
+  @override
+  BaseViewRenderObject basicInstance() {
+    Map<String, dynamic> json = jsonDecode(jsonBasicInfo);
+    PageModel model = PageModel.fromJson(json);
+
+    model.objectID = const Uuid().v1();
+    return model;
+  }
+
+  @override
+  String toJson() {
+    Map<String, dynamic> json = {};
+
+    return json.toString();
+  }
 }
+
+String jsonBasicInfo = """
+{
+  "id": "1000FC4JC5FMAA1SBQZ9W8Y1JB95HFVARVT13DST063NYBP2YRDJKI",
+  "type" : "page",
+  "name": "Page intro",
+  "page_name": "intro",
+  "native_control": "BaseViewController",
+  "background_color": "",
+  "children": []
+}
+
+""";
 
 String sampleJson = """
 {

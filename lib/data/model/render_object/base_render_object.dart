@@ -1,7 +1,8 @@
+import 'package:flutter/material.dart';
 import 'package:my_bad/presentation/widget/loading/header/vib_header_view_model.dart';
 import 'package:my_bad/presentation/widget/loading/page_widget/page_model.dart';
 
-class BaseViewRenderObject {
+abstract class BaseViewRenderObject {
   String objectID = "";
   String name = "";
   String type = "";
@@ -30,6 +31,10 @@ class BaseViewRenderObject {
       }
     });
   }
+
+  /// Abstract function
+  String toJson();
+  BaseViewRenderObject basicInstance();
 }
 
 enum ControlType { unknown, page, headerView }

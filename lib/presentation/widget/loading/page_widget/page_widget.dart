@@ -16,8 +16,6 @@ class PageRenderWidget extends StatefulWidget {
 }
 
 class PageRenderWidgetState extends State<PageRenderWidget> {
-  Color backgroundColor = Colors.black12;
-
   List<Widget> getChildren() {
     List<Widget> childrenWidgets = [];
     for (var element in widget.pageModel.childrenNode) {
@@ -36,7 +34,7 @@ class PageRenderWidgetState extends State<PageRenderWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: mapVIbColorName[widget.pageModel.backgroundColor],
+      color: widget.pageModel.backgroundColor(),
       child: Container(
           child: Column(
         children: getChildren(),

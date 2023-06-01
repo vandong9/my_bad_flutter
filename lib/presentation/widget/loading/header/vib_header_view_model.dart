@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:uuid/uuid.dart';
+
 import '../../../../data/model/render_object/base_render_object.dart';
 import '../../../../data/model/render_object/render_object_config.dart';
 
@@ -16,8 +18,24 @@ class VibHeaderViewRenderObject extends BaseViewRenderObject {
   }
 
   static VibHeaderViewRenderObject mockObject() {
-    Map<String, dynamic> json = jsonDecode(_jsonexport);
+    Map<String, dynamic> json = jsonDecode(jsonBasicInfo);
     return VibHeaderViewRenderObject.fromJson(json);
+  }
+
+  @override
+  BaseViewRenderObject basicInstance() {
+    Map<String, dynamic> json = jsonDecode(jsonBasicInfo);
+    VibHeaderViewRenderObject model = VibHeaderViewRenderObject.fromJson(json);
+
+    model.objectID = const Uuid().v1();
+    return model;
+  }
+
+  @override
+  String toJson() {
+    Map<String, dynamic> json = {};
+
+    return json.toString();
   }
 }
 
@@ -59,7 +77,7 @@ class VibHeaderProperties {
   }
 }
 
-const String _jsonexport = """
+const String jsonBasicInfo = """
 {  
     "id" : "123456",
     "type": "header_view",
