@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_bad/data/model/render_object/base_render_object.dart';
 import 'package:my_bad/presentation/widget/loading/header/vib_header.dart';
 import 'package:my_bad/presentation/widget/loading/page_widget/page_model.dart';
 import 'package:my_bad/presentation/widget/loading/status_bar/status_bard.dart';
@@ -30,17 +31,6 @@ class _SimulatorWidgetState extends State<SimulatorWidget> {
         InheritedAppThemeProvider.of(context)!; // Little tricky force
     AppTheme currentTheme = themeProvider.appTheme;
     backgroundColor = currentTheme.color.grey50;
-
-    List<Widget> childrenWidgets = [];
-    for (var element in pageModel.children) {
-      String type = element["type"];
-      if (type == "header_view") {
-        VibHeaderViewRenderObject model =
-            VibHeaderViewRenderObject.fromJson(element);
-        childrenWidgets
-            .add(VIBHeaderView(key: ValueKey(model.objectID), model: model));
-      }
-    }
 
     return Container(
       color: Colors.red,

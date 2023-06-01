@@ -4,13 +4,17 @@ import 'package:my_bad/presentation/widget/loading/page_widget/page_model.dart';
 class BaseViewRenderObject {
   String objectID = "";
   String name = "";
+  String type = "";
+  ControlType controlType = ControlType.unknown;
   List<dynamic> children = [];
   List<BaseViewRenderObject> childrenNode = [];
 
   BaseViewRenderObject.fromJson(Map<String, dynamic> json) {
     objectID = json["id"];
     name = json["name"];
+    type = json["type"];
     children = json["children"] ?? [];
+    controlType = mapControlNameToType[type] ?? ControlType.unknown;
 
     children.forEach((element) {
       String type = element["type"];

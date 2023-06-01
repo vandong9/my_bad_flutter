@@ -17,7 +17,7 @@ class PageTreeNodeWidget extends StatefulWidget {
 class PageTreeNodeWidgetState extends State<PageTreeNodeWidget> {
   List<Widget> getTreeNode() {
     List<Widget> treeWidget = [];
-    int i = 0;
+
     widget.pageObject.childrenNode.forEach((element) {
       if (element.childrenNode.length > 0) {
         treeWidget.add(ParentNodeWidget(
