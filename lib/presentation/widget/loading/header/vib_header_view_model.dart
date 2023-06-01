@@ -11,6 +11,7 @@ class VibHeaderViewRenderObject extends BaseViewRenderObject {
 
   late VibHeaderViewAttribute attribute;
 
+  VibHeaderViewRenderObject();
   VibHeaderViewRenderObject.fromJson(Map<String, dynamic> json)
       : super.fromJson(json) {
     objectID = json["id"];
@@ -25,17 +26,16 @@ class VibHeaderViewRenderObject extends BaseViewRenderObject {
   @override
   BaseViewRenderObject basicInstance() {
     Map<String, dynamic> json = jsonDecode(jsonBasicInfo);
+    json["id"] = const Uuid().v1();
     VibHeaderViewRenderObject model = VibHeaderViewRenderObject.fromJson(json);
-
-    model.objectID = const Uuid().v1();
     return model;
   }
 
   @override
-  String toJson() {
+  Map<String, dynamic> toJson() {
     Map<String, dynamic> json = {};
-
-    return json.toString();
+    json["id"] = objectID;
+    return json;
   }
 }
 

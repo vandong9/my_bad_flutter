@@ -35,10 +35,10 @@ class PageModel extends BaseViewRenderObject {
   }
 
   @override
-  String toJson() {
+  Map<String, dynamic> toJson() {
     Map<String, dynamic> json = {};
-
-    return json.toString();
+    json["id"] = objectID;
+    return json;
   }
 }
 

@@ -94,6 +94,9 @@ class _ShowSimulatorScreenState extends State<ShowSimulatorScreen> {
                         selectedWidget.updateSelectedWidget(
                             editor, renderObject.objectID);
                       },
+                      onChanged: () {
+                        setState(() {});
+                      },
                     ),
                   ),
                   SimulatorWidget(

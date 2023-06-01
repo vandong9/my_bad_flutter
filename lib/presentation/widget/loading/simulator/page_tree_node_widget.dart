@@ -1,17 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:rxdart/subjects.dart';
 
 import '../../../../data/model/render_object/base_render_object.dart';
 import '../../../features/show_simulator/show_simulator_screen.dart';
 
+PublishSubject publishSubject = PublishSubject();
+
 class PageTreeNodeWidget extends StatefulWidget {
   BaseViewRenderObject pageObject;
   Function(BaseViewRenderObject) onSelected;
+  Function() onChanged;
 
   PageTreeNodeWidget(
-      {super.key, required this.pageObject, required this.onSelected});
+      {super.key,
+      required this.pageObject,
+      required this.onSelected,
+      required this.onChanged});
 
   @override
-  State<StatefulWidget> createState() => PageTreeNodeWidgetState();
+  State<StatefulWidget> createState() {
+    publishSubject.listen((value) {
+      onChanged();
+    });
+    return PageTreeNodeWidgetState();
+  }
 }
 
 class PageTreeNodeWidgetState extends State<PageTreeNodeWidget> {
@@ -31,6 +43,9 @@ class PageTreeNodeWidgetState extends State<PageTreeNodeWidget> {
           renderObject: element,
           onSelected: (renderObject) {
             widget.onSelected(renderObject);
+          },
+          onDeleted: () {
+            publishSubject.add("event");
           },
         ));
       }
@@ -82,6 +97,9 @@ class ParentNodeWidgetState extends State<ParentNodeWidget> {
           onSelected: (renderObject) {
             widget.onSelected(renderObject);
           },
+          onDeleted: () {
+            publishSubject.add("event");
+          },
         ));
       }
     });
@@ -98,6 +116,7 @@ class ParentNodeWidgetState extends State<ParentNodeWidget> {
           onSelected: (renderObject) {
             widget.onSelected(renderObject);
           },
+          onDeleted: () {},
         ),
         Container(
           padding: EdgeInsets.only(left: 20),
@@ -114,11 +133,13 @@ class LeafNodeWidget extends StatefulWidget {
   bool isParent = false;
   BaseViewRenderObject renderObject;
   Function(BaseViewRenderObject) onSelected;
+  Function() onDeleted;
   LeafNodeWidget(
       {super.key,
       required this.renderObject,
       this.isParent = false,
-      required this.onSelected});
+      required this.onSelected,
+      required this.onDeleted});
 
   @override
   State<StatefulWidget> createState() => LeafNodeWidgetState();
@@ -136,6 +157,7 @@ class LeafNodeWidgetState extends State<LeafNodeWidget> {
         widget.renderObject.objectID;
   }
 
+  makeDelte() {}
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -149,6 +171,38 @@ class LeafNodeWidgetState extends State<LeafNodeWidget> {
             Text(
               widget.renderObject.name,
               style: TextStyle(color: isSelected ? Colors.red : Colors.black),
+            ),
+            SizedBox(
+              width: 8,
+            ),
+            GestureDetector(
+              onTap: () {
+                showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      AlertDialog alert = AlertDialog(
+                        title: Text("Warning"),
+                        content: Text("Are you sure to remove this control ?"),
+                        actions: [
+                          TextButton(
+                            child: Text("OK"),
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                              widget.renderObject.parent
+                                  ?.removeChild(widget.renderObject);
+                              widget.onDeleted();
+                            },
+                          ),
+                        ],
+                      );
+                      return alert;
+                    });
+              },
+              child: Icon(
+                Icons.delete_forever,
+                size: 12.0,
+                color: Colors.red,
+              ),
             )
           ],
         ),
