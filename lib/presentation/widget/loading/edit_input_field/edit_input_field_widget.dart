@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class PairKeyValueWidget extends StatelessWidget {
   final TextEditingController controller = TextEditingController();
-  Function(double) valueChanged;
+  Function(String) valueChanged;
 
   String fieldName;
   String value;
@@ -23,8 +23,8 @@ class PairKeyValueWidget extends StatelessWidget {
             width: 200,
             child: TextField(
               onEditingComplete: () {
-                double doubleValue = double.parse(controller.text);
-                valueChanged(doubleValue);
+                // double doubleValue = double.parse(controller.text);
+                valueChanged(controller.text);
               },
               controller: controller,
             ),

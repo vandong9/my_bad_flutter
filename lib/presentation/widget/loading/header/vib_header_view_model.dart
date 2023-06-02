@@ -54,10 +54,10 @@ class VibHeaderViewLayout {
   double? left;
   double? right;
   double? height;
-  String? background_color;
+  String? backgroundColorName;
 
   VibHeaderViewLayout.fromJson(Map<String, dynamic> json) {
-    background_color = json["background_color"];
+    backgroundColorName = json["background_color"];
     top = json["top"];
     left = json["left"];
     right = json["right"];
@@ -72,8 +72,8 @@ class VibHeaderProperties {
 
   VibHeaderProperties.fromJson(Map<String, dynamic> json) {
     title = json["title"];
-    leftIcon = mapVibImageAsset[json["left_icon"]];
-    rightIcon = mapVibImageAsset[json["right_icon"]];
+    leftIcon = json["left_icon"];
+    rightIcon = json["right_icon"];
   }
 }
 

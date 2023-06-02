@@ -15,7 +15,10 @@ class PickColorButtonWidgetState extends State<PickColorButtonWidget> {
 
   @override
   void initState() {
-    // dropdownValue = widget.initValue ?? "clear";
+    dropdownValue = widget.initValue;
+    if (widget.initValue == null || widget.initValue!.isEmpty) {
+      dropdownValue = "clear";
+    }
 
     super.initState();
   }

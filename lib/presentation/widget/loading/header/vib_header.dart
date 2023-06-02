@@ -28,18 +28,9 @@ class VIBHeaderViewState extends State<VIBHeaderView> {
 
   VIBHeaderViewState({required this.model});
 
-  String leftIconName = R.controlsImages.cmBackIcImages.cmBackIc;
-  String rightIconName =
-      R.controlsImages.cmCloseHeaderIcImagesetImages.cmCloseHeaderIc;
-
-  Color backgroundColor = const Color.fromRGBO(0, 0, 0, 0);
-
   @override
   void initState() {
     super.initState();
-    backgroundColor =
-        mapVIbColorName[model.attribute.layout.background_color] ??
-            Color.fromRGBO(0, 0, 0, 0);
   }
 
   @override
@@ -60,11 +51,16 @@ class VIBHeaderViewState extends State<VIBHeaderView> {
         EditPageViewData.of(context); // Little tricky force
 
     return Container(
+      padding: EdgeInsets.only(
+          left: model.attribute.layout.left ?? 0.0,
+          right: model.attribute.layout.right ?? 0.0,
+          top: model.attribute.layout.top ?? 0.0),
       child: Stack(
         children: [
           Container(
-            color: mapVIbColorName[model.attribute.layout.background_color] ??
-                Color.fromRGBO(0, 0, 0, 0),
+            color:
+                mapVIbColorName[model.attribute.layout.backgroundColorName] ??
+                    Color.fromRGBO(0, 0, 0, 0),
             padding: const EdgeInsets.only(left: 18, right: 18),
             height: model.attribute.layout.height,
             child: Row(
@@ -75,7 +71,9 @@ class VIBHeaderViewState extends State<VIBHeaderView> {
                   height: 30,
                   child: (model.attribute.properties.leftIcon == null
                       ? Container()
-                      : Image.asset(model.attribute.properties.leftIcon!)),
+                      : Image.asset(mapVibImageAsset[
+                              model.attribute.properties.leftIcon] ??
+                          "")),
                 ),
                 Text(
                   model.attribute.properties.title,
@@ -87,7 +85,9 @@ class VIBHeaderViewState extends State<VIBHeaderView> {
                   height: 30,
                   child: (model.attribute.properties.rightIcon == null
                       ? Container()
-                      : Image.asset(rightIconName)),
+                      : Image.asset(mapVibImageAsset[
+                              model.attribute.properties.rightIcon] ??
+                          "")),
                 )
               ],
             ),

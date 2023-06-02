@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../r.dart';
 
 final Map<String, String> mapVibImageAsset = {
+  "empty": "",
   "arrow_left": R.controlsImages.cmBackIcImages.cmBackIc,
   "close": R.controlsImages.cmCloseHeaderIcImagesetImages.cmCloseHeaderIc
 };
