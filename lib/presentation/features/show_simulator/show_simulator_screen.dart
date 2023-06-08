@@ -3,13 +3,13 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:my_bad/data/model/render_object/base_render_object.dart';
-import 'package:my_bad/presentation/widget/loading/header/vib_header_view_model.dart';
-import 'package:my_bad/presentation/widget/loading/page_widget/page_model.dart';
-import 'package:my_bad/presentation/widget/loading/simulator/simulator.dart';
+import 'package:my_bad/presentation/widget/control_widgets/header/vib_header_view_model.dart';
+import 'package:my_bad/presentation/widget/control_widgets/page_widget/page_model.dart';
+import 'package:my_bad/presentation/widget/support_widgets/simulator/simulator.dart';
 
-import '../../widget/loading/header/vib_header_editor.dart';
-import '../../widget/loading/page_widget/page_editor_widget.dart';
-import '../../widget/loading/simulator/page_tree_node_widget.dart';
+import '../../widget/control_widgets/header/vib_header_editor.dart';
+import '../../widget/control_widgets/page_widget/page_editor_widget.dart';
+import '../../widget/support_widgets/simulator/page_tree_node_widget.dart';
 
 class ShowSimulatorScreen extends StatefulWidget {
   const ShowSimulatorScreen({super.key});

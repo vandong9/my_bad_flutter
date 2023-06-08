@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
-import 'package:my_bad/presentation/widget/loading/header/vib_header_view_model.dart';
-import 'package:my_bad/presentation/widget/loading/page_widget/page_model.dart';
+import 'package:my_bad/presentation/widget/control_widgets/header/vib_header_view_model.dart';
+import 'package:my_bad/presentation/widget/control_widgets/page_widget/page_model.dart';
 
 abstract class BaseViewRenderObject {
   String objectID = "";

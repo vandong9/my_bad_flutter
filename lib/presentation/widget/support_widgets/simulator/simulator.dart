@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:my_bad/data/model/render_object/base_render_object.dart';
-import 'package:my_bad/presentation/widget/loading/header/vib_header.dart';
-import 'package:my_bad/presentation/widget/loading/page_widget/page_model.dart';
-import 'package:my_bad/presentation/widget/loading/status_bar/status_bard.dart';
+import 'package:my_bad/presentation/widget/control_widgets/header/vib_header.dart';
+import 'package:my_bad/presentation/widget/control_widgets/page_widget/page_model.dart';
+import 'package:my_bad/presentation/widget/control_widgets/status_bar/status_bard.dart';
 import 'package:share_ui/theme/app_theme.dart';
 import 'package:share_ui/theme/theme_manager.dart';
 
-import '../header/vib_header_view_model.dart';
-import '../page_widget/page_widget.dart';
+import '../../control_widgets/header/vib_header_view_model.dart';
+import '../../control_widgets/page_widget/page_widget.dart';
 
 class SimulatorWidget extends StatefulWidget {
   PageModel pageModel;

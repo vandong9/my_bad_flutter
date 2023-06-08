@@ -55,7 +55,7 @@ class PickImageButtonWidgetState extends State<PickImageButtonWidget> {
                       width: 20,
                       height: 20,
                     ),
-              SizedBox(
+              const SizedBox(
                 width: 4,
               ),
               Text(value)

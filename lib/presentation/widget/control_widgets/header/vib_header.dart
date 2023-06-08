@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_bad/data/model/render_object/render_object_config.dart';
-import 'package:my_bad/presentation/widget/loading/header/vib_header_editor.dart';
+import 'package:my_bad/presentation/widget/control_widgets/header/vib_header_editor.dart';
 import 'package:rxdart/subjects.dart';
 import 'package:share_ui/theme/app_theme.dart';
 import 'package:share_ui/theme/theme_manager.dart';

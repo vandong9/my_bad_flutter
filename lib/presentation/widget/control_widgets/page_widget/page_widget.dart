@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_bad/data/model/render_object/render_object_config.dart';
-import 'package:my_bad/presentation/widget/loading/page_widget/page_model.dart';
+import 'package:my_bad/presentation/widget/control_widgets/page_widget/page_model.dart';
 
 import '../../../../data/model/render_object/base_render_object.dart';
 import '../header/vib_header.dart';

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../features/show_simulator/show_simulator_screen.dart';
-import '../edit_input_field/edit_input_field_widget.dart';
-import '../support_widgets/pick_color_button/pick_color_button_widget.dart';
-import '../support_widgets/pick_image_button/pick_image_button.dart';
+import '../../support_widgets/edit_input_field/edit_input_field_widget.dart';
+import '../../support_widgets/pick_color_button/pick_color_button_widget.dart';
+import '../../support_widgets/pick_image_button/pick_image_button.dart';
 import 'vib_header_view_model.dart';
 
 class VIBHeaderEditInfoView extends StatefulWidget {
